@@ -1,0 +1,8 @@
+
+{
+  "pitchPoints": [
+    {"timestampMs": 0, "cents": -5, "freqHz": 260.88},
+    {"timestampMs": 20, "cents": 2, "freqHz": 261.93},
+    {"timestampMs": 40, "cents": -3, "freqHz": 261.18}
+  ]
+}

@@ -1,0 +1,18 @@
+
+{
+  "durationMs": 30000,
+  "referencePitch": [
+    {"timestampMs": 0, "cents": 0, "freqHz": 261.63},
+    {"timestampMs": 500, "cents": 0, "freqHz": 261.63},
+    {"timestampMs": 2000, "cents": 200, "freqHz": 293.66}
+  ],
+  "gridLines": [
+    {"cents": 0, "label": "Sa", "isHighlighted": true},
+    {"cents": 200, "label": "Re", "isHighlighted": false},
+    {"cents": 400, "label": "Ga", "isHighlighted": false},
+    {"cents": 500, "label": "Ma", "isHighlighted": false},
+    {"cents": 700, "label": "Pa", "isHighlighted": false},
+    {"cents": 900, "label": "Dha", "isHighlighted": false},
+    {"cents": 1100, "label": "Ni", "isHighlighted": false}
+  ]
+}

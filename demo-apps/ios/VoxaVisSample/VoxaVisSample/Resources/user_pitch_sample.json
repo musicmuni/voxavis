@@ -1,0 +1,7039 @@
+{
+  "pitchPoints": [
+    {
+      "timestampMs": 0,
+      "cents": 0.0,
+      "freqHz": 261.63
+    },
+    {
+      "timestampMs": 20,
+      "cents": 6.07,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 40,
+      "cents": 9.15,
+      "freqHz": 263.02
+    },
+    {
+      "timestampMs": 60,
+      "cents": 7.89,
+      "freqHz": 262.82
+    },
+    {
+      "timestampMs": 80,
+      "cents": 3.25,
+      "freqHz": 262.12
+    },
+    {
+      "timestampMs": 100,
+      "cents": -1.97,
+      "freqHz": 261.33
+    },
+    {
+      "timestampMs": 120,
+      "cents": -4.69,
+      "freqHz": 260.92
+    },
+    {
+      "timestampMs": 140,
+      "cents": -3.2,
+      "freqHz": 261.15
+    },
+    {
+      "timestampMs": 160,
+      "cents": 1.88,
+      "freqHz": 261.91
+    },
+    {
+      "timestampMs": 180,
+      "cents": 7.98,
+      "freqHz": 262.84
+    },
+    {
+      "timestampMs": 200,
+      "cents": 11.92,
+      "freqHz": 263.44
+    },
+    {
+      "timestampMs": 220,
+      "cents": 11.66,
+      "freqHz": 263.4
+    },
+    {
+      "timestampMs": 240,
+      "cents": 7.41,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 260,
+      "cents": 1.49,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 280,
+      "cents": -2.9,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 300,
+      "cents": -3.43,
+      "freqHz": 261.11
+    },
+    {
+      "timestampMs": 320,
+      "cents": 0.11,
+      "freqHz": 261.65
+    },
+    {
+      "timestampMs": 340,
+      "cents": 5.69,
+      "freqHz": 262.49
+    },
+    {
+      "timestampMs": 360,
+      "cents": 10.15,
+      "freqHz": 263.17
+    },
+    {
+      "timestampMs": 380,
+      "cents": 10.92,
+      "freqHz": 263.29
+    },
+    {
+      "timestampMs": 400,
+      "cents": 7.4,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 420,
+      "cents": 1.31,
+      "freqHz": 261.83
+    },
+    {
+      "timestampMs": 440,
+      "cents": -4.24,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 460,
+      "cents": -6.44,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 480,
+      "cents": -4.31,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 500,
+      "cents": 0.81,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 520,
+      "cents": 5.95,
+      "freqHz": 262.53
+    },
+    {
+      "timestampMs": 540,
+      "cents": 8.16,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 560,
+      "cents": 6.07,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 580,
+      "cents": 0.67,
+      "freqHz": 261.73
+    },
+    {
+      "timestampMs": 600,
+      "cents": -5.22,
+      "freqHz": 260.84
+    },
+    {
+      "timestampMs": 620,
+      "cents": -8.53,
+      "freqHz": 260.34
+    },
+    {
+      "timestampMs": 640,
+      "cents": -7.53,
+      "freqHz": 260.49
+    },
+    {
+      "timestampMs": 660,
+      "cents": -2.84,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 680,
+      "cents": 2.97,
+      "freqHz": 262.08
+    },
+    {
+      "timestampMs": 700,
+      "cents": 6.73,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 720,
+      "cents": 6.38,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 740,
+      "cents": 2.13,
+      "freqHz": 261.95
+    },
+    {
+      "timestampMs": 760,
+      "cents": -3.69,
+      "freqHz": 261.07
+    },
+    {
+      "timestampMs": 780,
+      "cents": -7.92,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 800,
+      "cents": -8.22,
+      "freqHz": 260.39
+    },
+    {
+      "timestampMs": 820,
+      "cents": -4.39,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 840,
+      "cents": 1.51,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 860,
+      "cents": 6.31,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 880,
+      "cents": 7.43,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 900,
+      "cents": 4.27,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 920,
+      "cents": -1.48,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 940,
+      "cents": -6.71,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 960,
+      "cents": -8.63,
+      "freqHz": 260.33
+    },
+    {
+      "timestampMs": 980,
+      "cents": -6.26,
+      "freqHz": 260.69
+    },
+    {
+      "timestampMs": 1000,
+      "cents": -0.95,
+      "freqHz": 261.49
+    },
+    {
+      "timestampMs": 1020,
+      "cents": 4.33,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 1040,
+      "cents": 6.62,
+      "freqHz": 262.63
+    },
+    {
+      "timestampMs": 1060,
+      "cents": 4.56,
+      "freqHz": 262.32
+    },
+    {
+      "timestampMs": 1080,
+      "cents": -0.86,
+      "freqHz": 261.5
+    },
+    {
+      "timestampMs": 1100,
+      "cents": -6.83,
+      "freqHz": 260.6
+    },
+    {
+      "timestampMs": 1120,
+      "cents": -10.24,
+      "freqHz": 260.09
+    },
+    {
+      "timestampMs": 1140,
+      "cents": -9.39,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 1160,
+      "cents": -4.87,
+      "freqHz": 260.9
+    },
+    {
+      "timestampMs": 1180,
+      "cents": 0.77,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 1200,
+      "cents": 4.34,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 1220,
+      "cents": 3.83,
+      "freqHz": 262.21
+    },
+    {
+      "timestampMs": 1240,
+      "cents": -0.56,
+      "freqHz": 261.55
+    },
+    {
+      "timestampMs": 1260,
+      "cents": -6.5,
+      "freqHz": 260.65
+    },
+    {
+      "timestampMs": 1280,
+      "cents": -10.78,
+      "freqHz": 260.01
+    },
+    {
+      "timestampMs": 1300,
+      "cents": -11.08,
+      "freqHz": 259.96
+    },
+    {
+      "timestampMs": 1320,
+      "cents": -7.19,
+      "freqHz": 260.55
+    },
+    {
+      "timestampMs": 1340,
+      "cents": -1.15,
+      "freqHz": 261.46
+    },
+    {
+      "timestampMs": 1360,
+      "cents": 3.88,
+      "freqHz": 262.22
+    },
+    {
+      "timestampMs": 1380,
+      "cents": 5.3,
+      "freqHz": 262.43
+    },
+    {
+      "timestampMs": 1400,
+      "cents": 2.52,
+      "freqHz": 262.01
+    },
+    {
+      "timestampMs": 1420,
+      "cents": -2.76,
+      "freqHz": 261.21
+    },
+    {
+      "timestampMs": 1440,
+      "cents": -7.45,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 1460,
+      "cents": -8.77,
+      "freqHz": 260.31
+    },
+    {
+      "timestampMs": 1480,
+      "cents": -5.72,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 1500,
+      "cents": 0.31,
+      "freqHz": 261.68
+    },
+    {
+      "timestampMs": 1520,
+      "cents": 6.35,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 1540,
+      "cents": 9.42,
+      "freqHz": 263.06
+    },
+    {
+      "timestampMs": 1560,
+      "cents": 8.15,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 1580,
+      "cents": 3.52,
+      "freqHz": 262.16
+    },
+    {
+      "timestampMs": 1600,
+      "cents": -1.69,
+      "freqHz": 261.38
+    },
+    {
+      "timestampMs": 1620,
+      "cents": -4.38,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 1640,
+      "cents": -2.87,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 1660,
+      "cents": 2.24,
+      "freqHz": 261.97
+    },
+    {
+      "timestampMs": 1680,
+      "cents": 8.37,
+      "freqHz": 262.9
+    },
+    {
+      "timestampMs": 1700,
+      "cents": 12.33,
+      "freqHz": 263.5
+    },
+    {
+      "timestampMs": 1720,
+      "cents": 12.11,
+      "freqHz": 263.47
+    },
+    {
+      "timestampMs": 1740,
+      "cents": 7.88,
+      "freqHz": 262.82
+    },
+    {
+      "timestampMs": 1760,
+      "cents": 1.98,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 1780,
+      "cents": -2.4,
+      "freqHz": 261.27
+    },
+    {
+      "timestampMs": 1800,
+      "cents": -2.93,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 1820,
+      "cents": 0.6,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 1840,
+      "cents": 6.16,
+      "freqHz": 262.56
+    },
+    {
+      "timestampMs": 1860,
+      "cents": 10.58,
+      "freqHz": 263.23
+    },
+    {
+      "timestampMs": 1880,
+      "cents": 11.29,
+      "freqHz": 263.34
+    },
+    {
+      "timestampMs": 1900,
+      "cents": 7.71,
+      "freqHz": 262.8
+    },
+    {
+      "timestampMs": 1920,
+      "cents": 1.54,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 1940,
+      "cents": -4.1,
+      "freqHz": 261.01
+    },
+    {
+      "timestampMs": 1960,
+      "cents": -6.42,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 1980,
+      "cents": -4.4,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 2000,
+      "cents": 200.59,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 2020,
+      "cents": 205.6,
+      "freqHz": 294.62
+    },
+    {
+      "timestampMs": 2040,
+      "cents": 207.66,
+      "freqHz": 294.97
+    },
+    {
+      "timestampMs": 2060,
+      "cents": 205.43,
+      "freqHz": 294.59
+    },
+    {
+      "timestampMs": 2080,
+      "cents": 199.9,
+      "freqHz": 293.65
+    },
+    {
+      "timestampMs": 2100,
+      "cents": 193.88,
+      "freqHz": 292.63
+    },
+    {
+      "timestampMs": 2120,
+      "cents": 190.44,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 2140,
+      "cents": 191.32,
+      "freqHz": 292.2
+    },
+    {
+      "timestampMs": 2160,
+      "cents": 195.92,
+      "freqHz": 292.98
+    },
+    {
+      "timestampMs": 2180,
+      "cents": 201.64,
+      "freqHz": 293.95
+    },
+    {
+      "timestampMs": 2200,
+      "cents": 205.32,
+      "freqHz": 294.57
+    },
+    {
+      "timestampMs": 2220,
+      "cents": 204.93,
+      "freqHz": 294.51
+    },
+    {
+      "timestampMs": 2240,
+      "cents": 200.65,
+      "freqHz": 293.78
+    },
+    {
+      "timestampMs": 2260,
+      "cents": 194.82,
+      "freqHz": 292.79
+    },
+    {
+      "timestampMs": 2280,
+      "cents": 190.61,
+      "freqHz": 292.08
+    },
+    {
+      "timestampMs": 2300,
+      "cents": 190.35,
+      "freqHz": 292.04
+    },
+    {
+      "timestampMs": 2320,
+      "cents": 194.24,
+      "freqHz": 292.69
+    },
+    {
+      "timestampMs": 2340,
+      "cents": 200.22,
+      "freqHz": 293.71
+    },
+    {
+      "timestampMs": 2360,
+      "cents": 205.13,
+      "freqHz": 294.54
+    },
+    {
+      "timestampMs": 2380,
+      "cents": 206.38,
+      "freqHz": 294.75
+    },
+    {
+      "timestampMs": 2400,
+      "cents": 203.36,
+      "freqHz": 294.24
+    },
+    {
+      "timestampMs": 2420,
+      "cents": 197.77,
+      "freqHz": 293.29
+    },
+    {
+      "timestampMs": 2440,
+      "cents": 192.7,
+      "freqHz": 292.43
+    },
+    {
+      "timestampMs": 2460,
+      "cents": 190.96,
+      "freqHz": 292.14
+    },
+    {
+      "timestampMs": 2480,
+      "cents": 193.51,
+      "freqHz": 292.57
+    },
+    {
+      "timestampMs": 2500,
+      "cents": 199.0,
+      "freqHz": 293.5
+    },
+    {
+      "timestampMs": 2520,
+      "cents": 204.46,
+      "freqHz": 294.43
+    },
+    {
+      "timestampMs": 2540,
+      "cents": 206.92,
+      "freqHz": 294.85
+    },
+    {
+      "timestampMs": 2560,
+      "cents": 205.03,
+      "freqHz": 294.52
+    },
+    {
+      "timestampMs": 2580,
+      "cents": 199.77,
+      "freqHz": 293.63
+    },
+    {
+      "timestampMs": 2600,
+      "cents": 193.95,
+      "freqHz": 292.65
+    },
+    {
+      "timestampMs": 2620,
+      "cents": 190.66,
+      "freqHz": 292.09
+    },
+    {
+      "timestampMs": 2640,
+      "cents": 191.63,
+      "freqHz": 292.25
+    },
+    {
+      "timestampMs": 2660,
+      "cents": 196.24,
+      "freqHz": 293.03
+    },
+    {
+      "timestampMs": 2680,
+      "cents": 201.95,
+      "freqHz": 294.0
+    },
+    {
+      "timestampMs": 2700,
+      "cents": 205.57,
+      "freqHz": 294.62
+    },
+    {
+      "timestampMs": 2720,
+      "cents": 205.09,
+      "freqHz": 294.53
+    },
+    {
+      "timestampMs": 2740,
+      "cents": 200.71,
+      "freqHz": 293.79
+    },
+    {
+      "timestampMs": 2760,
+      "cents": 194.76,
+      "freqHz": 292.78
+    },
+    {
+      "timestampMs": 2780,
+      "cents": 190.45,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 2800,
+      "cents": 190.1,
+      "freqHz": 292.0
+    },
+    {
+      "timestampMs": 2820,
+      "cents": 193.93,
+      "freqHz": 292.64
+    },
+    {
+      "timestampMs": 2840,
+      "cents": 199.89,
+      "freqHz": 293.65
+    },
+    {
+      "timestampMs": 2860,
+      "cents": 204.83,
+      "freqHz": 294.49
+    },
+    {
+      "timestampMs": 2880,
+      "cents": 206.16,
+      "freqHz": 294.72
+    },
+    {
+      "timestampMs": 2900,
+      "cents": 203.28,
+      "freqHz": 294.23
+    },
+    {
+      "timestampMs": 2920,
+      "cents": 197.9,
+      "freqHz": 293.31
+    },
+    {
+      "timestampMs": 2940,
+      "cents": 193.11,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 2960,
+      "cents": 191.69,
+      "freqHz": 292.26
+    },
+    {
+      "timestampMs": 2980,
+      "cents": 194.64,
+      "freqHz": 292.76
+    },
+    {
+      "timestampMs": 3000,
+      "cents": 200.59,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 3020,
+      "cents": 206.55,
+      "freqHz": 294.78
+    },
+    {
+      "timestampMs": 3040,
+      "cents": 209.55,
+      "freqHz": 295.29
+    },
+    {
+      "timestampMs": 3060,
+      "cents": 208.22,
+      "freqHz": 295.07
+    },
+    {
+      "timestampMs": 3080,
+      "cents": 203.54,
+      "freqHz": 294.27
+    },
+    {
+      "timestampMs": 3100,
+      "cents": 198.3,
+      "freqHz": 293.38
+    },
+    {
+      "timestampMs": 3120,
+      "cents": 195.58,
+      "freqHz": 292.92
+    },
+    {
+      "timestampMs": 3140,
+      "cents": 197.07,
+      "freqHz": 293.17
+    },
+    {
+      "timestampMs": 3160,
+      "cents": 202.18,
+      "freqHz": 294.04
+    },
+    {
+      "timestampMs": 3180,
+      "cents": 208.31,
+      "freqHz": 295.08
+    },
+    {
+      "timestampMs": 3200,
+      "cents": 212.29,
+      "freqHz": 295.76
+    },
+    {
+      "timestampMs": 3220,
+      "cents": 212.08,
+      "freqHz": 295.73
+    },
+    {
+      "timestampMs": 3240,
+      "cents": 207.87,
+      "freqHz": 295.01
+    },
+    {
+      "timestampMs": 3260,
+      "cents": 201.99,
+      "freqHz": 294.01
+    },
+    {
+      "timestampMs": 3280,
+      "cents": 197.63,
+      "freqHz": 293.27
+    },
+    {
+      "timestampMs": 3300,
+      "cents": 197.12,
+      "freqHz": 293.18
+    },
+    {
+      "timestampMs": 3320,
+      "cents": 200.66,
+      "freqHz": 293.78
+    },
+    {
+      "timestampMs": 3340,
+      "cents": 206.22,
+      "freqHz": 294.73
+    },
+    {
+      "timestampMs": 3360,
+      "cents": 210.63,
+      "freqHz": 295.48
+    },
+    {
+      "timestampMs": 3380,
+      "cents": 211.33,
+      "freqHz": 295.6
+    },
+    {
+      "timestampMs": 3400,
+      "cents": 207.72,
+      "freqHz": 294.98
+    },
+    {
+      "timestampMs": 3420,
+      "cents": 201.52,
+      "freqHz": 293.93
+    },
+    {
+      "timestampMs": 3440,
+      "cents": 195.83,
+      "freqHz": 292.96
+    },
+    {
+      "timestampMs": 3460,
+      "cents": 193.45,
+      "freqHz": 292.56
+    },
+    {
+      "timestampMs": 3480,
+      "cents": 195.4,
+      "freqHz": 292.89
+    },
+    {
+      "timestampMs": 3500,
+      "cents": 200.31,
+      "freqHz": 293.72
+    },
+    {
+      "timestampMs": 3520,
+      "cents": 205.23,
+      "freqHz": 294.56
+    },
+    {
+      "timestampMs": 3540,
+      "cents": 207.2,
+      "freqHz": 294.89
+    },
+    {
+      "timestampMs": 3560,
+      "cents": 204.87,
+      "freqHz": 294.5
+    },
+    {
+      "timestampMs": 3580,
+      "cents": 199.24,
+      "freqHz": 293.54
+    },
+    {
+      "timestampMs": 3600,
+      "cents": 193.11,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 3620,
+      "cents": 189.58,
+      "freqHz": 291.91
+    },
+    {
+      "timestampMs": 3640,
+      "cents": 190.37,
+      "freqHz": 292.04
+    },
+    {
+      "timestampMs": 3660,
+      "cents": 194.87,
+      "freqHz": 292.8
+    },
+    {
+      "timestampMs": 3680,
+      "cents": 200.52,
+      "freqHz": 293.76
+    },
+    {
+      "timestampMs": 3700,
+      "cents": 204.14,
+      "freqHz": 294.37
+    },
+    {
+      "timestampMs": 3720,
+      "cents": 203.7,
+      "freqHz": 294.3
+    },
+    {
+      "timestampMs": 3740,
+      "cents": 199.39,
+      "freqHz": 293.57
+    },
+    {
+      "timestampMs": 3760,
+      "cents": 193.55,
+      "freqHz": 292.58
+    },
+    {
+      "timestampMs": 3780,
+      "cents": 189.35,
+      "freqHz": 291.87
+    },
+    {
+      "timestampMs": 3800,
+      "cents": 189.12,
+      "freqHz": 291.83
+    },
+    {
+      "timestampMs": 3820,
+      "cents": 193.06,
+      "freqHz": 292.49
+    },
+    {
+      "timestampMs": 3840,
+      "cents": 199.11,
+      "freqHz": 293.52
+    },
+    {
+      "timestampMs": 3860,
+      "cents": 204.12,
+      "freqHz": 294.37
+    },
+    {
+      "timestampMs": 3880,
+      "cents": 205.47,
+      "freqHz": 294.6
+    },
+    {
+      "timestampMs": 3900,
+      "cents": 202.58,
+      "freqHz": 294.11
+    },
+    {
+      "timestampMs": 3920,
+      "cents": 197.13,
+      "freqHz": 293.18
+    },
+    {
+      "timestampMs": 3940,
+      "cents": 192.23,
+      "freqHz": 292.35
+    },
+    {
+      "timestampMs": 3960,
+      "cents": 190.65,
+      "freqHz": 292.09
+    },
+    {
+      "timestampMs": 3980,
+      "cents": 193.38,
+      "freqHz": 292.55
+    },
+    {
+      "timestampMs": 4000,
+      "cents": 399.05,
+      "freqHz": 329.45
+    },
+    {
+      "timestampMs": 4020,
+      "cents": 404.69,
+      "freqHz": 330.53
+    },
+    {
+      "timestampMs": 4040,
+      "cents": 407.34,
+      "freqHz": 331.03
+    },
+    {
+      "timestampMs": 4060,
+      "cents": 405.62,
+      "freqHz": 330.71
+    },
+    {
+      "timestampMs": 4080,
+      "cents": 400.53,
+      "freqHz": 329.73
+    },
+    {
+      "timestampMs": 4100,
+      "cents": 394.86,
+      "freqHz": 328.66
+    },
+    {
+      "timestampMs": 4120,
+      "cents": 391.72,
+      "freqHz": 328.06
+    },
+    {
+      "timestampMs": 4140,
+      "cents": 392.8,
+      "freqHz": 328.27
+    },
+    {
+      "timestampMs": 4160,
+      "cents": 397.53,
+      "freqHz": 329.16
+    },
+    {
+      "timestampMs": 4180,
+      "cents": 403.31,
+      "freqHz": 330.26
+    },
+    {
+      "timestampMs": 4200,
+      "cents": 407.0,
+      "freqHz": 330.97
+    },
+    {
+      "timestampMs": 4220,
+      "cents": 406.56,
+      "freqHz": 330.88
+    },
+    {
+      "timestampMs": 4240,
+      "cents": 402.2,
+      "freqHz": 330.05
+    },
+    {
+      "timestampMs": 4260,
+      "cents": 396.24,
+      "freqHz": 328.92
+    },
+    {
+      "timestampMs": 4280,
+      "cents": 391.9,
+      "freqHz": 328.1
+    },
+    {
+      "timestampMs": 4300,
+      "cents": 391.51,
+      "freqHz": 328.02
+    },
+    {
+      "timestampMs": 4320,
+      "cents": 395.26,
+      "freqHz": 328.73
+    },
+    {
+      "timestampMs": 4340,
+      "cents": 401.14,
+      "freqHz": 329.85
+    },
+    {
+      "timestampMs": 4360,
+      "cents": 405.98,
+      "freqHz": 330.77
+    },
+    {
+      "timestampMs": 4380,
+      "cents": 407.19,
+      "freqHz": 331.0
+    },
+    {
+      "timestampMs": 4400,
+      "cents": 404.18,
+      "freqHz": 330.43
+    },
+    {
+      "timestampMs": 4420,
+      "cents": 398.67,
+      "freqHz": 329.38
+    },
+    {
+      "timestampMs": 4440,
+      "cents": 393.74,
+      "freqHz": 328.44
+    },
+    {
+      "timestampMs": 4460,
+      "cents": 392.19,
+      "freqHz": 328.15
+    },
+    {
+      "timestampMs": 4480,
+      "cents": 395.0,
+      "freqHz": 328.68
+    },
+    {
+      "timestampMs": 4500,
+      "cents": 400.81,
+      "freqHz": 329.79
+    },
+    {
+      "timestampMs": 4520,
+      "cents": 406.64,
+      "freqHz": 330.9
+    },
+    {
+      "timestampMs": 4540,
+      "cents": 409.53,
+      "freqHz": 331.45
+    },
+    {
+      "timestampMs": 4560,
+      "cents": 408.09,
+      "freqHz": 331.18
+    },
+    {
+      "timestampMs": 4580,
+      "cents": 403.32,
+      "freqHz": 330.27
+    },
+    {
+      "timestampMs": 4600,
+      "cents": 397.99,
+      "freqHz": 329.25
+    },
+    {
+      "timestampMs": 4620,
+      "cents": 395.2,
+      "freqHz": 328.72
+    },
+    {
+      "timestampMs": 4640,
+      "cents": 396.64,
+      "freqHz": 328.99
+    },
+    {
+      "timestampMs": 4660,
+      "cents": 401.71,
+      "freqHz": 329.96
+    },
+    {
+      "timestampMs": 4680,
+      "cents": 407.82,
+      "freqHz": 331.13
+    },
+    {
+      "timestampMs": 4700,
+      "cents": 411.79,
+      "freqHz": 331.89
+    },
+    {
+      "timestampMs": 4720,
+      "cents": 411.58,
+      "freqHz": 331.84
+    },
+    {
+      "timestampMs": 4740,
+      "cents": 407.38,
+      "freqHz": 331.04
+    },
+    {
+      "timestampMs": 4760,
+      "cents": 401.52,
+      "freqHz": 329.92
+    },
+    {
+      "timestampMs": 4780,
+      "cents": 397.18,
+      "freqHz": 329.1
+    },
+    {
+      "timestampMs": 4800,
+      "cents": 396.7,
+      "freqHz": 329.01
+    },
+    {
+      "timestampMs": 4820,
+      "cents": 400.27,
+      "freqHz": 329.68
+    },
+    {
+      "timestampMs": 4840,
+      "cents": 405.86,
+      "freqHz": 330.75
+    },
+    {
+      "timestampMs": 4860,
+      "cents": 410.31,
+      "freqHz": 331.6
+    },
+    {
+      "timestampMs": 4880,
+      "cents": 411.03,
+      "freqHz": 331.74
+    },
+    {
+      "timestampMs": 4900,
+      "cents": 407.44,
+      "freqHz": 331.05
+    },
+    {
+      "timestampMs": 4920,
+      "cents": 401.25,
+      "freqHz": 329.87
+    },
+    {
+      "timestampMs": 4940,
+      "cents": 395.56,
+      "freqHz": 328.79
+    },
+    {
+      "timestampMs": 4960,
+      "cents": 393.18,
+      "freqHz": 328.34
+    },
+    {
+      "timestampMs": 4980,
+      "cents": 395.11,
+      "freqHz": 328.7
+    },
+    {
+      "timestampMs": 5000,
+      "cents": 400.0,
+      "freqHz": 329.63
+    },
+    {
+      "timestampMs": 5020,
+      "cents": 404.89,
+      "freqHz": 330.57
+    },
+    {
+      "timestampMs": 5040,
+      "cents": 406.82,
+      "freqHz": 330.93
+    },
+    {
+      "timestampMs": 5060,
+      "cents": 404.44,
+      "freqHz": 330.48
+    },
+    {
+      "timestampMs": 5080,
+      "cents": 398.75,
+      "freqHz": 329.4
+    },
+    {
+      "timestampMs": 5100,
+      "cents": 392.56,
+      "freqHz": 328.22
+    },
+    {
+      "timestampMs": 5120,
+      "cents": 388.97,
+      "freqHz": 327.54
+    },
+    {
+      "timestampMs": 5140,
+      "cents": 389.69,
+      "freqHz": 327.68
+    },
+    {
+      "timestampMs": 5160,
+      "cents": 394.14,
+      "freqHz": 328.52
+    },
+    {
+      "timestampMs": 5180,
+      "cents": 399.73,
+      "freqHz": 329.58
+    },
+    {
+      "timestampMs": 5200,
+      "cents": 403.3,
+      "freqHz": 330.26
+    },
+    {
+      "timestampMs": 5220,
+      "cents": 402.82,
+      "freqHz": 330.17
+    },
+    {
+      "timestampMs": 5240,
+      "cents": 398.48,
+      "freqHz": 329.34
+    },
+    {
+      "timestampMs": 5260,
+      "cents": 392.62,
+      "freqHz": 328.23
+    },
+    {
+      "timestampMs": 5280,
+      "cents": 388.42,
+      "freqHz": 327.44
+    },
+    {
+      "timestampMs": 5300,
+      "cents": 388.21,
+      "freqHz": 327.4
+    },
+    {
+      "timestampMs": 5320,
+      "cents": 392.18,
+      "freqHz": 328.15
+    },
+    {
+      "timestampMs": 5340,
+      "cents": 398.29,
+      "freqHz": 329.31
+    },
+    {
+      "timestampMs": 5360,
+      "cents": 403.36,
+      "freqHz": 330.27
+    },
+    {
+      "timestampMs": 5380,
+      "cents": 404.8,
+      "freqHz": 330.55
+    },
+    {
+      "timestampMs": 5400,
+      "cents": 402.01,
+      "freqHz": 330.02
+    },
+    {
+      "timestampMs": 5420,
+      "cents": 396.68,
+      "freqHz": 329.0
+    },
+    {
+      "timestampMs": 5440,
+      "cents": 391.91,
+      "freqHz": 328.1
+    },
+    {
+      "timestampMs": 5460,
+      "cents": 390.47,
+      "freqHz": 327.82
+    },
+    {
+      "timestampMs": 5480,
+      "cents": 393.36,
+      "freqHz": 328.37
+    },
+    {
+      "timestampMs": 5500,
+      "cents": 399.19,
+      "freqHz": 329.48
+    },
+    {
+      "timestampMs": 5520,
+      "cents": 405.0,
+      "freqHz": 330.59
+    },
+    {
+      "timestampMs": 5540,
+      "cents": 407.81,
+      "freqHz": 331.12
+    },
+    {
+      "timestampMs": 5560,
+      "cents": 406.26,
+      "freqHz": 330.83
+    },
+    {
+      "timestampMs": 5580,
+      "cents": 401.33,
+      "freqHz": 329.89
+    },
+    {
+      "timestampMs": 5600,
+      "cents": 395.82,
+      "freqHz": 328.84
+    },
+    {
+      "timestampMs": 5620,
+      "cents": 392.81,
+      "freqHz": 328.27
+    },
+    {
+      "timestampMs": 5640,
+      "cents": 394.02,
+      "freqHz": 328.5
+    },
+    {
+      "timestampMs": 5660,
+      "cents": 398.86,
+      "freqHz": 329.42
+    },
+    {
+      "timestampMs": 5680,
+      "cents": 404.74,
+      "freqHz": 330.54
+    },
+    {
+      "timestampMs": 5700,
+      "cents": 408.49,
+      "freqHz": 331.25
+    },
+    {
+      "timestampMs": 5720,
+      "cents": 408.1,
+      "freqHz": 331.18
+    },
+    {
+      "timestampMs": 5740,
+      "cents": 403.76,
+      "freqHz": 330.35
+    },
+    {
+      "timestampMs": 5760,
+      "cents": 397.8,
+      "freqHz": 329.22
+    },
+    {
+      "timestampMs": 5780,
+      "cents": 393.44,
+      "freqHz": 328.39
+    },
+    {
+      "timestampMs": 5800,
+      "cents": 393.0,
+      "freqHz": 328.3
+    },
+    {
+      "timestampMs": 5820,
+      "cents": 396.69,
+      "freqHz": 329.0
+    },
+    {
+      "timestampMs": 5840,
+      "cents": 402.47,
+      "freqHz": 330.1
+    },
+    {
+      "timestampMs": 5860,
+      "cents": 407.2,
+      "freqHz": 331.01
+    },
+    {
+      "timestampMs": 5880,
+      "cents": 408.28,
+      "freqHz": 331.21
+    },
+    {
+      "timestampMs": 5900,
+      "cents": 405.14,
+      "freqHz": 330.61
+    },
+    {
+      "timestampMs": 5920,
+      "cents": 399.47,
+      "freqHz": 329.53
+    },
+    {
+      "timestampMs": 5940,
+      "cents": 394.38,
+      "freqHz": 328.56
+    },
+    {
+      "timestampMs": 5960,
+      "cents": 392.66,
+      "freqHz": 328.24
+    },
+    {
+      "timestampMs": 5980,
+      "cents": 395.31,
+      "freqHz": 328.74
+    },
+    {
+      "timestampMs": 6000,
+      "cents": 200.95,
+      "freqHz": 293.83
+    },
+    {
+      "timestampMs": 6020,
+      "cents": 206.62,
+      "freqHz": 294.8
+    },
+    {
+      "timestampMs": 6040,
+      "cents": 209.35,
+      "freqHz": 295.26
+    },
+    {
+      "timestampMs": 6060,
+      "cents": 207.77,
+      "freqHz": 294.99
+    },
+    {
+      "timestampMs": 6080,
+      "cents": 202.87,
+      "freqHz": 294.16
+    },
+    {
+      "timestampMs": 6100,
+      "cents": 197.42,
+      "freqHz": 293.23
+    },
+    {
+      "timestampMs": 6120,
+      "cents": 194.53,
+      "freqHz": 292.74
+    },
+    {
+      "timestampMs": 6140,
+      "cents": 195.88,
+      "freqHz": 292.97
+    },
+    {
+      "timestampMs": 6160,
+      "cents": 200.89,
+      "freqHz": 293.82
+    },
+    {
+      "timestampMs": 6180,
+      "cents": 206.94,
+      "freqHz": 294.85
+    },
+    {
+      "timestampMs": 6200,
+      "cents": 210.88,
+      "freqHz": 295.52
+    },
+    {
+      "timestampMs": 6220,
+      "cents": 210.65,
+      "freqHz": 295.48
+    },
+    {
+      "timestampMs": 6240,
+      "cents": 206.45,
+      "freqHz": 294.77
+    },
+    {
+      "timestampMs": 6260,
+      "cents": 200.61,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 6280,
+      "cents": 196.3,
+      "freqHz": 293.04
+    },
+    {
+      "timestampMs": 6300,
+      "cents": 195.86,
+      "freqHz": 292.97
+    },
+    {
+      "timestampMs": 6320,
+      "cents": 199.48,
+      "freqHz": 293.58
+    },
+    {
+      "timestampMs": 6340,
+      "cents": 205.13,
+      "freqHz": 294.54
+    },
+    {
+      "timestampMs": 6360,
+      "cents": 209.63,
+      "freqHz": 295.31
+    },
+    {
+      "timestampMs": 6380,
+      "cents": 210.42,
+      "freqHz": 295.44
+    },
+    {
+      "timestampMs": 6400,
+      "cents": 206.89,
+      "freqHz": 294.84
+    },
+    {
+      "timestampMs": 6420,
+      "cents": 200.76,
+      "freqHz": 293.8
+    },
+    {
+      "timestampMs": 6440,
+      "cents": 195.13,
+      "freqHz": 292.84
+    },
+    {
+      "timestampMs": 6460,
+      "cents": 192.8,
+      "freqHz": 292.45
+    },
+    {
+      "timestampMs": 6480,
+      "cents": 194.77,
+      "freqHz": 292.78
+    },
+    {
+      "timestampMs": 6500,
+      "cents": 199.69,
+      "freqHz": 293.62
+    },
+    {
+      "timestampMs": 6520,
+      "cents": 204.6,
+      "freqHz": 294.45
+    },
+    {
+      "timestampMs": 6540,
+      "cents": 206.55,
+      "freqHz": 294.78
+    },
+    {
+      "timestampMs": 6560,
+      "cents": 204.17,
+      "freqHz": 294.38
+    },
+    {
+      "timestampMs": 6580,
+      "cents": 198.48,
+      "freqHz": 293.41
+    },
+    {
+      "timestampMs": 6600,
+      "cents": 192.28,
+      "freqHz": 292.36
+    },
+    {
+      "timestampMs": 6620,
+      "cents": 188.67,
+      "freqHz": 291.75
+    },
+    {
+      "timestampMs": 6640,
+      "cents": 189.37,
+      "freqHz": 291.87
+    },
+    {
+      "timestampMs": 6660,
+      "cents": 193.78,
+      "freqHz": 292.62
+    },
+    {
+      "timestampMs": 6680,
+      "cents": 199.34,
+      "freqHz": 293.56
+    },
+    {
+      "timestampMs": 6700,
+      "cents": 202.88,
+      "freqHz": 294.16
+    },
+    {
+      "timestampMs": 6720,
+      "cents": 202.37,
+      "freqHz": 294.07
+    },
+    {
+      "timestampMs": 6740,
+      "cents": 198.01,
+      "freqHz": 293.33
+    },
+    {
+      "timestampMs": 6760,
+      "cents": 192.13,
+      "freqHz": 292.34
+    },
+    {
+      "timestampMs": 6780,
+      "cents": 187.92,
+      "freqHz": 291.63
+    },
+    {
+      "timestampMs": 6800,
+      "cents": 187.71,
+      "freqHz": 291.59
+    },
+    {
+      "timestampMs": 6820,
+      "cents": 191.69,
+      "freqHz": 292.26
+    },
+    {
+      "timestampMs": 6840,
+      "cents": 197.82,
+      "freqHz": 293.3
+    },
+    {
+      "timestampMs": 6860,
+      "cents": 202.93,
+      "freqHz": 294.17
+    },
+    {
+      "timestampMs": 6880,
+      "cents": 204.42,
+      "freqHz": 294.42
+    },
+    {
+      "timestampMs": 6900,
+      "cents": 201.7,
+      "freqHz": 293.96
+    },
+    {
+      "timestampMs": 6920,
+      "cents": 196.46,
+      "freqHz": 293.07
+    },
+    {
+      "timestampMs": 6940,
+      "cents": 191.78,
+      "freqHz": 292.28
+    },
+    {
+      "timestampMs": 6960,
+      "cents": 190.45,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 6980,
+      "cents": 193.45,
+      "freqHz": 292.56
+    },
+    {
+      "timestampMs": 7000,
+      "cents": 199.41,
+      "freqHz": 293.57
+    },
+    {
+      "timestampMs": 7020,
+      "cents": 205.36,
+      "freqHz": 294.58
+    },
+    {
+      "timestampMs": 7040,
+      "cents": 208.31,
+      "freqHz": 295.08
+    },
+    {
+      "timestampMs": 7060,
+      "cents": 206.89,
+      "freqHz": 294.84
+    },
+    {
+      "timestampMs": 7080,
+      "cents": 202.1,
+      "freqHz": 294.03
+    },
+    {
+      "timestampMs": 7100,
+      "cents": 196.72,
+      "freqHz": 293.11
+    },
+    {
+      "timestampMs": 7120,
+      "cents": 193.84,
+      "freqHz": 292.63
+    },
+    {
+      "timestampMs": 7140,
+      "cents": 195.17,
+      "freqHz": 292.85
+    },
+    {
+      "timestampMs": 7160,
+      "cents": 200.11,
+      "freqHz": 293.69
+    },
+    {
+      "timestampMs": 7180,
+      "cents": 206.07,
+      "freqHz": 294.7
+    },
+    {
+      "timestampMs": 7200,
+      "cents": 209.9,
+      "freqHz": 295.35
+    },
+    {
+      "timestampMs": 7220,
+      "cents": 209.55,
+      "freqHz": 295.29
+    },
+    {
+      "timestampMs": 7240,
+      "cents": 205.24,
+      "freqHz": 294.56
+    },
+    {
+      "timestampMs": 7260,
+      "cents": 199.29,
+      "freqHz": 293.55
+    },
+    {
+      "timestampMs": 7280,
+      "cents": 194.91,
+      "freqHz": 292.81
+    },
+    {
+      "timestampMs": 7300,
+      "cents": 194.43,
+      "freqHz": 292.73
+    },
+    {
+      "timestampMs": 7320,
+      "cents": 198.05,
+      "freqHz": 293.34
+    },
+    {
+      "timestampMs": 7340,
+      "cents": 203.76,
+      "freqHz": 294.31
+    },
+    {
+      "timestampMs": 7360,
+      "cents": 208.37,
+      "freqHz": 295.09
+    },
+    {
+      "timestampMs": 7380,
+      "cents": 209.34,
+      "freqHz": 295.26
+    },
+    {
+      "timestampMs": 7400,
+      "cents": 206.05,
+      "freqHz": 294.7
+    },
+    {
+      "timestampMs": 7420,
+      "cents": 200.23,
+      "freqHz": 293.71
+    },
+    {
+      "timestampMs": 7440,
+      "cents": 194.97,
+      "freqHz": 292.82
+    },
+    {
+      "timestampMs": 7460,
+      "cents": 193.08,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 7480,
+      "cents": 195.54,
+      "freqHz": 292.91
+    },
+    {
+      "timestampMs": 7500,
+      "cents": 201.0,
+      "freqHz": 293.84
+    },
+    {
+      "timestampMs": 7520,
+      "cents": 206.49,
+      "freqHz": 294.77
+    },
+    {
+      "timestampMs": 7540,
+      "cents": 209.04,
+      "freqHz": 295.21
+    },
+    {
+      "timestampMs": 7560,
+      "cents": 207.3,
+      "freqHz": 294.91
+    },
+    {
+      "timestampMs": 7580,
+      "cents": 202.23,
+      "freqHz": 294.05
+    },
+    {
+      "timestampMs": 7600,
+      "cents": 196.64,
+      "freqHz": 293.1
+    },
+    {
+      "timestampMs": 7620,
+      "cents": 193.62,
+      "freqHz": 292.59
+    },
+    {
+      "timestampMs": 7640,
+      "cents": 194.87,
+      "freqHz": 292.8
+    },
+    {
+      "timestampMs": 7660,
+      "cents": 199.78,
+      "freqHz": 293.63
+    },
+    {
+      "timestampMs": 7680,
+      "cents": 205.76,
+      "freqHz": 294.65
+    },
+    {
+      "timestampMs": 7700,
+      "cents": 209.65,
+      "freqHz": 295.31
+    },
+    {
+      "timestampMs": 7720,
+      "cents": 209.39,
+      "freqHz": 295.27
+    },
+    {
+      "timestampMs": 7740,
+      "cents": 205.18,
+      "freqHz": 294.55
+    },
+    {
+      "timestampMs": 7760,
+      "cents": 199.35,
+      "freqHz": 293.56
+    },
+    {
+      "timestampMs": 7780,
+      "cents": 195.07,
+      "freqHz": 292.84
+    },
+    {
+      "timestampMs": 7800,
+      "cents": 194.68,
+      "freqHz": 292.77
+    },
+    {
+      "timestampMs": 7820,
+      "cents": 198.36,
+      "freqHz": 293.39
+    },
+    {
+      "timestampMs": 7840,
+      "cents": 204.08,
+      "freqHz": 294.36
+    },
+    {
+      "timestampMs": 7860,
+      "cents": 208.68,
+      "freqHz": 295.15
+    },
+    {
+      "timestampMs": 7880,
+      "cents": 209.56,
+      "freqHz": 295.3
+    },
+    {
+      "timestampMs": 7900,
+      "cents": 206.12,
+      "freqHz": 294.71
+    },
+    {
+      "timestampMs": 7920,
+      "cents": 200.1,
+      "freqHz": 293.69
+    },
+    {
+      "timestampMs": 7940,
+      "cents": 194.57,
+      "freqHz": 292.75
+    },
+    {
+      "timestampMs": 7960,
+      "cents": 192.34,
+      "freqHz": 292.37
+    },
+    {
+      "timestampMs": 7980,
+      "cents": 194.4,
+      "freqHz": 292.72
+    },
+    {
+      "timestampMs": 8000,
+      "cents": -0.59,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 8020,
+      "cents": 4.4,
+      "freqHz": 262.3
+    },
+    {
+      "timestampMs": 8040,
+      "cents": 6.42,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 8060,
+      "cents": 4.1,
+      "freqHz": 262.25
+    },
+    {
+      "timestampMs": 8080,
+      "cents": -1.54,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 8100,
+      "cents": -7.71,
+      "freqHz": 260.47
+    },
+    {
+      "timestampMs": 8120,
+      "cents": -11.29,
+      "freqHz": 259.93
+    },
+    {
+      "timestampMs": 8140,
+      "cents": -10.58,
+      "freqHz": 260.04
+    },
+    {
+      "timestampMs": 8160,
+      "cents": -6.16,
+      "freqHz": 260.7
+    },
+    {
+      "timestampMs": 8180,
+      "cents": -0.6,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 8200,
+      "cents": 2.93,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 8220,
+      "cents": 2.4,
+      "freqHz": 261.99
+    },
+    {
+      "timestampMs": 8240,
+      "cents": -1.98,
+      "freqHz": 261.33
+    },
+    {
+      "timestampMs": 8260,
+      "cents": -7.88,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 8280,
+      "cents": -12.11,
+      "freqHz": 259.81
+    },
+    {
+      "timestampMs": 8300,
+      "cents": -12.33,
+      "freqHz": 259.77
+    },
+    {
+      "timestampMs": 8320,
+      "cents": -8.37,
+      "freqHz": 260.37
+    },
+    {
+      "timestampMs": 8340,
+      "cents": -2.24,
+      "freqHz": 261.29
+    },
+    {
+      "timestampMs": 8360,
+      "cents": 2.87,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 8380,
+      "cents": 4.38,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 8400,
+      "cents": 1.69,
+      "freqHz": 261.88
+    },
+    {
+      "timestampMs": 8420,
+      "cents": -3.52,
+      "freqHz": 261.1
+    },
+    {
+      "timestampMs": 8440,
+      "cents": -8.15,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 8460,
+      "cents": -9.42,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 8480,
+      "cents": -6.35,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 8500,
+      "cents": -0.31,
+      "freqHz": 261.58
+    },
+    {
+      "timestampMs": 8520,
+      "cents": 5.72,
+      "freqHz": 262.5
+    },
+    {
+      "timestampMs": 8540,
+      "cents": 8.77,
+      "freqHz": 262.96
+    },
+    {
+      "timestampMs": 8560,
+      "cents": 7.45,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 8580,
+      "cents": 2.76,
+      "freqHz": 262.05
+    },
+    {
+      "timestampMs": 8600,
+      "cents": -2.52,
+      "freqHz": 261.25
+    },
+    {
+      "timestampMs": 8620,
+      "cents": -5.3,
+      "freqHz": 260.83
+    },
+    {
+      "timestampMs": 8640,
+      "cents": -3.88,
+      "freqHz": 261.04
+    },
+    {
+      "timestampMs": 8660,
+      "cents": 1.15,
+      "freqHz": 261.8
+    },
+    {
+      "timestampMs": 8680,
+      "cents": 7.19,
+      "freqHz": 262.72
+    },
+    {
+      "timestampMs": 8700,
+      "cents": 11.08,
+      "freqHz": 263.31
+    },
+    {
+      "timestampMs": 8720,
+      "cents": 10.78,
+      "freqHz": 263.26
+    },
+    {
+      "timestampMs": 8740,
+      "cents": 6.5,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 8760,
+      "cents": 0.56,
+      "freqHz": 261.71
+    },
+    {
+      "timestampMs": 8780,
+      "cents": -3.83,
+      "freqHz": 261.05
+    },
+    {
+      "timestampMs": 8800,
+      "cents": -4.34,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 8820,
+      "cents": -0.77,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 8840,
+      "cents": 4.87,
+      "freqHz": 262.37
+    },
+    {
+      "timestampMs": 8860,
+      "cents": 9.39,
+      "freqHz": 263.05
+    },
+    {
+      "timestampMs": 8880,
+      "cents": 10.24,
+      "freqHz": 263.18
+    },
+    {
+      "timestampMs": 8900,
+      "cents": 6.83,
+      "freqHz": 262.66
+    },
+    {
+      "timestampMs": 8920,
+      "cents": 0.86,
+      "freqHz": 261.76
+    },
+    {
+      "timestampMs": 8940,
+      "cents": -4.56,
+      "freqHz": 260.94
+    },
+    {
+      "timestampMs": 8960,
+      "cents": -6.62,
+      "freqHz": 260.63
+    },
+    {
+      "timestampMs": 8980,
+      "cents": -4.33,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 9000,
+      "cents": 0.95,
+      "freqHz": 261.77
+    },
+    {
+      "timestampMs": 9020,
+      "cents": 6.26,
+      "freqHz": 262.58
+    },
+    {
+      "timestampMs": 9040,
+      "cents": 8.63,
+      "freqHz": 262.94
+    },
+    {
+      "timestampMs": 9060,
+      "cents": 6.71,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 9080,
+      "cents": 1.48,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 9100,
+      "cents": -4.27,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 9120,
+      "cents": -7.43,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 9140,
+      "cents": -6.31,
+      "freqHz": 260.68
+    },
+    {
+      "timestampMs": 9160,
+      "cents": -1.51,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 9180,
+      "cents": 4.39,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 9200,
+      "cents": 8.22,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 9220,
+      "cents": 7.92,
+      "freqHz": 262.83
+    },
+    {
+      "timestampMs": 9240,
+      "cents": 3.69,
+      "freqHz": 262.19
+    },
+    {
+      "timestampMs": 9260,
+      "cents": -2.13,
+      "freqHz": 261.31
+    },
+    {
+      "timestampMs": 9280,
+      "cents": -6.38,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 9300,
+      "cents": -6.73,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 9320,
+      "cents": -2.97,
+      "freqHz": 261.18
+    },
+    {
+      "timestampMs": 9340,
+      "cents": 2.84,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 9360,
+      "cents": 7.53,
+      "freqHz": 262.77
+    },
+    {
+      "timestampMs": 9380,
+      "cents": 8.53,
+      "freqHz": 262.92
+    },
+    {
+      "timestampMs": 9400,
+      "cents": 5.22,
+      "freqHz": 262.42
+    },
+    {
+      "timestampMs": 9420,
+      "cents": -0.67,
+      "freqHz": 261.53
+    },
+    {
+      "timestampMs": 9440,
+      "cents": -6.07,
+      "freqHz": 260.71
+    },
+    {
+      "timestampMs": 9460,
+      "cents": -8.16,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 9480,
+      "cents": -5.95,
+      "freqHz": 260.73
+    },
+    {
+      "timestampMs": 9500,
+      "cents": -0.81,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 9520,
+      "cents": 4.31,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 9540,
+      "cents": 6.44,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 9560,
+      "cents": 4.24,
+      "freqHz": 262.27
+    },
+    {
+      "timestampMs": 9580,
+      "cents": -1.31,
+      "freqHz": 261.43
+    },
+    {
+      "timestampMs": 9600,
+      "cents": -7.4,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 9620,
+      "cents": -10.92,
+      "freqHz": 259.99
+    },
+    {
+      "timestampMs": 9640,
+      "cents": -10.15,
+      "freqHz": 260.1
+    },
+    {
+      "timestampMs": 9660,
+      "cents": -5.69,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 9680,
+      "cents": -0.11,
+      "freqHz": 261.61
+    },
+    {
+      "timestampMs": 9700,
+      "cents": 3.43,
+      "freqHz": 262.15
+    },
+    {
+      "timestampMs": 9720,
+      "cents": 2.9,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 9740,
+      "cents": -1.49,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 9760,
+      "cents": -7.41,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 9780,
+      "cents": -11.66,
+      "freqHz": 259.87
+    },
+    {
+      "timestampMs": 10220,
+      "cents": 11.66,
+      "freqHz": 263.4
+    },
+    {
+      "timestampMs": 10240,
+      "cents": 7.41,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 10260,
+      "cents": 1.49,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 10280,
+      "cents": -2.9,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 10300,
+      "cents": -3.43,
+      "freqHz": 261.11
+    },
+    {
+      "timestampMs": 10320,
+      "cents": 0.11,
+      "freqHz": 261.65
+    },
+    {
+      "timestampMs": 10340,
+      "cents": 5.69,
+      "freqHz": 262.49
+    },
+    {
+      "timestampMs": 10360,
+      "cents": 10.15,
+      "freqHz": 263.17
+    },
+    {
+      "timestampMs": 10380,
+      "cents": 10.92,
+      "freqHz": 263.29
+    },
+    {
+      "timestampMs": 10400,
+      "cents": 7.4,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 10420,
+      "cents": 1.31,
+      "freqHz": 261.83
+    },
+    {
+      "timestampMs": 10440,
+      "cents": -4.24,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 10460,
+      "cents": -6.44,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 10480,
+      "cents": -4.31,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 10500,
+      "cents": 0.81,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 10520,
+      "cents": 5.95,
+      "freqHz": 262.53
+    },
+    {
+      "timestampMs": 10540,
+      "cents": 8.16,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 10560,
+      "cents": 6.07,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 10580,
+      "cents": 0.67,
+      "freqHz": 261.73
+    },
+    {
+      "timestampMs": 10600,
+      "cents": -5.22,
+      "freqHz": 260.84
+    },
+    {
+      "timestampMs": 10620,
+      "cents": -8.53,
+      "freqHz": 260.34
+    },
+    {
+      "timestampMs": 10640,
+      "cents": -7.53,
+      "freqHz": 260.49
+    },
+    {
+      "timestampMs": 10660,
+      "cents": -2.84,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 10680,
+      "cents": 2.97,
+      "freqHz": 262.08
+    },
+    {
+      "timestampMs": 10700,
+      "cents": 6.73,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 10720,
+      "cents": 6.38,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 10740,
+      "cents": 2.13,
+      "freqHz": 261.95
+    },
+    {
+      "timestampMs": 10760,
+      "cents": -3.69,
+      "freqHz": 261.07
+    },
+    {
+      "timestampMs": 10780,
+      "cents": -7.92,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 10800,
+      "cents": -8.22,
+      "freqHz": 260.39
+    },
+    {
+      "timestampMs": 10820,
+      "cents": -4.39,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 10840,
+      "cents": 1.51,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 10860,
+      "cents": 6.31,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 10880,
+      "cents": 7.43,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 10900,
+      "cents": 4.27,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 10920,
+      "cents": -1.48,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 10940,
+      "cents": -6.71,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 10960,
+      "cents": -8.63,
+      "freqHz": 260.33
+    },
+    {
+      "timestampMs": 10980,
+      "cents": -6.26,
+      "freqHz": 260.69
+    },
+    {
+      "timestampMs": 11000,
+      "cents": -0.95,
+      "freqHz": 261.49
+    },
+    {
+      "timestampMs": 11020,
+      "cents": 4.33,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 11040,
+      "cents": 6.62,
+      "freqHz": 262.63
+    },
+    {
+      "timestampMs": 11060,
+      "cents": 4.56,
+      "freqHz": 262.32
+    },
+    {
+      "timestampMs": 11080,
+      "cents": -0.86,
+      "freqHz": 261.5
+    },
+    {
+      "timestampMs": 11100,
+      "cents": -6.83,
+      "freqHz": 260.6
+    },
+    {
+      "timestampMs": 11120,
+      "cents": -10.24,
+      "freqHz": 260.09
+    },
+    {
+      "timestampMs": 11140,
+      "cents": -9.39,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 11160,
+      "cents": -4.87,
+      "freqHz": 260.9
+    },
+    {
+      "timestampMs": 11180,
+      "cents": 0.77,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 11200,
+      "cents": 4.34,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 11220,
+      "cents": 3.83,
+      "freqHz": 262.21
+    },
+    {
+      "timestampMs": 11240,
+      "cents": -0.56,
+      "freqHz": 261.55
+    },
+    {
+      "timestampMs": 11260,
+      "cents": -6.5,
+      "freqHz": 260.65
+    },
+    {
+      "timestampMs": 11280,
+      "cents": -10.78,
+      "freqHz": 260.01
+    },
+    {
+      "timestampMs": 11300,
+      "cents": -11.08,
+      "freqHz": 259.96
+    },
+    {
+      "timestampMs": 11320,
+      "cents": -7.19,
+      "freqHz": 260.55
+    },
+    {
+      "timestampMs": 11340,
+      "cents": -1.15,
+      "freqHz": 261.46
+    },
+    {
+      "timestampMs": 11360,
+      "cents": 3.88,
+      "freqHz": 262.22
+    },
+    {
+      "timestampMs": 11380,
+      "cents": 5.3,
+      "freqHz": 262.43
+    },
+    {
+      "timestampMs": 11400,
+      "cents": 2.52,
+      "freqHz": 262.01
+    },
+    {
+      "timestampMs": 11420,
+      "cents": -2.76,
+      "freqHz": 261.21
+    },
+    {
+      "timestampMs": 11440,
+      "cents": -7.45,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 11460,
+      "cents": -8.77,
+      "freqHz": 260.31
+    },
+    {
+      "timestampMs": 11480,
+      "cents": -5.72,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 11500,
+      "cents": 0.31,
+      "freqHz": 261.68
+    },
+    {
+      "timestampMs": 11520,
+      "cents": 6.35,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 11540,
+      "cents": 9.42,
+      "freqHz": 263.06
+    },
+    {
+      "timestampMs": 11560,
+      "cents": 8.15,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 11580,
+      "cents": 3.52,
+      "freqHz": 262.16
+    },
+    {
+      "timestampMs": 11600,
+      "cents": -1.69,
+      "freqHz": 261.38
+    },
+    {
+      "timestampMs": 11620,
+      "cents": -4.38,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 11640,
+      "cents": -2.87,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 11660,
+      "cents": 2.24,
+      "freqHz": 261.97
+    },
+    {
+      "timestampMs": 11680,
+      "cents": 8.37,
+      "freqHz": 262.9
+    },
+    {
+      "timestampMs": 11700,
+      "cents": 12.33,
+      "freqHz": 263.5
+    },
+    {
+      "timestampMs": 11720,
+      "cents": 12.11,
+      "freqHz": 263.47
+    },
+    {
+      "timestampMs": 11740,
+      "cents": 7.88,
+      "freqHz": 262.82
+    },
+    {
+      "timestampMs": 11760,
+      "cents": 1.98,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 11780,
+      "cents": -2.4,
+      "freqHz": 261.27
+    },
+    {
+      "timestampMs": 11800,
+      "cents": -2.93,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 11820,
+      "cents": 0.6,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 11840,
+      "cents": 6.16,
+      "freqHz": 262.56
+    },
+    {
+      "timestampMs": 11860,
+      "cents": 10.58,
+      "freqHz": 263.23
+    },
+    {
+      "timestampMs": 11880,
+      "cents": 11.29,
+      "freqHz": 263.34
+    },
+    {
+      "timestampMs": 11900,
+      "cents": 7.71,
+      "freqHz": 262.8
+    },
+    {
+      "timestampMs": 11920,
+      "cents": 1.54,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 11940,
+      "cents": -4.1,
+      "freqHz": 261.01
+    },
+    {
+      "timestampMs": 11960,
+      "cents": -6.42,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 11980,
+      "cents": -4.4,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 12000,
+      "cents": 200.59,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 12020,
+      "cents": 205.6,
+      "freqHz": 294.62
+    },
+    {
+      "timestampMs": 12040,
+      "cents": 207.66,
+      "freqHz": 294.97
+    },
+    {
+      "timestampMs": 12060,
+      "cents": 205.43,
+      "freqHz": 294.59
+    },
+    {
+      "timestampMs": 12080,
+      "cents": 199.9,
+      "freqHz": 293.65
+    },
+    {
+      "timestampMs": 12100,
+      "cents": 193.88,
+      "freqHz": 292.63
+    },
+    {
+      "timestampMs": 12120,
+      "cents": 190.44,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 12140,
+      "cents": 191.32,
+      "freqHz": 292.2
+    },
+    {
+      "timestampMs": 12160,
+      "cents": 195.92,
+      "freqHz": 292.98
+    },
+    {
+      "timestampMs": 12180,
+      "cents": 201.64,
+      "freqHz": 293.95
+    },
+    {
+      "timestampMs": 12200,
+      "cents": 205.32,
+      "freqHz": 294.57
+    },
+    {
+      "timestampMs": 12220,
+      "cents": 204.93,
+      "freqHz": 294.51
+    },
+    {
+      "timestampMs": 12240,
+      "cents": 200.65,
+      "freqHz": 293.78
+    },
+    {
+      "timestampMs": 12260,
+      "cents": 194.82,
+      "freqHz": 292.79
+    },
+    {
+      "timestampMs": 12280,
+      "cents": 190.61,
+      "freqHz": 292.08
+    },
+    {
+      "timestampMs": 12300,
+      "cents": 190.35,
+      "freqHz": 292.04
+    },
+    {
+      "timestampMs": 12320,
+      "cents": 194.24,
+      "freqHz": 292.69
+    },
+    {
+      "timestampMs": 12340,
+      "cents": 200.22,
+      "freqHz": 293.71
+    },
+    {
+      "timestampMs": 12360,
+      "cents": 205.13,
+      "freqHz": 294.54
+    },
+    {
+      "timestampMs": 12380,
+      "cents": 206.38,
+      "freqHz": 294.75
+    },
+    {
+      "timestampMs": 12400,
+      "cents": 203.36,
+      "freqHz": 294.24
+    },
+    {
+      "timestampMs": 12420,
+      "cents": 197.77,
+      "freqHz": 293.29
+    },
+    {
+      "timestampMs": 12440,
+      "cents": 192.7,
+      "freqHz": 292.43
+    },
+    {
+      "timestampMs": 12460,
+      "cents": 190.96,
+      "freqHz": 292.14
+    },
+    {
+      "timestampMs": 12480,
+      "cents": 193.51,
+      "freqHz": 292.57
+    },
+    {
+      "timestampMs": 12500,
+      "cents": 199.0,
+      "freqHz": 293.5
+    },
+    {
+      "timestampMs": 12520,
+      "cents": 204.46,
+      "freqHz": 294.43
+    },
+    {
+      "timestampMs": 12540,
+      "cents": 206.92,
+      "freqHz": 294.85
+    },
+    {
+      "timestampMs": 12560,
+      "cents": 205.03,
+      "freqHz": 294.52
+    },
+    {
+      "timestampMs": 12580,
+      "cents": 199.77,
+      "freqHz": 293.63
+    },
+    {
+      "timestampMs": 12600,
+      "cents": 193.95,
+      "freqHz": 292.65
+    },
+    {
+      "timestampMs": 12620,
+      "cents": 190.66,
+      "freqHz": 292.09
+    },
+    {
+      "timestampMs": 12640,
+      "cents": 191.63,
+      "freqHz": 292.25
+    },
+    {
+      "timestampMs": 12660,
+      "cents": 196.24,
+      "freqHz": 293.03
+    },
+    {
+      "timestampMs": 12680,
+      "cents": 201.95,
+      "freqHz": 294.0
+    },
+    {
+      "timestampMs": 12700,
+      "cents": 205.57,
+      "freqHz": 294.62
+    },
+    {
+      "timestampMs": 12720,
+      "cents": 205.09,
+      "freqHz": 294.53
+    },
+    {
+      "timestampMs": 12740,
+      "cents": 200.71,
+      "freqHz": 293.79
+    },
+    {
+      "timestampMs": 12760,
+      "cents": 194.76,
+      "freqHz": 292.78
+    },
+    {
+      "timestampMs": 12780,
+      "cents": 190.45,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 12800,
+      "cents": 190.1,
+      "freqHz": 292.0
+    },
+    {
+      "timestampMs": 12820,
+      "cents": 193.93,
+      "freqHz": 292.64
+    },
+    {
+      "timestampMs": 12840,
+      "cents": 199.89,
+      "freqHz": 293.65
+    },
+    {
+      "timestampMs": 12860,
+      "cents": 204.83,
+      "freqHz": 294.49
+    },
+    {
+      "timestampMs": 12880,
+      "cents": 206.16,
+      "freqHz": 294.72
+    },
+    {
+      "timestampMs": 12900,
+      "cents": 203.28,
+      "freqHz": 294.23
+    },
+    {
+      "timestampMs": 12920,
+      "cents": 197.9,
+      "freqHz": 293.31
+    },
+    {
+      "timestampMs": 12940,
+      "cents": 193.11,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 12960,
+      "cents": 191.69,
+      "freqHz": 292.26
+    },
+    {
+      "timestampMs": 12980,
+      "cents": 194.64,
+      "freqHz": 292.76
+    },
+    {
+      "timestampMs": 13000,
+      "cents": 200.59,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 13020,
+      "cents": 206.55,
+      "freqHz": 294.78
+    },
+    {
+      "timestampMs": 13040,
+      "cents": 209.55,
+      "freqHz": 295.29
+    },
+    {
+      "timestampMs": 13060,
+      "cents": 208.22,
+      "freqHz": 295.07
+    },
+    {
+      "timestampMs": 13080,
+      "cents": 203.54,
+      "freqHz": 294.27
+    },
+    {
+      "timestampMs": 13100,
+      "cents": 198.3,
+      "freqHz": 293.38
+    },
+    {
+      "timestampMs": 13120,
+      "cents": 195.58,
+      "freqHz": 292.92
+    },
+    {
+      "timestampMs": 13140,
+      "cents": 197.07,
+      "freqHz": 293.17
+    },
+    {
+      "timestampMs": 13160,
+      "cents": 202.18,
+      "freqHz": 294.04
+    },
+    {
+      "timestampMs": 13180,
+      "cents": 208.31,
+      "freqHz": 295.08
+    },
+    {
+      "timestampMs": 13200,
+      "cents": 212.29,
+      "freqHz": 295.76
+    },
+    {
+      "timestampMs": 13220,
+      "cents": 212.08,
+      "freqHz": 295.73
+    },
+    {
+      "timestampMs": 13240,
+      "cents": 207.87,
+      "freqHz": 295.01
+    },
+    {
+      "timestampMs": 13260,
+      "cents": 201.99,
+      "freqHz": 294.01
+    },
+    {
+      "timestampMs": 13280,
+      "cents": 197.63,
+      "freqHz": 293.27
+    },
+    {
+      "timestampMs": 13300,
+      "cents": 197.12,
+      "freqHz": 293.18
+    },
+    {
+      "timestampMs": 13320,
+      "cents": 200.66,
+      "freqHz": 293.78
+    },
+    {
+      "timestampMs": 13340,
+      "cents": 206.22,
+      "freqHz": 294.73
+    },
+    {
+      "timestampMs": 13360,
+      "cents": 210.63,
+      "freqHz": 295.48
+    },
+    {
+      "timestampMs": 13380,
+      "cents": 211.33,
+      "freqHz": 295.6
+    },
+    {
+      "timestampMs": 13400,
+      "cents": 207.72,
+      "freqHz": 294.98
+    },
+    {
+      "timestampMs": 13420,
+      "cents": 201.52,
+      "freqHz": 293.93
+    },
+    {
+      "timestampMs": 13440,
+      "cents": 195.83,
+      "freqHz": 292.96
+    },
+    {
+      "timestampMs": 13460,
+      "cents": 193.45,
+      "freqHz": 292.56
+    },
+    {
+      "timestampMs": 13480,
+      "cents": 195.4,
+      "freqHz": 292.89
+    },
+    {
+      "timestampMs": 13500,
+      "cents": 200.31,
+      "freqHz": 293.72
+    },
+    {
+      "timestampMs": 13520,
+      "cents": 205.23,
+      "freqHz": 294.56
+    },
+    {
+      "timestampMs": 13540,
+      "cents": 207.2,
+      "freqHz": 294.89
+    },
+    {
+      "timestampMs": 13560,
+      "cents": 204.87,
+      "freqHz": 294.5
+    },
+    {
+      "timestampMs": 13580,
+      "cents": 199.24,
+      "freqHz": 293.54
+    },
+    {
+      "timestampMs": 13600,
+      "cents": 193.11,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 13620,
+      "cents": 189.58,
+      "freqHz": 291.91
+    },
+    {
+      "timestampMs": 13640,
+      "cents": 190.37,
+      "freqHz": 292.04
+    },
+    {
+      "timestampMs": 13660,
+      "cents": 194.87,
+      "freqHz": 292.8
+    },
+    {
+      "timestampMs": 13680,
+      "cents": 200.52,
+      "freqHz": 293.76
+    },
+    {
+      "timestampMs": 13700,
+      "cents": 204.14,
+      "freqHz": 294.37
+    },
+    {
+      "timestampMs": 13720,
+      "cents": 203.7,
+      "freqHz": 294.3
+    },
+    {
+      "timestampMs": 13740,
+      "cents": 199.39,
+      "freqHz": 293.57
+    },
+    {
+      "timestampMs": 13760,
+      "cents": 193.55,
+      "freqHz": 292.58
+    },
+    {
+      "timestampMs": 13780,
+      "cents": 189.35,
+      "freqHz": 291.87
+    },
+    {
+      "timestampMs": 13800,
+      "cents": 189.12,
+      "freqHz": 291.83
+    },
+    {
+      "timestampMs": 13820,
+      "cents": 193.06,
+      "freqHz": 292.49
+    },
+    {
+      "timestampMs": 13840,
+      "cents": 199.11,
+      "freqHz": 293.52
+    },
+    {
+      "timestampMs": 13860,
+      "cents": 204.12,
+      "freqHz": 294.37
+    },
+    {
+      "timestampMs": 13880,
+      "cents": 205.47,
+      "freqHz": 294.6
+    },
+    {
+      "timestampMs": 13900,
+      "cents": 202.58,
+      "freqHz": 294.11
+    },
+    {
+      "timestampMs": 13920,
+      "cents": 197.13,
+      "freqHz": 293.18
+    },
+    {
+      "timestampMs": 13940,
+      "cents": 192.23,
+      "freqHz": 292.35
+    },
+    {
+      "timestampMs": 13960,
+      "cents": 190.65,
+      "freqHz": 292.09
+    },
+    {
+      "timestampMs": 13980,
+      "cents": 193.38,
+      "freqHz": 292.55
+    },
+    {
+      "timestampMs": 14000,
+      "cents": 399.05,
+      "freqHz": 329.45
+    },
+    {
+      "timestampMs": 14020,
+      "cents": 404.69,
+      "freqHz": 330.53
+    },
+    {
+      "timestampMs": 14040,
+      "cents": 407.34,
+      "freqHz": 331.03
+    },
+    {
+      "timestampMs": 14060,
+      "cents": 405.62,
+      "freqHz": 330.71
+    },
+    {
+      "timestampMs": 14080,
+      "cents": 400.53,
+      "freqHz": 329.73
+    },
+    {
+      "timestampMs": 14100,
+      "cents": 394.86,
+      "freqHz": 328.66
+    },
+    {
+      "timestampMs": 14120,
+      "cents": 391.72,
+      "freqHz": 328.06
+    },
+    {
+      "timestampMs": 14140,
+      "cents": 392.8,
+      "freqHz": 328.27
+    },
+    {
+      "timestampMs": 14160,
+      "cents": 397.53,
+      "freqHz": 329.16
+    },
+    {
+      "timestampMs": 14180,
+      "cents": 403.31,
+      "freqHz": 330.26
+    },
+    {
+      "timestampMs": 14200,
+      "cents": 407.0,
+      "freqHz": 330.97
+    },
+    {
+      "timestampMs": 14220,
+      "cents": 406.56,
+      "freqHz": 330.88
+    },
+    {
+      "timestampMs": 14240,
+      "cents": 402.2,
+      "freqHz": 330.05
+    },
+    {
+      "timestampMs": 14260,
+      "cents": 396.24,
+      "freqHz": 328.92
+    },
+    {
+      "timestampMs": 14280,
+      "cents": 391.9,
+      "freqHz": 328.1
+    },
+    {
+      "timestampMs": 14300,
+      "cents": 391.51,
+      "freqHz": 328.02
+    },
+    {
+      "timestampMs": 14320,
+      "cents": 395.26,
+      "freqHz": 328.73
+    },
+    {
+      "timestampMs": 14340,
+      "cents": 401.14,
+      "freqHz": 329.85
+    },
+    {
+      "timestampMs": 14360,
+      "cents": 405.98,
+      "freqHz": 330.77
+    },
+    {
+      "timestampMs": 14380,
+      "cents": 407.19,
+      "freqHz": 331.0
+    },
+    {
+      "timestampMs": 14400,
+      "cents": 404.18,
+      "freqHz": 330.43
+    },
+    {
+      "timestampMs": 14420,
+      "cents": 398.67,
+      "freqHz": 329.38
+    },
+    {
+      "timestampMs": 14440,
+      "cents": 393.74,
+      "freqHz": 328.44
+    },
+    {
+      "timestampMs": 14460,
+      "cents": 392.19,
+      "freqHz": 328.15
+    },
+    {
+      "timestampMs": 14480,
+      "cents": 395.0,
+      "freqHz": 328.68
+    },
+    {
+      "timestampMs": 14500,
+      "cents": 400.81,
+      "freqHz": 329.79
+    },
+    {
+      "timestampMs": 14520,
+      "cents": 406.64,
+      "freqHz": 330.9
+    },
+    {
+      "timestampMs": 14540,
+      "cents": 409.53,
+      "freqHz": 331.45
+    },
+    {
+      "timestampMs": 14560,
+      "cents": 408.09,
+      "freqHz": 331.18
+    },
+    {
+      "timestampMs": 14580,
+      "cents": 403.32,
+      "freqHz": 330.27
+    },
+    {
+      "timestampMs": 14600,
+      "cents": 397.99,
+      "freqHz": 329.25
+    },
+    {
+      "timestampMs": 14620,
+      "cents": 395.2,
+      "freqHz": 328.72
+    },
+    {
+      "timestampMs": 14640,
+      "cents": 396.64,
+      "freqHz": 328.99
+    },
+    {
+      "timestampMs": 14660,
+      "cents": 401.71,
+      "freqHz": 329.96
+    },
+    {
+      "timestampMs": 14680,
+      "cents": 407.82,
+      "freqHz": 331.13
+    },
+    {
+      "timestampMs": 14700,
+      "cents": 411.79,
+      "freqHz": 331.89
+    },
+    {
+      "timestampMs": 14720,
+      "cents": 411.58,
+      "freqHz": 331.84
+    },
+    {
+      "timestampMs": 14740,
+      "cents": 407.38,
+      "freqHz": 331.04
+    },
+    {
+      "timestampMs": 14760,
+      "cents": 401.52,
+      "freqHz": 329.92
+    },
+    {
+      "timestampMs": 14780,
+      "cents": 397.18,
+      "freqHz": 329.1
+    },
+    {
+      "timestampMs": 14800,
+      "cents": 396.7,
+      "freqHz": 329.01
+    },
+    {
+      "timestampMs": 14820,
+      "cents": 400.27,
+      "freqHz": 329.68
+    },
+    {
+      "timestampMs": 14840,
+      "cents": 405.86,
+      "freqHz": 330.75
+    },
+    {
+      "timestampMs": 14860,
+      "cents": 410.31,
+      "freqHz": 331.6
+    },
+    {
+      "timestampMs": 14880,
+      "cents": 411.03,
+      "freqHz": 331.74
+    },
+    {
+      "timestampMs": 14900,
+      "cents": 407.44,
+      "freqHz": 331.05
+    },
+    {
+      "timestampMs": 14920,
+      "cents": 401.25,
+      "freqHz": 329.87
+    },
+    {
+      "timestampMs": 14940,
+      "cents": 395.56,
+      "freqHz": 328.79
+    },
+    {
+      "timestampMs": 14960,
+      "cents": 393.18,
+      "freqHz": 328.34
+    },
+    {
+      "timestampMs": 14980,
+      "cents": 395.11,
+      "freqHz": 328.7
+    },
+    {
+      "timestampMs": 15000,
+      "cents": 400.0,
+      "freqHz": 329.63
+    },
+    {
+      "timestampMs": 15020,
+      "cents": 404.89,
+      "freqHz": 330.57
+    },
+    {
+      "timestampMs": 15040,
+      "cents": 406.82,
+      "freqHz": 330.93
+    },
+    {
+      "timestampMs": 15060,
+      "cents": 404.44,
+      "freqHz": 330.48
+    },
+    {
+      "timestampMs": 15080,
+      "cents": 398.75,
+      "freqHz": 329.4
+    },
+    {
+      "timestampMs": 15100,
+      "cents": 392.56,
+      "freqHz": 328.22
+    },
+    {
+      "timestampMs": 15120,
+      "cents": 388.97,
+      "freqHz": 327.54
+    },
+    {
+      "timestampMs": 15140,
+      "cents": 389.69,
+      "freqHz": 327.68
+    },
+    {
+      "timestampMs": 15160,
+      "cents": 394.14,
+      "freqHz": 328.52
+    },
+    {
+      "timestampMs": 15180,
+      "cents": 399.73,
+      "freqHz": 329.58
+    },
+    {
+      "timestampMs": 15200,
+      "cents": 403.3,
+      "freqHz": 330.26
+    },
+    {
+      "timestampMs": 15220,
+      "cents": 402.82,
+      "freqHz": 330.17
+    },
+    {
+      "timestampMs": 15240,
+      "cents": 398.48,
+      "freqHz": 329.34
+    },
+    {
+      "timestampMs": 15260,
+      "cents": 392.62,
+      "freqHz": 328.23
+    },
+    {
+      "timestampMs": 15280,
+      "cents": 388.42,
+      "freqHz": 327.44
+    },
+    {
+      "timestampMs": 15300,
+      "cents": 388.21,
+      "freqHz": 327.4
+    },
+    {
+      "timestampMs": 15320,
+      "cents": 392.18,
+      "freqHz": 328.15
+    },
+    {
+      "timestampMs": 15340,
+      "cents": 398.29,
+      "freqHz": 329.31
+    },
+    {
+      "timestampMs": 15360,
+      "cents": 403.36,
+      "freqHz": 330.27
+    },
+    {
+      "timestampMs": 15380,
+      "cents": 404.8,
+      "freqHz": 330.55
+    },
+    {
+      "timestampMs": 15400,
+      "cents": 402.01,
+      "freqHz": 330.02
+    },
+    {
+      "timestampMs": 15420,
+      "cents": 396.68,
+      "freqHz": 329.0
+    },
+    {
+      "timestampMs": 15440,
+      "cents": 391.91,
+      "freqHz": 328.1
+    },
+    {
+      "timestampMs": 15460,
+      "cents": 390.47,
+      "freqHz": 327.82
+    },
+    {
+      "timestampMs": 15480,
+      "cents": 393.36,
+      "freqHz": 328.37
+    },
+    {
+      "timestampMs": 15500,
+      "cents": 399.19,
+      "freqHz": 329.48
+    },
+    {
+      "timestampMs": 15520,
+      "cents": 405.0,
+      "freqHz": 330.59
+    },
+    {
+      "timestampMs": 15540,
+      "cents": 407.81,
+      "freqHz": 331.12
+    },
+    {
+      "timestampMs": 15560,
+      "cents": 406.26,
+      "freqHz": 330.83
+    },
+    {
+      "timestampMs": 15580,
+      "cents": 401.33,
+      "freqHz": 329.89
+    },
+    {
+      "timestampMs": 15600,
+      "cents": 395.82,
+      "freqHz": 328.84
+    },
+    {
+      "timestampMs": 15620,
+      "cents": 392.81,
+      "freqHz": 328.27
+    },
+    {
+      "timestampMs": 15640,
+      "cents": 394.02,
+      "freqHz": 328.5
+    },
+    {
+      "timestampMs": 15660,
+      "cents": 398.86,
+      "freqHz": 329.42
+    },
+    {
+      "timestampMs": 15680,
+      "cents": 404.74,
+      "freqHz": 330.54
+    },
+    {
+      "timestampMs": 15700,
+      "cents": 408.49,
+      "freqHz": 331.25
+    },
+    {
+      "timestampMs": 15720,
+      "cents": 408.1,
+      "freqHz": 331.18
+    },
+    {
+      "timestampMs": 15740,
+      "cents": 403.76,
+      "freqHz": 330.35
+    },
+    {
+      "timestampMs": 15760,
+      "cents": 397.8,
+      "freqHz": 329.22
+    },
+    {
+      "timestampMs": 15780,
+      "cents": 393.44,
+      "freqHz": 328.39
+    },
+    {
+      "timestampMs": 15800,
+      "cents": 393.0,
+      "freqHz": 328.3
+    },
+    {
+      "timestampMs": 15820,
+      "cents": 396.69,
+      "freqHz": 329.0
+    },
+    {
+      "timestampMs": 15840,
+      "cents": 402.47,
+      "freqHz": 330.1
+    },
+    {
+      "timestampMs": 15860,
+      "cents": 407.2,
+      "freqHz": 331.01
+    },
+    {
+      "timestampMs": 15880,
+      "cents": 408.28,
+      "freqHz": 331.21
+    },
+    {
+      "timestampMs": 15900,
+      "cents": 405.14,
+      "freqHz": 330.61
+    },
+    {
+      "timestampMs": 15920,
+      "cents": 399.47,
+      "freqHz": 329.53
+    },
+    {
+      "timestampMs": 15940,
+      "cents": 394.38,
+      "freqHz": 328.56
+    },
+    {
+      "timestampMs": 15960,
+      "cents": 392.66,
+      "freqHz": 328.24
+    },
+    {
+      "timestampMs": 15980,
+      "cents": 395.31,
+      "freqHz": 328.74
+    },
+    {
+      "timestampMs": 16000,
+      "cents": 200.95,
+      "freqHz": 293.83
+    },
+    {
+      "timestampMs": 16020,
+      "cents": 206.62,
+      "freqHz": 294.8
+    },
+    {
+      "timestampMs": 16040,
+      "cents": 209.35,
+      "freqHz": 295.26
+    },
+    {
+      "timestampMs": 16060,
+      "cents": 207.77,
+      "freqHz": 294.99
+    },
+    {
+      "timestampMs": 16080,
+      "cents": 202.87,
+      "freqHz": 294.16
+    },
+    {
+      "timestampMs": 16100,
+      "cents": 197.42,
+      "freqHz": 293.23
+    },
+    {
+      "timestampMs": 16120,
+      "cents": 194.53,
+      "freqHz": 292.74
+    },
+    {
+      "timestampMs": 16140,
+      "cents": 195.88,
+      "freqHz": 292.97
+    },
+    {
+      "timestampMs": 16160,
+      "cents": 200.89,
+      "freqHz": 293.82
+    },
+    {
+      "timestampMs": 16180,
+      "cents": 206.94,
+      "freqHz": 294.85
+    },
+    {
+      "timestampMs": 16200,
+      "cents": 210.88,
+      "freqHz": 295.52
+    },
+    {
+      "timestampMs": 16220,
+      "cents": 210.65,
+      "freqHz": 295.48
+    },
+    {
+      "timestampMs": 16240,
+      "cents": 206.45,
+      "freqHz": 294.77
+    },
+    {
+      "timestampMs": 16260,
+      "cents": 200.61,
+      "freqHz": 293.77
+    },
+    {
+      "timestampMs": 16280,
+      "cents": 196.3,
+      "freqHz": 293.04
+    },
+    {
+      "timestampMs": 16300,
+      "cents": 195.86,
+      "freqHz": 292.97
+    },
+    {
+      "timestampMs": 16320,
+      "cents": 199.48,
+      "freqHz": 293.58
+    },
+    {
+      "timestampMs": 16340,
+      "cents": 205.13,
+      "freqHz": 294.54
+    },
+    {
+      "timestampMs": 16360,
+      "cents": 209.63,
+      "freqHz": 295.31
+    },
+    {
+      "timestampMs": 16380,
+      "cents": 210.42,
+      "freqHz": 295.44
+    },
+    {
+      "timestampMs": 16400,
+      "cents": 206.89,
+      "freqHz": 294.84
+    },
+    {
+      "timestampMs": 16420,
+      "cents": 200.76,
+      "freqHz": 293.8
+    },
+    {
+      "timestampMs": 16440,
+      "cents": 195.13,
+      "freqHz": 292.84
+    },
+    {
+      "timestampMs": 16460,
+      "cents": 192.8,
+      "freqHz": 292.45
+    },
+    {
+      "timestampMs": 16480,
+      "cents": 194.77,
+      "freqHz": 292.78
+    },
+    {
+      "timestampMs": 16500,
+      "cents": 199.69,
+      "freqHz": 293.62
+    },
+    {
+      "timestampMs": 16520,
+      "cents": 204.6,
+      "freqHz": 294.45
+    },
+    {
+      "timestampMs": 16540,
+      "cents": 206.55,
+      "freqHz": 294.78
+    },
+    {
+      "timestampMs": 16560,
+      "cents": 204.17,
+      "freqHz": 294.38
+    },
+    {
+      "timestampMs": 16580,
+      "cents": 198.48,
+      "freqHz": 293.41
+    },
+    {
+      "timestampMs": 16600,
+      "cents": 192.28,
+      "freqHz": 292.36
+    },
+    {
+      "timestampMs": 16620,
+      "cents": 188.67,
+      "freqHz": 291.75
+    },
+    {
+      "timestampMs": 16640,
+      "cents": 189.37,
+      "freqHz": 291.87
+    },
+    {
+      "timestampMs": 16660,
+      "cents": 193.78,
+      "freqHz": 292.62
+    },
+    {
+      "timestampMs": 16680,
+      "cents": 199.34,
+      "freqHz": 293.56
+    },
+    {
+      "timestampMs": 16700,
+      "cents": 202.88,
+      "freqHz": 294.16
+    },
+    {
+      "timestampMs": 16720,
+      "cents": 202.37,
+      "freqHz": 294.07
+    },
+    {
+      "timestampMs": 16740,
+      "cents": 198.01,
+      "freqHz": 293.33
+    },
+    {
+      "timestampMs": 16760,
+      "cents": 192.13,
+      "freqHz": 292.34
+    },
+    {
+      "timestampMs": 16780,
+      "cents": 187.92,
+      "freqHz": 291.63
+    },
+    {
+      "timestampMs": 16800,
+      "cents": 187.71,
+      "freqHz": 291.59
+    },
+    {
+      "timestampMs": 16820,
+      "cents": 191.69,
+      "freqHz": 292.26
+    },
+    {
+      "timestampMs": 16840,
+      "cents": 197.82,
+      "freqHz": 293.3
+    },
+    {
+      "timestampMs": 16860,
+      "cents": 202.93,
+      "freqHz": 294.17
+    },
+    {
+      "timestampMs": 16880,
+      "cents": 204.42,
+      "freqHz": 294.42
+    },
+    {
+      "timestampMs": 16900,
+      "cents": 201.7,
+      "freqHz": 293.96
+    },
+    {
+      "timestampMs": 16920,
+      "cents": 196.46,
+      "freqHz": 293.07
+    },
+    {
+      "timestampMs": 16940,
+      "cents": 191.78,
+      "freqHz": 292.28
+    },
+    {
+      "timestampMs": 16960,
+      "cents": 190.45,
+      "freqHz": 292.05
+    },
+    {
+      "timestampMs": 16980,
+      "cents": 193.45,
+      "freqHz": 292.56
+    },
+    {
+      "timestampMs": 17000,
+      "cents": 199.41,
+      "freqHz": 293.57
+    },
+    {
+      "timestampMs": 17020,
+      "cents": 205.36,
+      "freqHz": 294.58
+    },
+    {
+      "timestampMs": 17040,
+      "cents": 208.31,
+      "freqHz": 295.08
+    },
+    {
+      "timestampMs": 17060,
+      "cents": 206.89,
+      "freqHz": 294.84
+    },
+    {
+      "timestampMs": 17080,
+      "cents": 202.1,
+      "freqHz": 294.03
+    },
+    {
+      "timestampMs": 17100,
+      "cents": 196.72,
+      "freqHz": 293.11
+    },
+    {
+      "timestampMs": 17120,
+      "cents": 193.84,
+      "freqHz": 292.63
+    },
+    {
+      "timestampMs": 17140,
+      "cents": 195.17,
+      "freqHz": 292.85
+    },
+    {
+      "timestampMs": 17160,
+      "cents": 200.11,
+      "freqHz": 293.69
+    },
+    {
+      "timestampMs": 17180,
+      "cents": 206.07,
+      "freqHz": 294.7
+    },
+    {
+      "timestampMs": 17200,
+      "cents": 209.9,
+      "freqHz": 295.35
+    },
+    {
+      "timestampMs": 17220,
+      "cents": 209.55,
+      "freqHz": 295.29
+    },
+    {
+      "timestampMs": 17240,
+      "cents": 205.24,
+      "freqHz": 294.56
+    },
+    {
+      "timestampMs": 17260,
+      "cents": 199.29,
+      "freqHz": 293.55
+    },
+    {
+      "timestampMs": 17280,
+      "cents": 194.91,
+      "freqHz": 292.81
+    },
+    {
+      "timestampMs": 17300,
+      "cents": 194.43,
+      "freqHz": 292.73
+    },
+    {
+      "timestampMs": 17320,
+      "cents": 198.05,
+      "freqHz": 293.34
+    },
+    {
+      "timestampMs": 17340,
+      "cents": 203.76,
+      "freqHz": 294.31
+    },
+    {
+      "timestampMs": 17360,
+      "cents": 208.37,
+      "freqHz": 295.09
+    },
+    {
+      "timestampMs": 17380,
+      "cents": 209.34,
+      "freqHz": 295.26
+    },
+    {
+      "timestampMs": 17400,
+      "cents": 206.05,
+      "freqHz": 294.7
+    },
+    {
+      "timestampMs": 17420,
+      "cents": 200.23,
+      "freqHz": 293.71
+    },
+    {
+      "timestampMs": 17440,
+      "cents": 194.97,
+      "freqHz": 292.82
+    },
+    {
+      "timestampMs": 17460,
+      "cents": 193.08,
+      "freqHz": 292.5
+    },
+    {
+      "timestampMs": 17480,
+      "cents": 195.54,
+      "freqHz": 292.91
+    },
+    {
+      "timestampMs": 17500,
+      "cents": 201.0,
+      "freqHz": 293.84
+    },
+    {
+      "timestampMs": 17520,
+      "cents": 206.49,
+      "freqHz": 294.77
+    },
+    {
+      "timestampMs": 17540,
+      "cents": 209.04,
+      "freqHz": 295.21
+    },
+    {
+      "timestampMs": 17560,
+      "cents": 207.3,
+      "freqHz": 294.91
+    },
+    {
+      "timestampMs": 17580,
+      "cents": 202.23,
+      "freqHz": 294.05
+    },
+    {
+      "timestampMs": 17600,
+      "cents": 196.64,
+      "freqHz": 293.1
+    },
+    {
+      "timestampMs": 17620,
+      "cents": 193.62,
+      "freqHz": 292.59
+    },
+    {
+      "timestampMs": 17640,
+      "cents": 194.87,
+      "freqHz": 292.8
+    },
+    {
+      "timestampMs": 17660,
+      "cents": 199.78,
+      "freqHz": 293.63
+    },
+    {
+      "timestampMs": 17680,
+      "cents": 205.76,
+      "freqHz": 294.65
+    },
+    {
+      "timestampMs": 17700,
+      "cents": 209.65,
+      "freqHz": 295.31
+    },
+    {
+      "timestampMs": 17720,
+      "cents": 209.39,
+      "freqHz": 295.27
+    },
+    {
+      "timestampMs": 17740,
+      "cents": 205.18,
+      "freqHz": 294.55
+    },
+    {
+      "timestampMs": 17760,
+      "cents": 199.35,
+      "freqHz": 293.56
+    },
+    {
+      "timestampMs": 17780,
+      "cents": 195.07,
+      "freqHz": 292.84
+    },
+    {
+      "timestampMs": 17800,
+      "cents": 194.68,
+      "freqHz": 292.77
+    },
+    {
+      "timestampMs": 17820,
+      "cents": 198.36,
+      "freqHz": 293.39
+    },
+    {
+      "timestampMs": 17840,
+      "cents": 204.08,
+      "freqHz": 294.36
+    },
+    {
+      "timestampMs": 17860,
+      "cents": 208.68,
+      "freqHz": 295.15
+    },
+    {
+      "timestampMs": 17880,
+      "cents": 209.56,
+      "freqHz": 295.3
+    },
+    {
+      "timestampMs": 17900,
+      "cents": 206.12,
+      "freqHz": 294.71
+    },
+    {
+      "timestampMs": 17920,
+      "cents": 200.1,
+      "freqHz": 293.69
+    },
+    {
+      "timestampMs": 17940,
+      "cents": 194.57,
+      "freqHz": 292.75
+    },
+    {
+      "timestampMs": 17960,
+      "cents": 192.34,
+      "freqHz": 292.37
+    },
+    {
+      "timestampMs": 17980,
+      "cents": 194.4,
+      "freqHz": 292.72
+    },
+    {
+      "timestampMs": 18000,
+      "cents": -0.59,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 18020,
+      "cents": 4.4,
+      "freqHz": 262.3
+    },
+    {
+      "timestampMs": 18040,
+      "cents": 6.42,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 18060,
+      "cents": 4.1,
+      "freqHz": 262.25
+    },
+    {
+      "timestampMs": 18080,
+      "cents": -1.54,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 18100,
+      "cents": -7.71,
+      "freqHz": 260.47
+    },
+    {
+      "timestampMs": 18120,
+      "cents": -11.29,
+      "freqHz": 259.93
+    },
+    {
+      "timestampMs": 18140,
+      "cents": -10.58,
+      "freqHz": 260.04
+    },
+    {
+      "timestampMs": 18160,
+      "cents": -6.16,
+      "freqHz": 260.7
+    },
+    {
+      "timestampMs": 18180,
+      "cents": -0.6,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 18200,
+      "cents": 2.93,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 18220,
+      "cents": 2.4,
+      "freqHz": 261.99
+    },
+    {
+      "timestampMs": 18240,
+      "cents": -1.98,
+      "freqHz": 261.33
+    },
+    {
+      "timestampMs": 18260,
+      "cents": -7.88,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 18280,
+      "cents": -12.11,
+      "freqHz": 259.81
+    },
+    {
+      "timestampMs": 18300,
+      "cents": -12.33,
+      "freqHz": 259.77
+    },
+    {
+      "timestampMs": 18320,
+      "cents": -8.37,
+      "freqHz": 260.37
+    },
+    {
+      "timestampMs": 18340,
+      "cents": -2.24,
+      "freqHz": 261.29
+    },
+    {
+      "timestampMs": 18360,
+      "cents": 2.87,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 18380,
+      "cents": 4.38,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 18400,
+      "cents": 1.69,
+      "freqHz": 261.88
+    },
+    {
+      "timestampMs": 18420,
+      "cents": -3.52,
+      "freqHz": 261.1
+    },
+    {
+      "timestampMs": 18440,
+      "cents": -8.15,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 18460,
+      "cents": -9.42,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 18480,
+      "cents": -6.35,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 18500,
+      "cents": -0.31,
+      "freqHz": 261.58
+    },
+    {
+      "timestampMs": 18520,
+      "cents": 5.72,
+      "freqHz": 262.5
+    },
+    {
+      "timestampMs": 18540,
+      "cents": 8.77,
+      "freqHz": 262.96
+    },
+    {
+      "timestampMs": 18560,
+      "cents": 7.45,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 18580,
+      "cents": 2.76,
+      "freqHz": 262.05
+    },
+    {
+      "timestampMs": 18600,
+      "cents": -2.52,
+      "freqHz": 261.25
+    },
+    {
+      "timestampMs": 18620,
+      "cents": -5.3,
+      "freqHz": 260.83
+    },
+    {
+      "timestampMs": 18640,
+      "cents": -3.88,
+      "freqHz": 261.04
+    },
+    {
+      "timestampMs": 18660,
+      "cents": 1.15,
+      "freqHz": 261.8
+    },
+    {
+      "timestampMs": 18680,
+      "cents": 7.19,
+      "freqHz": 262.72
+    },
+    {
+      "timestampMs": 18700,
+      "cents": 11.08,
+      "freqHz": 263.31
+    },
+    {
+      "timestampMs": 18720,
+      "cents": 10.78,
+      "freqHz": 263.26
+    },
+    {
+      "timestampMs": 18740,
+      "cents": 6.5,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 18760,
+      "cents": 0.56,
+      "freqHz": 261.71
+    },
+    {
+      "timestampMs": 18780,
+      "cents": -3.83,
+      "freqHz": 261.05
+    },
+    {
+      "timestampMs": 18800,
+      "cents": -4.34,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 18820,
+      "cents": -0.77,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 18840,
+      "cents": 4.87,
+      "freqHz": 262.37
+    },
+    {
+      "timestampMs": 18860,
+      "cents": 9.39,
+      "freqHz": 263.05
+    },
+    {
+      "timestampMs": 18880,
+      "cents": 10.24,
+      "freqHz": 263.18
+    },
+    {
+      "timestampMs": 18900,
+      "cents": 6.83,
+      "freqHz": 262.66
+    },
+    {
+      "timestampMs": 18920,
+      "cents": 0.86,
+      "freqHz": 261.76
+    },
+    {
+      "timestampMs": 18940,
+      "cents": -4.56,
+      "freqHz": 260.94
+    },
+    {
+      "timestampMs": 18960,
+      "cents": -6.62,
+      "freqHz": 260.63
+    },
+    {
+      "timestampMs": 18980,
+      "cents": -4.33,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 19000,
+      "cents": 0.95,
+      "freqHz": 261.77
+    },
+    {
+      "timestampMs": 19020,
+      "cents": 6.26,
+      "freqHz": 262.58
+    },
+    {
+      "timestampMs": 19040,
+      "cents": 8.63,
+      "freqHz": 262.94
+    },
+    {
+      "timestampMs": 19060,
+      "cents": 6.71,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 19080,
+      "cents": 1.48,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 19100,
+      "cents": -4.27,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 19120,
+      "cents": -7.43,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 19140,
+      "cents": -6.31,
+      "freqHz": 260.68
+    },
+    {
+      "timestampMs": 19160,
+      "cents": -1.51,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 19180,
+      "cents": 4.39,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 19200,
+      "cents": 8.22,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 19220,
+      "cents": 7.92,
+      "freqHz": 262.83
+    },
+    {
+      "timestampMs": 19240,
+      "cents": 3.69,
+      "freqHz": 262.19
+    },
+    {
+      "timestampMs": 19260,
+      "cents": -2.13,
+      "freqHz": 261.31
+    },
+    {
+      "timestampMs": 19280,
+      "cents": -6.38,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 19300,
+      "cents": -6.73,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 19320,
+      "cents": -2.97,
+      "freqHz": 261.18
+    },
+    {
+      "timestampMs": 19340,
+      "cents": 2.84,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 19360,
+      "cents": 7.53,
+      "freqHz": 262.77
+    },
+    {
+      "timestampMs": 19380,
+      "cents": 8.53,
+      "freqHz": 262.92
+    },
+    {
+      "timestampMs": 19400,
+      "cents": 5.22,
+      "freqHz": 262.42
+    },
+    {
+      "timestampMs": 19420,
+      "cents": -0.67,
+      "freqHz": 261.53
+    },
+    {
+      "timestampMs": 19440,
+      "cents": -6.07,
+      "freqHz": 260.71
+    },
+    {
+      "timestampMs": 19460,
+      "cents": -8.16,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 19480,
+      "cents": -5.95,
+      "freqHz": 260.73
+    },
+    {
+      "timestampMs": 19500,
+      "cents": -0.81,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 19520,
+      "cents": 4.31,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 19540,
+      "cents": 6.44,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 19560,
+      "cents": 4.24,
+      "freqHz": 262.27
+    },
+    {
+      "timestampMs": 19580,
+      "cents": -1.31,
+      "freqHz": 261.43
+    },
+    {
+      "timestampMs": 19600,
+      "cents": -7.4,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 19620,
+      "cents": -10.92,
+      "freqHz": 259.99
+    },
+    {
+      "timestampMs": 19640,
+      "cents": -10.15,
+      "freqHz": 260.1
+    },
+    {
+      "timestampMs": 19660,
+      "cents": -5.69,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 19680,
+      "cents": -0.11,
+      "freqHz": 261.61
+    },
+    {
+      "timestampMs": 19700,
+      "cents": 3.43,
+      "freqHz": 262.15
+    },
+    {
+      "timestampMs": 19720,
+      "cents": 2.9,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 19740,
+      "cents": -1.49,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 19760,
+      "cents": -7.41,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 19780,
+      "cents": -11.66,
+      "freqHz": 259.87
+    },
+    {
+      "timestampMs": 20220,
+      "cents": 11.66,
+      "freqHz": 263.4
+    },
+    {
+      "timestampMs": 20240,
+      "cents": 7.41,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 20260,
+      "cents": 1.49,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 20280,
+      "cents": -2.9,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 20300,
+      "cents": -3.43,
+      "freqHz": 261.11
+    },
+    {
+      "timestampMs": 20320,
+      "cents": 0.11,
+      "freqHz": 261.65
+    },
+    {
+      "timestampMs": 20340,
+      "cents": 5.69,
+      "freqHz": 262.49
+    },
+    {
+      "timestampMs": 20360,
+      "cents": 10.15,
+      "freqHz": 263.17
+    },
+    {
+      "timestampMs": 20380,
+      "cents": 10.92,
+      "freqHz": 263.29
+    },
+    {
+      "timestampMs": 20400,
+      "cents": 7.4,
+      "freqHz": 262.75
+    },
+    {
+      "timestampMs": 20420,
+      "cents": 1.31,
+      "freqHz": 261.83
+    },
+    {
+      "timestampMs": 20440,
+      "cents": -4.24,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 20460,
+      "cents": -6.44,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 20480,
+      "cents": -4.31,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 20500,
+      "cents": 0.81,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 20520,
+      "cents": 5.95,
+      "freqHz": 262.53
+    },
+    {
+      "timestampMs": 20540,
+      "cents": 8.16,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 20560,
+      "cents": 6.07,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 20580,
+      "cents": 0.67,
+      "freqHz": 261.73
+    },
+    {
+      "timestampMs": 20600,
+      "cents": -5.22,
+      "freqHz": 260.84
+    },
+    {
+      "timestampMs": 20620,
+      "cents": -8.53,
+      "freqHz": 260.34
+    },
+    {
+      "timestampMs": 20640,
+      "cents": -7.53,
+      "freqHz": 260.49
+    },
+    {
+      "timestampMs": 20660,
+      "cents": -2.84,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 20680,
+      "cents": 2.97,
+      "freqHz": 262.08
+    },
+    {
+      "timestampMs": 20700,
+      "cents": 6.73,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 20720,
+      "cents": 6.38,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 20740,
+      "cents": 2.13,
+      "freqHz": 261.95
+    },
+    {
+      "timestampMs": 20760,
+      "cents": -3.69,
+      "freqHz": 261.07
+    },
+    {
+      "timestampMs": 20780,
+      "cents": -7.92,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 20800,
+      "cents": -8.22,
+      "freqHz": 260.39
+    },
+    {
+      "timestampMs": 20820,
+      "cents": -4.39,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 20840,
+      "cents": 1.51,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 20860,
+      "cents": 6.31,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 20880,
+      "cents": 7.43,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 20900,
+      "cents": 4.27,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 20920,
+      "cents": -1.48,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 20940,
+      "cents": -6.71,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 20960,
+      "cents": -8.63,
+      "freqHz": 260.33
+    },
+    {
+      "timestampMs": 20980,
+      "cents": -6.26,
+      "freqHz": 260.69
+    },
+    {
+      "timestampMs": 21000,
+      "cents": -0.95,
+      "freqHz": 261.49
+    },
+    {
+      "timestampMs": 21020,
+      "cents": 4.33,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 21040,
+      "cents": 6.62,
+      "freqHz": 262.63
+    },
+    {
+      "timestampMs": 21060,
+      "cents": 4.56,
+      "freqHz": 262.32
+    },
+    {
+      "timestampMs": 21080,
+      "cents": -0.86,
+      "freqHz": 261.5
+    },
+    {
+      "timestampMs": 21100,
+      "cents": -6.83,
+      "freqHz": 260.6
+    },
+    {
+      "timestampMs": 21120,
+      "cents": -10.24,
+      "freqHz": 260.09
+    },
+    {
+      "timestampMs": 21140,
+      "cents": -9.39,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 21160,
+      "cents": -4.87,
+      "freqHz": 260.9
+    },
+    {
+      "timestampMs": 21180,
+      "cents": 0.77,
+      "freqHz": 261.75
+    },
+    {
+      "timestampMs": 21200,
+      "cents": 4.34,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 21220,
+      "cents": 3.83,
+      "freqHz": 262.21
+    },
+    {
+      "timestampMs": 21240,
+      "cents": -0.56,
+      "freqHz": 261.55
+    },
+    {
+      "timestampMs": 21260,
+      "cents": -6.5,
+      "freqHz": 260.65
+    },
+    {
+      "timestampMs": 21280,
+      "cents": -10.78,
+      "freqHz": 260.01
+    },
+    {
+      "timestampMs": 21300,
+      "cents": -11.08,
+      "freqHz": 259.96
+    },
+    {
+      "timestampMs": 21320,
+      "cents": -7.19,
+      "freqHz": 260.55
+    },
+    {
+      "timestampMs": 21340,
+      "cents": -1.15,
+      "freqHz": 261.46
+    },
+    {
+      "timestampMs": 21360,
+      "cents": 3.88,
+      "freqHz": 262.22
+    },
+    {
+      "timestampMs": 21380,
+      "cents": 5.3,
+      "freqHz": 262.43
+    },
+    {
+      "timestampMs": 21400,
+      "cents": 2.52,
+      "freqHz": 262.01
+    },
+    {
+      "timestampMs": 21420,
+      "cents": -2.76,
+      "freqHz": 261.21
+    },
+    {
+      "timestampMs": 21440,
+      "cents": -7.45,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 21460,
+      "cents": -8.77,
+      "freqHz": 260.31
+    },
+    {
+      "timestampMs": 21480,
+      "cents": -5.72,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 21500,
+      "cents": 0.31,
+      "freqHz": 261.68
+    },
+    {
+      "timestampMs": 21520,
+      "cents": 6.35,
+      "freqHz": 262.59
+    },
+    {
+      "timestampMs": 21540,
+      "cents": 9.42,
+      "freqHz": 263.06
+    },
+    {
+      "timestampMs": 21560,
+      "cents": 8.15,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 21580,
+      "cents": 3.52,
+      "freqHz": 262.16
+    },
+    {
+      "timestampMs": 21600,
+      "cents": -1.69,
+      "freqHz": 261.38
+    },
+    {
+      "timestampMs": 21620,
+      "cents": -4.38,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 21640,
+      "cents": -2.87,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 21660,
+      "cents": 2.24,
+      "freqHz": 261.97
+    },
+    {
+      "timestampMs": 21680,
+      "cents": 8.37,
+      "freqHz": 262.9
+    },
+    {
+      "timestampMs": 21700,
+      "cents": 12.33,
+      "freqHz": 263.5
+    },
+    {
+      "timestampMs": 21720,
+      "cents": 12.11,
+      "freqHz": 263.47
+    },
+    {
+      "timestampMs": 21740,
+      "cents": 7.88,
+      "freqHz": 262.82
+    },
+    {
+      "timestampMs": 21760,
+      "cents": 1.98,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 21780,
+      "cents": -2.4,
+      "freqHz": 261.27
+    },
+    {
+      "timestampMs": 21800,
+      "cents": -2.93,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 21820,
+      "cents": 0.6,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 21840,
+      "cents": 6.16,
+      "freqHz": 262.56
+    },
+    {
+      "timestampMs": 21860,
+      "cents": 10.58,
+      "freqHz": 263.23
+    },
+    {
+      "timestampMs": 21880,
+      "cents": 11.29,
+      "freqHz": 263.34
+    },
+    {
+      "timestampMs": 21900,
+      "cents": 7.71,
+      "freqHz": 262.8
+    },
+    {
+      "timestampMs": 21920,
+      "cents": 1.54,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 21940,
+      "cents": -4.1,
+      "freqHz": 261.01
+    },
+    {
+      "timestampMs": 21960,
+      "cents": -6.42,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 21980,
+      "cents": -4.4,
+      "freqHz": 260.97
+    },
+    {
+      "timestampMs": 22000,
+      "cents": 0.59,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 22020,
+      "cents": 5.6,
+      "freqHz": 262.48
+    },
+    {
+      "timestampMs": 22040,
+      "cents": 7.66,
+      "freqHz": 262.79
+    },
+    {
+      "timestampMs": 22060,
+      "cents": 5.43,
+      "freqHz": 262.45
+    },
+    {
+      "timestampMs": 22080,
+      "cents": -0.1,
+      "freqHz": 261.62
+    },
+    {
+      "timestampMs": 22100,
+      "cents": -6.12,
+      "freqHz": 260.71
+    },
+    {
+      "timestampMs": 22120,
+      "cents": -9.56,
+      "freqHz": 260.19
+    },
+    {
+      "timestampMs": 22140,
+      "cents": -8.68,
+      "freqHz": 260.32
+    },
+    {
+      "timestampMs": 22160,
+      "cents": -4.08,
+      "freqHz": 261.01
+    },
+    {
+      "timestampMs": 22180,
+      "cents": 1.64,
+      "freqHz": 261.88
+    },
+    {
+      "timestampMs": 22200,
+      "cents": 5.32,
+      "freqHz": 262.44
+    },
+    {
+      "timestampMs": 22220,
+      "cents": 4.93,
+      "freqHz": 262.38
+    },
+    {
+      "timestampMs": 22240,
+      "cents": 0.65,
+      "freqHz": 261.73
+    },
+    {
+      "timestampMs": 22260,
+      "cents": -5.18,
+      "freqHz": 260.85
+    },
+    {
+      "timestampMs": 22280,
+      "cents": -9.39,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 22300,
+      "cents": -9.65,
+      "freqHz": 260.18
+    },
+    {
+      "timestampMs": 22320,
+      "cents": -5.76,
+      "freqHz": 260.76
+    },
+    {
+      "timestampMs": 22340,
+      "cents": 0.22,
+      "freqHz": 261.66
+    },
+    {
+      "timestampMs": 22360,
+      "cents": 5.13,
+      "freqHz": 262.41
+    },
+    {
+      "timestampMs": 22380,
+      "cents": 6.38,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 22400,
+      "cents": 3.36,
+      "freqHz": 262.14
+    },
+    {
+      "timestampMs": 22420,
+      "cents": -2.23,
+      "freqHz": 261.29
+    },
+    {
+      "timestampMs": 22440,
+      "cents": -7.3,
+      "freqHz": 260.53
+    },
+    {
+      "timestampMs": 22460,
+      "cents": -9.04,
+      "freqHz": 260.27
+    },
+    {
+      "timestampMs": 22480,
+      "cents": -6.49,
+      "freqHz": 260.65
+    },
+    {
+      "timestampMs": 22500,
+      "cents": -1.0,
+      "freqHz": 261.48
+    },
+    {
+      "timestampMs": 22520,
+      "cents": 4.46,
+      "freqHz": 262.31
+    },
+    {
+      "timestampMs": 22540,
+      "cents": 6.92,
+      "freqHz": 262.68
+    },
+    {
+      "timestampMs": 22560,
+      "cents": 5.03,
+      "freqHz": 262.39
+    },
+    {
+      "timestampMs": 22580,
+      "cents": -0.23,
+      "freqHz": 261.6
+    },
+    {
+      "timestampMs": 22600,
+      "cents": -6.05,
+      "freqHz": 260.72
+    },
+    {
+      "timestampMs": 22620,
+      "cents": -9.34,
+      "freqHz": 260.22
+    },
+    {
+      "timestampMs": 22640,
+      "cents": -8.37,
+      "freqHz": 260.37
+    },
+    {
+      "timestampMs": 22660,
+      "cents": -3.76,
+      "freqHz": 261.06
+    },
+    {
+      "timestampMs": 22680,
+      "cents": 1.95,
+      "freqHz": 261.92
+    },
+    {
+      "timestampMs": 22700,
+      "cents": 5.57,
+      "freqHz": 262.47
+    },
+    {
+      "timestampMs": 22720,
+      "cents": 5.09,
+      "freqHz": 262.4
+    },
+    {
+      "timestampMs": 22740,
+      "cents": 0.71,
+      "freqHz": 261.74
+    },
+    {
+      "timestampMs": 22760,
+      "cents": -5.24,
+      "freqHz": 260.84
+    },
+    {
+      "timestampMs": 22780,
+      "cents": -9.55,
+      "freqHz": 260.19
+    },
+    {
+      "timestampMs": 22800,
+      "cents": -9.9,
+      "freqHz": 260.14
+    },
+    {
+      "timestampMs": 22820,
+      "cents": -6.07,
+      "freqHz": 260.71
+    },
+    {
+      "timestampMs": 22840,
+      "cents": -0.11,
+      "freqHz": 261.61
+    },
+    {
+      "timestampMs": 22860,
+      "cents": 4.83,
+      "freqHz": 262.36
+    },
+    {
+      "timestampMs": 22880,
+      "cents": 6.16,
+      "freqHz": 262.56
+    },
+    {
+      "timestampMs": 22900,
+      "cents": 3.28,
+      "freqHz": 262.13
+    },
+    {
+      "timestampMs": 22920,
+      "cents": -2.1,
+      "freqHz": 261.31
+    },
+    {
+      "timestampMs": 22940,
+      "cents": -6.89,
+      "freqHz": 260.59
+    },
+    {
+      "timestampMs": 22960,
+      "cents": -8.31,
+      "freqHz": 260.38
+    },
+    {
+      "timestampMs": 22980,
+      "cents": -5.36,
+      "freqHz": 260.82
+    },
+    {
+      "timestampMs": 23000,
+      "cents": 0.59,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 23020,
+      "cents": 6.55,
+      "freqHz": 262.62
+    },
+    {
+      "timestampMs": 23040,
+      "cents": 9.55,
+      "freqHz": 263.08
+    },
+    {
+      "timestampMs": 23060,
+      "cents": 8.22,
+      "freqHz": 262.88
+    },
+    {
+      "timestampMs": 23080,
+      "cents": 3.54,
+      "freqHz": 262.17
+    },
+    {
+      "timestampMs": 23100,
+      "cents": -1.7,
+      "freqHz": 261.37
+    },
+    {
+      "timestampMs": 23120,
+      "cents": -4.42,
+      "freqHz": 260.96
+    },
+    {
+      "timestampMs": 23140,
+      "cents": -2.93,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 23160,
+      "cents": 2.18,
+      "freqHz": 261.96
+    },
+    {
+      "timestampMs": 23180,
+      "cents": 8.31,
+      "freqHz": 262.89
+    },
+    {
+      "timestampMs": 23200,
+      "cents": 12.29,
+      "freqHz": 263.49
+    },
+    {
+      "timestampMs": 23220,
+      "cents": 12.08,
+      "freqHz": 263.46
+    },
+    {
+      "timestampMs": 23240,
+      "cents": 7.87,
+      "freqHz": 262.82
+    },
+    {
+      "timestampMs": 23260,
+      "cents": 1.99,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 23280,
+      "cents": -2.37,
+      "freqHz": 261.27
+    },
+    {
+      "timestampMs": 23300,
+      "cents": -2.88,
+      "freqHz": 261.19
+    },
+    {
+      "timestampMs": 23320,
+      "cents": 0.66,
+      "freqHz": 261.73
+    },
+    {
+      "timestampMs": 23340,
+      "cents": 6.22,
+      "freqHz": 262.57
+    },
+    {
+      "timestampMs": 23360,
+      "cents": 10.63,
+      "freqHz": 263.24
+    },
+    {
+      "timestampMs": 23380,
+      "cents": 11.33,
+      "freqHz": 263.35
+    },
+    {
+      "timestampMs": 23400,
+      "cents": 7.72,
+      "freqHz": 262.8
+    },
+    {
+      "timestampMs": 23420,
+      "cents": 1.52,
+      "freqHz": 261.86
+    },
+    {
+      "timestampMs": 23440,
+      "cents": -4.17,
+      "freqHz": 261.0
+    },
+    {
+      "timestampMs": 23460,
+      "cents": -6.55,
+      "freqHz": 260.64
+    },
+    {
+      "timestampMs": 23480,
+      "cents": -4.6,
+      "freqHz": 260.94
+    },
+    {
+      "timestampMs": 23500,
+      "cents": 0.31,
+      "freqHz": 261.68
+    },
+    {
+      "timestampMs": 23520,
+      "cents": 5.23,
+      "freqHz": 262.42
+    },
+    {
+      "timestampMs": 23540,
+      "cents": 7.2,
+      "freqHz": 262.72
+    },
+    {
+      "timestampMs": 23560,
+      "cents": 4.87,
+      "freqHz": 262.37
+    },
+    {
+      "timestampMs": 23580,
+      "cents": -0.76,
+      "freqHz": 261.52
+    },
+    {
+      "timestampMs": 23600,
+      "cents": -6.89,
+      "freqHz": 260.59
+    },
+    {
+      "timestampMs": 23620,
+      "cents": -10.42,
+      "freqHz": 260.06
+    },
+    {
+      "timestampMs": 23640,
+      "cents": -9.63,
+      "freqHz": 260.18
+    },
+    {
+      "timestampMs": 23660,
+      "cents": -5.13,
+      "freqHz": 260.86
+    },
+    {
+      "timestampMs": 23680,
+      "cents": 0.52,
+      "freqHz": 261.71
+    },
+    {
+      "timestampMs": 23700,
+      "cents": 4.14,
+      "freqHz": 262.26
+    },
+    {
+      "timestampMs": 23720,
+      "cents": 3.7,
+      "freqHz": 262.19
+    },
+    {
+      "timestampMs": 23740,
+      "cents": -0.61,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 23760,
+      "cents": -6.45,
+      "freqHz": 260.66
+    },
+    {
+      "timestampMs": 23780,
+      "cents": -10.65,
+      "freqHz": 260.03
+    },
+    {
+      "timestampMs": 23800,
+      "cents": -10.88,
+      "freqHz": 259.99
+    },
+    {
+      "timestampMs": 23820,
+      "cents": -6.94,
+      "freqHz": 260.58
+    },
+    {
+      "timestampMs": 23840,
+      "cents": -0.89,
+      "freqHz": 261.5
+    },
+    {
+      "timestampMs": 23860,
+      "cents": 4.12,
+      "freqHz": 262.25
+    },
+    {
+      "timestampMs": 23880,
+      "cents": 5.47,
+      "freqHz": 262.46
+    },
+    {
+      "timestampMs": 23900,
+      "cents": 2.58,
+      "freqHz": 262.02
+    },
+    {
+      "timestampMs": 23920,
+      "cents": -2.87,
+      "freqHz": 261.2
+    },
+    {
+      "timestampMs": 23940,
+      "cents": -7.77,
+      "freqHz": 260.46
+    },
+    {
+      "timestampMs": 23960,
+      "cents": -9.35,
+      "freqHz": 260.22
+    },
+    {
+      "timestampMs": 23980,
+      "cents": -6.62,
+      "freqHz": 260.63
+    },
+    {
+      "timestampMs": 25020,
+      "cents": 4.89,
+      "freqHz": 262.37
+    },
+    {
+      "timestampMs": 25040,
+      "cents": 6.82,
+      "freqHz": 262.66
+    },
+    {
+      "timestampMs": 25060,
+      "cents": 4.44,
+      "freqHz": 262.3
+    },
+    {
+      "timestampMs": 25080,
+      "cents": -1.25,
+      "freqHz": 261.44
+    },
+    {
+      "timestampMs": 25100,
+      "cents": -7.44,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 25120,
+      "cents": -11.03,
+      "freqHz": 259.97
+    },
+    {
+      "timestampMs": 25140,
+      "cents": -10.31,
+      "freqHz": 260.08
+    },
+    {
+      "timestampMs": 25160,
+      "cents": -5.86,
+      "freqHz": 260.75
+    },
+    {
+      "timestampMs": 25180,
+      "cents": -0.27,
+      "freqHz": 261.59
+    },
+    {
+      "timestampMs": 25200,
+      "cents": 3.3,
+      "freqHz": 262.13
+    },
+    {
+      "timestampMs": 25220,
+      "cents": 2.82,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 25240,
+      "cents": -1.52,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 25260,
+      "cents": -7.38,
+      "freqHz": 260.52
+    },
+    {
+      "timestampMs": 25280,
+      "cents": -11.58,
+      "freqHz": 259.89
+    },
+    {
+      "timestampMs": 25300,
+      "cents": -11.79,
+      "freqHz": 259.85
+    },
+    {
+      "timestampMs": 25320,
+      "cents": -7.82,
+      "freqHz": 260.45
+    },
+    {
+      "timestampMs": 25340,
+      "cents": -1.71,
+      "freqHz": 261.37
+    },
+    {
+      "timestampMs": 25360,
+      "cents": 3.36,
+      "freqHz": 262.14
+    },
+    {
+      "timestampMs": 25380,
+      "cents": 4.8,
+      "freqHz": 262.36
+    },
+    {
+      "timestampMs": 25400,
+      "cents": 2.01,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 25420,
+      "cents": -3.32,
+      "freqHz": 261.13
+    },
+    {
+      "timestampMs": 25440,
+      "cents": -8.09,
+      "freqHz": 260.41
+    },
+    {
+      "timestampMs": 25460,
+      "cents": -9.53,
+      "freqHz": 260.19
+    },
+    {
+      "timestampMs": 25480,
+      "cents": -6.64,
+      "freqHz": 260.63
+    },
+    {
+      "timestampMs": 25500,
+      "cents": -0.81,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 25520,
+      "cents": 5.0,
+      "freqHz": 262.39
+    },
+    {
+      "timestampMs": 25540,
+      "cents": 7.81,
+      "freqHz": 262.81
+    },
+    {
+      "timestampMs": 25560,
+      "cents": 6.26,
+      "freqHz": 262.58
+    },
+    {
+      "timestampMs": 25580,
+      "cents": 1.33,
+      "freqHz": 261.83
+    },
+    {
+      "timestampMs": 25600,
+      "cents": -4.18,
+      "freqHz": 261.0
+    },
+    {
+      "timestampMs": 25620,
+      "cents": -7.19,
+      "freqHz": 260.55
+    },
+    {
+      "timestampMs": 25640,
+      "cents": -5.98,
+      "freqHz": 260.73
+    },
+    {
+      "timestampMs": 25660,
+      "cents": -1.14,
+      "freqHz": 261.46
+    },
+    {
+      "timestampMs": 25680,
+      "cents": 4.74,
+      "freqHz": 262.35
+    },
+    {
+      "timestampMs": 25700,
+      "cents": 8.49,
+      "freqHz": 262.92
+    },
+    {
+      "timestampMs": 25720,
+      "cents": 8.1,
+      "freqHz": 262.86
+    },
+    {
+      "timestampMs": 25740,
+      "cents": 3.76,
+      "freqHz": 262.2
+    },
+    {
+      "timestampMs": 25760,
+      "cents": -2.2,
+      "freqHz": 261.3
+    },
+    {
+      "timestampMs": 25780,
+      "cents": -6.56,
+      "freqHz": 260.64
+    },
+    {
+      "timestampMs": 25800,
+      "cents": -7.0,
+      "freqHz": 260.57
+    },
+    {
+      "timestampMs": 25820,
+      "cents": -3.31,
+      "freqHz": 261.13
+    },
+    {
+      "timestampMs": 25840,
+      "cents": 2.47,
+      "freqHz": 262.0
+    },
+    {
+      "timestampMs": 25860,
+      "cents": 7.2,
+      "freqHz": 262.72
+    },
+    {
+      "timestampMs": 25880,
+      "cents": 8.28,
+      "freqHz": 262.88
+    },
+    {
+      "timestampMs": 25900,
+      "cents": 5.14,
+      "freqHz": 262.41
+    },
+    {
+      "timestampMs": 25920,
+      "cents": -0.53,
+      "freqHz": 261.55
+    },
+    {
+      "timestampMs": 25940,
+      "cents": -5.62,
+      "freqHz": 260.78
+    },
+    {
+      "timestampMs": 25960,
+      "cents": -7.34,
+      "freqHz": 260.52
+    },
+    {
+      "timestampMs": 25980,
+      "cents": -4.69,
+      "freqHz": 260.92
+    },
+    {
+      "timestampMs": 26000,
+      "cents": 0.95,
+      "freqHz": 261.77
+    },
+    {
+      "timestampMs": 26020,
+      "cents": 6.62,
+      "freqHz": 262.63
+    },
+    {
+      "timestampMs": 26040,
+      "cents": 9.35,
+      "freqHz": 263.05
+    },
+    {
+      "timestampMs": 26060,
+      "cents": 7.77,
+      "freqHz": 262.81
+    },
+    {
+      "timestampMs": 26080,
+      "cents": 2.87,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 26100,
+      "cents": -2.58,
+      "freqHz": 261.24
+    },
+    {
+      "timestampMs": 26120,
+      "cents": -5.47,
+      "freqHz": 260.8
+    },
+    {
+      "timestampMs": 26140,
+      "cents": -4.12,
+      "freqHz": 261.01
+    },
+    {
+      "timestampMs": 26160,
+      "cents": 0.89,
+      "freqHz": 261.76
+    },
+    {
+      "timestampMs": 26180,
+      "cents": 6.94,
+      "freqHz": 262.68
+    },
+    {
+      "timestampMs": 26200,
+      "cents": 10.88,
+      "freqHz": 263.28
+    },
+    {
+      "timestampMs": 26220,
+      "cents": 10.65,
+      "freqHz": 263.24
+    },
+    {
+      "timestampMs": 26240,
+      "cents": 6.45,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 26260,
+      "cents": 0.61,
+      "freqHz": 261.72
+    },
+    {
+      "timestampMs": 26280,
+      "cents": -3.7,
+      "freqHz": 261.07
+    },
+    {
+      "timestampMs": 26300,
+      "cents": -4.14,
+      "freqHz": 261.0
+    },
+    {
+      "timestampMs": 26320,
+      "cents": -0.52,
+      "freqHz": 261.55
+    },
+    {
+      "timestampMs": 26340,
+      "cents": 5.13,
+      "freqHz": 262.41
+    },
+    {
+      "timestampMs": 26360,
+      "cents": 9.63,
+      "freqHz": 263.09
+    },
+    {
+      "timestampMs": 26380,
+      "cents": 10.42,
+      "freqHz": 263.21
+    },
+    {
+      "timestampMs": 26400,
+      "cents": 6.89,
+      "freqHz": 262.67
+    },
+    {
+      "timestampMs": 26420,
+      "cents": 0.76,
+      "freqHz": 261.74
+    },
+    {
+      "timestampMs": 26440,
+      "cents": -4.87,
+      "freqHz": 260.89
+    },
+    {
+      "timestampMs": 26460,
+      "cents": -7.2,
+      "freqHz": 260.54
+    },
+    {
+      "timestampMs": 26480,
+      "cents": -5.23,
+      "freqHz": 260.84
+    },
+    {
+      "timestampMs": 26500,
+      "cents": -0.31,
+      "freqHz": 261.58
+    },
+    {
+      "timestampMs": 26520,
+      "cents": 4.6,
+      "freqHz": 262.33
+    },
+    {
+      "timestampMs": 26540,
+      "cents": 6.55,
+      "freqHz": 262.62
+    },
+    {
+      "timestampMs": 26560,
+      "cents": 4.17,
+      "freqHz": 262.26
+    },
+    {
+      "timestampMs": 26580,
+      "cents": -1.52,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 26600,
+      "cents": -7.72,
+      "freqHz": 260.47
+    },
+    {
+      "timestampMs": 26620,
+      "cents": -11.33,
+      "freqHz": 259.92
+    },
+    {
+      "timestampMs": 26640,
+      "cents": -10.63,
+      "freqHz": 260.03
+    },
+    {
+      "timestampMs": 26660,
+      "cents": -6.22,
+      "freqHz": 260.69
+    },
+    {
+      "timestampMs": 26680,
+      "cents": -0.66,
+      "freqHz": 261.53
+    },
+    {
+      "timestampMs": 26700,
+      "cents": 2.88,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 26720,
+      "cents": 2.37,
+      "freqHz": 261.99
+    },
+    {
+      "timestampMs": 26740,
+      "cents": -1.99,
+      "freqHz": 261.33
+    },
+    {
+      "timestampMs": 26760,
+      "cents": -7.87,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 26780,
+      "cents": -12.08,
+      "freqHz": 259.81
+    },
+    {
+      "timestampMs": 26800,
+      "cents": -12.29,
+      "freqHz": 259.78
+    },
+    {
+      "timestampMs": 26820,
+      "cents": -8.31,
+      "freqHz": 260.38
+    },
+    {
+      "timestampMs": 26840,
+      "cents": -2.18,
+      "freqHz": 261.3
+    },
+    {
+      "timestampMs": 26860,
+      "cents": 2.93,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 26880,
+      "cents": 4.42,
+      "freqHz": 262.3
+    },
+    {
+      "timestampMs": 26900,
+      "cents": 1.7,
+      "freqHz": 261.89
+    },
+    {
+      "timestampMs": 26920,
+      "cents": -3.54,
+      "freqHz": 261.09
+    },
+    {
+      "timestampMs": 26940,
+      "cents": -8.22,
+      "freqHz": 260.39
+    },
+    {
+      "timestampMs": 26960,
+      "cents": -9.55,
+      "freqHz": 260.19
+    },
+    {
+      "timestampMs": 26980,
+      "cents": -6.55,
+      "freqHz": 260.64
+    },
+    {
+      "timestampMs": 27000,
+      "cents": -0.59,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 27020,
+      "cents": 5.36,
+      "freqHz": 262.44
+    },
+    {
+      "timestampMs": 27040,
+      "cents": 8.31,
+      "freqHz": 262.89
+    },
+    {
+      "timestampMs": 27060,
+      "cents": 6.89,
+      "freqHz": 262.67
+    },
+    {
+      "timestampMs": 27080,
+      "cents": 2.1,
+      "freqHz": 261.95
+    },
+    {
+      "timestampMs": 27100,
+      "cents": -3.28,
+      "freqHz": 261.13
+    },
+    {
+      "timestampMs": 27120,
+      "cents": -6.16,
+      "freqHz": 260.7
+    },
+    {
+      "timestampMs": 27140,
+      "cents": -4.83,
+      "freqHz": 260.9
+    },
+    {
+      "timestampMs": 27160,
+      "cents": 0.11,
+      "freqHz": 261.65
+    },
+    {
+      "timestampMs": 27180,
+      "cents": 6.07,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 27200,
+      "cents": 9.9,
+      "freqHz": 263.13
+    },
+    {
+      "timestampMs": 27220,
+      "cents": 9.55,
+      "freqHz": 263.08
+    },
+    {
+      "timestampMs": 27240,
+      "cents": 5.24,
+      "freqHz": 262.42
+    },
+    {
+      "timestampMs": 27260,
+      "cents": -0.71,
+      "freqHz": 261.52
+    },
+    {
+      "timestampMs": 27280,
+      "cents": -5.09,
+      "freqHz": 260.86
+    },
+    {
+      "timestampMs": 27300,
+      "cents": -5.57,
+      "freqHz": 260.79
+    },
+    {
+      "timestampMs": 27320,
+      "cents": -1.95,
+      "freqHz": 261.34
+    },
+    {
+      "timestampMs": 27340,
+      "cents": 3.76,
+      "freqHz": 262.2
+    },
+    {
+      "timestampMs": 27360,
+      "cents": 8.37,
+      "freqHz": 262.9
+    },
+    {
+      "timestampMs": 27380,
+      "cents": 9.34,
+      "freqHz": 263.04
+    },
+    {
+      "timestampMs": 27400,
+      "cents": 6.05,
+      "freqHz": 262.55
+    },
+    {
+      "timestampMs": 27420,
+      "cents": 0.23,
+      "freqHz": 261.66
+    },
+    {
+      "timestampMs": 27440,
+      "cents": -5.03,
+      "freqHz": 260.87
+    },
+    {
+      "timestampMs": 27460,
+      "cents": -6.92,
+      "freqHz": 260.59
+    },
+    {
+      "timestampMs": 27480,
+      "cents": -4.46,
+      "freqHz": 260.96
+    },
+    {
+      "timestampMs": 27500,
+      "cents": 1.0,
+      "freqHz": 261.78
+    },
+    {
+      "timestampMs": 27520,
+      "cents": 6.49,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 27540,
+      "cents": 9.04,
+      "freqHz": 263.0
+    },
+    {
+      "timestampMs": 27560,
+      "cents": 7.3,
+      "freqHz": 262.73
+    },
+    {
+      "timestampMs": 27580,
+      "cents": 2.23,
+      "freqHz": 261.97
+    },
+    {
+      "timestampMs": 27600,
+      "cents": -3.36,
+      "freqHz": 261.12
+    },
+    {
+      "timestampMs": 27620,
+      "cents": -6.38,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 27640,
+      "cents": -5.13,
+      "freqHz": 260.86
+    },
+    {
+      "timestampMs": 27660,
+      "cents": -0.22,
+      "freqHz": 261.6
+    },
+    {
+      "timestampMs": 27680,
+      "cents": 5.76,
+      "freqHz": 262.5
+    },
+    {
+      "timestampMs": 27700,
+      "cents": 9.65,
+      "freqHz": 263.09
+    },
+    {
+      "timestampMs": 27720,
+      "cents": 9.39,
+      "freqHz": 263.05
+    },
+    {
+      "timestampMs": 27740,
+      "cents": 5.18,
+      "freqHz": 262.41
+    },
+    {
+      "timestampMs": 27760,
+      "cents": -0.65,
+      "freqHz": 261.53
+    },
+    {
+      "timestampMs": 27780,
+      "cents": -4.93,
+      "freqHz": 260.89
+    },
+    {
+      "timestampMs": 27800,
+      "cents": -5.32,
+      "freqHz": 260.83
+    },
+    {
+      "timestampMs": 27820,
+      "cents": -1.64,
+      "freqHz": 261.38
+    },
+    {
+      "timestampMs": 27840,
+      "cents": 4.08,
+      "freqHz": 262.25
+    },
+    {
+      "timestampMs": 27860,
+      "cents": 8.68,
+      "freqHz": 262.94
+    },
+    {
+      "timestampMs": 27880,
+      "cents": 9.56,
+      "freqHz": 263.08
+    },
+    {
+      "timestampMs": 27900,
+      "cents": 6.12,
+      "freqHz": 262.56
+    },
+    {
+      "timestampMs": 27920,
+      "cents": 0.1,
+      "freqHz": 261.64
+    },
+    {
+      "timestampMs": 27940,
+      "cents": -5.43,
+      "freqHz": 260.81
+    },
+    {
+      "timestampMs": 27960,
+      "cents": -7.66,
+      "freqHz": 260.47
+    },
+    {
+      "timestampMs": 27980,
+      "cents": -5.6,
+      "freqHz": 260.79
+    },
+    {
+      "timestampMs": 28000,
+      "cents": -0.59,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 28020,
+      "cents": 4.4,
+      "freqHz": 262.3
+    },
+    {
+      "timestampMs": 28040,
+      "cents": 6.42,
+      "freqHz": 262.6
+    },
+    {
+      "timestampMs": 28060,
+      "cents": 4.1,
+      "freqHz": 262.25
+    },
+    {
+      "timestampMs": 28080,
+      "cents": -1.54,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 28100,
+      "cents": -7.71,
+      "freqHz": 260.47
+    },
+    {
+      "timestampMs": 28120,
+      "cents": -11.29,
+      "freqHz": 259.93
+    },
+    {
+      "timestampMs": 28140,
+      "cents": -10.58,
+      "freqHz": 260.04
+    },
+    {
+      "timestampMs": 28160,
+      "cents": -6.16,
+      "freqHz": 260.7
+    },
+    {
+      "timestampMs": 28180,
+      "cents": -0.6,
+      "freqHz": 261.54
+    },
+    {
+      "timestampMs": 28200,
+      "cents": 2.93,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 28220,
+      "cents": 2.4,
+      "freqHz": 261.99
+    },
+    {
+      "timestampMs": 28240,
+      "cents": -1.98,
+      "freqHz": 261.33
+    },
+    {
+      "timestampMs": 28260,
+      "cents": -7.88,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 28280,
+      "cents": -12.11,
+      "freqHz": 259.81
+    },
+    {
+      "timestampMs": 28300,
+      "cents": -12.33,
+      "freqHz": 259.77
+    },
+    {
+      "timestampMs": 28320,
+      "cents": -8.37,
+      "freqHz": 260.37
+    },
+    {
+      "timestampMs": 28340,
+      "cents": -2.24,
+      "freqHz": 261.29
+    },
+    {
+      "timestampMs": 28360,
+      "cents": 2.87,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 28380,
+      "cents": 4.38,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 28400,
+      "cents": 1.69,
+      "freqHz": 261.88
+    },
+    {
+      "timestampMs": 28420,
+      "cents": -3.52,
+      "freqHz": 261.1
+    },
+    {
+      "timestampMs": 28440,
+      "cents": -8.15,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 28460,
+      "cents": -9.42,
+      "freqHz": 260.21
+    },
+    {
+      "timestampMs": 28480,
+      "cents": -6.35,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 28500,
+      "cents": -0.31,
+      "freqHz": 261.58
+    },
+    {
+      "timestampMs": 28520,
+      "cents": 5.72,
+      "freqHz": 262.5
+    },
+    {
+      "timestampMs": 28540,
+      "cents": 8.77,
+      "freqHz": 262.96
+    },
+    {
+      "timestampMs": 28560,
+      "cents": 7.45,
+      "freqHz": 262.76
+    },
+    {
+      "timestampMs": 28580,
+      "cents": 2.76,
+      "freqHz": 262.05
+    },
+    {
+      "timestampMs": 28600,
+      "cents": -2.52,
+      "freqHz": 261.25
+    },
+    {
+      "timestampMs": 28620,
+      "cents": -5.3,
+      "freqHz": 260.83
+    },
+    {
+      "timestampMs": 28640,
+      "cents": -3.88,
+      "freqHz": 261.04
+    },
+    {
+      "timestampMs": 28660,
+      "cents": 1.15,
+      "freqHz": 261.8
+    },
+    {
+      "timestampMs": 28680,
+      "cents": 7.19,
+      "freqHz": 262.72
+    },
+    {
+      "timestampMs": 28700,
+      "cents": 11.08,
+      "freqHz": 263.31
+    },
+    {
+      "timestampMs": 28720,
+      "cents": 10.78,
+      "freqHz": 263.26
+    },
+    {
+      "timestampMs": 28740,
+      "cents": 6.5,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 28760,
+      "cents": 0.56,
+      "freqHz": 261.71
+    },
+    {
+      "timestampMs": 28780,
+      "cents": -3.83,
+      "freqHz": 261.05
+    },
+    {
+      "timestampMs": 28800,
+      "cents": -4.34,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 28820,
+      "cents": -0.77,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 28840,
+      "cents": 4.87,
+      "freqHz": 262.37
+    },
+    {
+      "timestampMs": 28860,
+      "cents": 9.39,
+      "freqHz": 263.05
+    },
+    {
+      "timestampMs": 28880,
+      "cents": 10.24,
+      "freqHz": 263.18
+    },
+    {
+      "timestampMs": 28900,
+      "cents": 6.83,
+      "freqHz": 262.66
+    },
+    {
+      "timestampMs": 28920,
+      "cents": 0.86,
+      "freqHz": 261.76
+    },
+    {
+      "timestampMs": 28940,
+      "cents": -4.56,
+      "freqHz": 260.94
+    },
+    {
+      "timestampMs": 28960,
+      "cents": -6.62,
+      "freqHz": 260.63
+    },
+    {
+      "timestampMs": 28980,
+      "cents": -4.33,
+      "freqHz": 260.98
+    },
+    {
+      "timestampMs": 29000,
+      "cents": 0.95,
+      "freqHz": 261.77
+    },
+    {
+      "timestampMs": 29020,
+      "cents": 6.26,
+      "freqHz": 262.58
+    },
+    {
+      "timestampMs": 29040,
+      "cents": 8.63,
+      "freqHz": 262.94
+    },
+    {
+      "timestampMs": 29060,
+      "cents": 6.71,
+      "freqHz": 262.65
+    },
+    {
+      "timestampMs": 29080,
+      "cents": 1.48,
+      "freqHz": 261.85
+    },
+    {
+      "timestampMs": 29100,
+      "cents": -4.27,
+      "freqHz": 260.99
+    },
+    {
+      "timestampMs": 29120,
+      "cents": -7.43,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 29140,
+      "cents": -6.31,
+      "freqHz": 260.68
+    },
+    {
+      "timestampMs": 29160,
+      "cents": -1.51,
+      "freqHz": 261.4
+    },
+    {
+      "timestampMs": 29180,
+      "cents": 4.39,
+      "freqHz": 262.29
+    },
+    {
+      "timestampMs": 29200,
+      "cents": 8.22,
+      "freqHz": 262.87
+    },
+    {
+      "timestampMs": 29220,
+      "cents": 7.92,
+      "freqHz": 262.83
+    },
+    {
+      "timestampMs": 29240,
+      "cents": 3.69,
+      "freqHz": 262.19
+    },
+    {
+      "timestampMs": 29260,
+      "cents": -2.13,
+      "freqHz": 261.31
+    },
+    {
+      "timestampMs": 29280,
+      "cents": -6.38,
+      "freqHz": 260.67
+    },
+    {
+      "timestampMs": 29300,
+      "cents": -6.73,
+      "freqHz": 260.62
+    },
+    {
+      "timestampMs": 29320,
+      "cents": -2.97,
+      "freqHz": 261.18
+    },
+    {
+      "timestampMs": 29340,
+      "cents": 2.84,
+      "freqHz": 262.06
+    },
+    {
+      "timestampMs": 29360,
+      "cents": 7.53,
+      "freqHz": 262.77
+    },
+    {
+      "timestampMs": 29380,
+      "cents": 8.53,
+      "freqHz": 262.92
+    },
+    {
+      "timestampMs": 29400,
+      "cents": 5.22,
+      "freqHz": 262.42
+    },
+    {
+      "timestampMs": 29420,
+      "cents": -0.67,
+      "freqHz": 261.53
+    },
+    {
+      "timestampMs": 29440,
+      "cents": -6.07,
+      "freqHz": 260.71
+    },
+    {
+      "timestampMs": 29460,
+      "cents": -8.16,
+      "freqHz": 260.4
+    },
+    {
+      "timestampMs": 29480,
+      "cents": -5.95,
+      "freqHz": 260.73
+    },
+    {
+      "timestampMs": 29500,
+      "cents": -0.81,
+      "freqHz": 261.51
+    },
+    {
+      "timestampMs": 29520,
+      "cents": 4.31,
+      "freqHz": 262.28
+    },
+    {
+      "timestampMs": 29540,
+      "cents": 6.44,
+      "freqHz": 262.61
+    },
+    {
+      "timestampMs": 29560,
+      "cents": 4.24,
+      "freqHz": 262.27
+    },
+    {
+      "timestampMs": 29580,
+      "cents": -1.31,
+      "freqHz": 261.43
+    },
+    {
+      "timestampMs": 29600,
+      "cents": -7.4,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 29620,
+      "cents": -10.92,
+      "freqHz": 259.99
+    },
+    {
+      "timestampMs": 29640,
+      "cents": -10.15,
+      "freqHz": 260.1
+    },
+    {
+      "timestampMs": 29660,
+      "cents": -5.69,
+      "freqHz": 260.77
+    },
+    {
+      "timestampMs": 29680,
+      "cents": -0.11,
+      "freqHz": 261.61
+    },
+    {
+      "timestampMs": 29700,
+      "cents": 3.43,
+      "freqHz": 262.15
+    },
+    {
+      "timestampMs": 29720,
+      "cents": 2.9,
+      "freqHz": 262.07
+    },
+    {
+      "timestampMs": 29740,
+      "cents": -1.49,
+      "freqHz": 261.41
+    },
+    {
+      "timestampMs": 29760,
+      "cents": -7.41,
+      "freqHz": 260.51
+    },
+    {
+      "timestampMs": 29780,
+      "cents": -11.66,
+      "freqHz": 259.87
+    },
+    {
+      "timestampMs": 29800,
+      "cents": -11.92,
+      "freqHz": 259.84
+    },
+    {
+      "timestampMs": 29820,
+      "cents": -7.98,
+      "freqHz": 260.43
+    },
+    {
+      "timestampMs": 29840,
+      "cents": -1.88,
+      "freqHz": 261.35
+    },
+    {
+      "timestampMs": 29860,
+      "cents": 3.2,
+      "freqHz": 262.11
+    },
+    {
+      "timestampMs": 29880,
+      "cents": 4.69,
+      "freqHz": 262.34
+    },
+    {
+      "timestampMs": 29900,
+      "cents": 1.97,
+      "freqHz": 261.93
+    },
+    {
+      "timestampMs": 29920,
+      "cents": -3.25,
+      "freqHz": 261.14
+    },
+    {
+      "timestampMs": 29940,
+      "cents": -7.89,
+      "freqHz": 260.44
+    },
+    {
+      "timestampMs": 29960,
+      "cents": -9.15,
+      "freqHz": 260.25
+    },
+    {
+      "timestampMs": 29980,
+      "cents": -6.07,
+      "freqHz": 260.72
+    }
+  ]
+}
