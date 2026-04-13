@@ -42,7 +42,7 @@ android/local.properties
 demo-apps/android/local.properties
 
 # iOS Config files with API keys
-demo-apps/ios/VoxaTraceDemo/VoxaTraceDemo/Config.swift
+demo-apps/ios/VoxaVisSample/VoxaVisSample/Config.swift
 
 # ==========================
 # Frameworks & Libraries (built from main library)
@@ -54,7 +54,7 @@ demo-apps/android/app/libs/
 demo-apps/android/app/src/main/jniLibs/
 
 # iOS Frameworks
-demo-apps/ios/VoxaTraceDemo/Frameworks/
+demo-apps/ios/VoxaVisSample/Frameworks/
 *.framework
 *.xcframework
 
