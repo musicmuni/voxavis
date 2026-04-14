@@ -1,11 +1,9 @@
 // swift-tools-version:5.9
-// This file is regenerated on each release by scripts/release-sdk.sh
-// The values below are placeholders — replaced when a release is published.
 import PackageDescription
 
-let version = "0.0.0"
-let releaseTag = "voxavis-v0.0.0"
-let checksum = "0000000000000000000000000000000000000000000000000000000000000000"
+let version = "1.0.0"
+let releaseTag = "voxavis-v1.0.0"
+let checksum = "a8a9cb7ee76317fd1f85740b6437e7d8ecbc704e08bf966972e20dfa6445cadb"
 
 let package = Package(
     name: "VoxaVis",

@@ -1,8 +1,6 @@
-# This file is regenerated on each release by scripts/release-sdk.sh
-# The values below are placeholders — replaced when a release is published.
 Pod::Spec.new do |spec|
   spec.name         = "VoxaVis"
-  spec.version      = "0.0.0"
+  spec.version      = "1.0.0"
   spec.summary      = "Cross-platform Compose visualization library for vocal/pitch apps"
   spec.description  = <<-DESC
     Cross-platform Compose visualization library for vocal/pitch apps
@@ -16,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.swift_versions = ["5.9"]
 
   spec.source = {
-    :http => "https://github.com/musicmuni/voxavis/releases/download/voxavis-v0.0.0/voxavis.xcframework.zip"
+    :http => "https://github.com/musicmuni/voxavis/releases/download/voxavis-v1.0.0/voxavis.xcframework.zip"
   }
 
   spec.vendored_frameworks = "VoxaVis.xcframework"
