@@ -19,9 +19,8 @@ Part of the [MusicMuni](https://musicmuni.com) SDK family. Pairs naturally with 
 
 ## Platforms
 
-- **Android** — minSdk 24, distributed as AAR via Maven Central
+- **Android** — minSdk 24, distributed as AAR via Maven Central (R8-obfuscated)
 - **iOS** — iOS 15+, distributed as XCFramework via SPM or CocoaPods
-- **Multiplatform** — KMP artifacts for JVM, JS, WASM also published
 
 ## Installation
 
