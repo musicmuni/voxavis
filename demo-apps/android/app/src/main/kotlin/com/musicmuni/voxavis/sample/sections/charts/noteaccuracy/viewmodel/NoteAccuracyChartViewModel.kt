@@ -6,7 +6,6 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 import com.musicmuni.voxavis.model.AccuracyData
 import com.musicmuni.voxavis.sample.shared.MockData
@@ -20,10 +19,6 @@ class NoteAccuracyChartViewModel : ViewModel() {
         notes.clear()
         notes.addAll(MockData.randomAccuracyData())
     }
-
-    // Style overrides (null = follow theme)
-    var customGoodColor by mutableStateOf<Color?>(null)
-    var customPoorColor by mutableStateOf<Color?>(null)
 
     var autoAnimate by mutableStateOf(false)
 }

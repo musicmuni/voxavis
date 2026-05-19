@@ -6,15 +6,15 @@ final class NoteAccuracyChartDemoViewModel: ObservableObject {
     @Published var noteDiameter: Float = 24
     @Published var gridLineCount: Int = 11
 
+    // The dot fill is a gradient over each note's score; the default
+    // accuracyRamp (red → amber → green) is used here.
     lazy var state: NoteAccuracyChartState = NoteAccuracyChartState(
         notes: MockData.noteAccuracyData(),
         gridLineCount: Int32(gridLineCount),
         noteDiameter: noteDiameter,
         noteSpacing: 17,
         flatLabel: "Flat",
-        sharpLabel: "Sharp",
-        goodColor: 0xFF4CAF50,
-        poorColor: 0xFFF44336
+        sharpLabel: "Sharp"
     )
 
     func randomize() {

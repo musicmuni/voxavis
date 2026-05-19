@@ -1,6 +1,5 @@
 package com.musicmuni.voxavis.sample.shared
 
-import com.musicmuni.voxavis.model.AccuracyLevel
 import com.musicmuni.voxavis.model.ChartPoint
 import com.musicmuni.voxavis.model.CircularPitchBuffer
 import com.musicmuni.voxavis.model.GridLine
@@ -214,13 +213,13 @@ object MockData {
     }
 
     fun noteAccuracyData(): List<AccuracyData> = listOf(
-        AccuracyData("Sa", 261.63f, -2f, AccuracyLevel.EXCELLENT),
-        AccuracyData("Re", 293.66f, 8f, AccuracyLevel.GOOD),
-        AccuracyData("Ga", 329.63f, -15f, AccuracyLevel.FAIR),
-        AccuracyData("Ma", 349.23f, 25f, AccuracyLevel.NEEDS_WORK),
-        AccuracyData("Pa", 392.00f, 3f, AccuracyLevel.EXCELLENT),
-        AccuracyData("Dha", 440.00f, -7f, AccuracyLevel.GOOD),
-        AccuracyData("Ni", 493.88f, 12f, AccuracyLevel.FAIR),
+        AccuracyData("Sa", 261.63f, -2f, score = 95f),
+        AccuracyData("Re", 293.66f, 8f, score = 80f),
+        AccuracyData("Ga", 329.63f, -15f, score = 55f),
+        AccuracyData("Ma", 349.23f, 25f, score = 28f),
+        AccuracyData("Pa", 392.00f, 3f, score = 92f),
+        AccuracyData("Dha", 440.00f, -7f, score = 82f),
+        AccuracyData("Ni", 493.88f, 12f, score = 60f),
     )
 
     fun scoreTrendData(): List<ChartPoint> = listOf(
@@ -281,9 +280,8 @@ object MockData {
     fun randomAccuracyData(): List<AccuracyData> {
         val notes = listOf("Sa", "Re", "Ga", "Ma", "Pa", "Dha", "Ni")
         val freqs = listOf(261.63f, 293.66f, 329.63f, 349.23f, 392.00f, 440.00f, 493.88f)
-        val levels = AccuracyLevel.entries
         return notes.zip(freqs).map { (name, freq) ->
-            AccuracyData(name, freq, Random.nextFloat() * 50f - 25f, levels.random())
+            AccuracyData(name, freq, Random.nextFloat() * 50f - 25f, Random.nextFloat() * 100f)
         }
     }
 

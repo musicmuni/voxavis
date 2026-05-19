@@ -46,13 +46,13 @@ enum MockData {
 
     static func noteAccuracyData() -> [AccuracyData] {
         return [
-            AccuracyData(label: "Sa", targetPitchHz: 261.63, deviationPercent: -2, deviationRemark: .excellent),
-            AccuracyData(label: "Re", targetPitchHz: 293.66, deviationPercent: 8, deviationRemark: .good),
-            AccuracyData(label: "Ga", targetPitchHz: 329.63, deviationPercent: -15, deviationRemark: .fair),
-            AccuracyData(label: "Ma", targetPitchHz: 349.23, deviationPercent: 25, deviationRemark: .needsWork),
-            AccuracyData(label: "Pa", targetPitchHz: 392.00, deviationPercent: 3, deviationRemark: .excellent),
-            AccuracyData(label: "Dha", targetPitchHz: 440.00, deviationPercent: -7, deviationRemark: .good),
-            AccuracyData(label: "Ni", targetPitchHz: 493.88, deviationPercent: 12, deviationRemark: .fair),
+            AccuracyData(label: "Sa", targetPitchHz: 261.63, deviationPercent: -2, score: 95),
+            AccuracyData(label: "Re", targetPitchHz: 293.66, deviationPercent: 8, score: 80),
+            AccuracyData(label: "Ga", targetPitchHz: 329.63, deviationPercent: -15, score: 55),
+            AccuracyData(label: "Ma", targetPitchHz: 349.23, deviationPercent: 25, score: 28),
+            AccuracyData(label: "Pa", targetPitchHz: 392.00, deviationPercent: 3, score: 92),
+            AccuracyData(label: "Dha", targetPitchHz: 440.00, deviationPercent: -7, score: 82),
+            AccuracyData(label: "Ni", targetPitchHz: 493.88, deviationPercent: 12, score: 60),
         ]
     }
 
@@ -124,13 +124,12 @@ enum MockData {
     static func randomAccuracyData() -> [AccuracyData] {
         let notes = ["Sa", "Re", "Ga", "Ma", "Pa", "Dha", "Ni"]
         let freqs: [Float] = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88]
-        let levels: [AccuracyLevel] = [.excellent, .good, .fair, .needsWork]
         return zip(notes, freqs).map { (name, freq) in
             AccuracyData(
                 label: name,
                 targetPitchHz: freq,
                 deviationPercent: Float.random(in: -25...25),
-                deviationRemark: levels.randomElement()!
+                score: Float.random(in: 0...100)
             )
         }
     }

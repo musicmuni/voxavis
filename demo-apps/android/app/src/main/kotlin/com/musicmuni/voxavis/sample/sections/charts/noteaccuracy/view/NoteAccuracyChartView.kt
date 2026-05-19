@@ -10,16 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.musicmuni.voxavis.NoteAccuracyChart
-import com.musicmuni.voxavis.components.charts.NoteAccuracyChartStyle
 import com.musicmuni.voxavis.sample.sections.charts.noteaccuracy.viewmodel.NoteAccuracyChartViewModel
-import com.musicmuni.voxavis.sample.shared.LocalThemeSheetState
-import com.musicmuni.voxavis.sample.shared.ColorPalette
 import com.musicmuni.voxavis.sample.shared.MockData
 
 @Composable
 fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
-    val themeSheet = LocalThemeSheetState.current
-
     LaunchedEffect(vm.autoAnimate) {
         if (vm.autoAnimate) {
             val start = System.currentTimeMillis()
@@ -35,20 +30,6 @@ fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
             }
         }
     }
-    DisposableEffect(Unit) {
-        themeSheet.componentStyleContent = @Composable {
-            val defaults = NoteAccuracyChartStyle.default()
-            ColorPalette("Good Color", vm.customGoodColor ?: defaults.goodColor, { vm.customGoodColor = it })
-            ColorPalette("Poor Color", vm.customPoorColor ?: defaults.poorColor, { vm.customPoorColor = it })
-        }
-        onDispose { themeSheet.componentStyleContent = null }
-    }
-
-    val defaultStyle = NoteAccuracyChartStyle.default()
-    val style = defaultStyle.copy(
-        goodColor = vm.customGoodColor ?: defaultStyle.goodColor,
-        poorColor = vm.customPoorColor ?: defaultStyle.poorColor,
-    )
 
     Column(
         modifier = Modifier
@@ -57,12 +38,13 @@ fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
+        // The dot fill is a gradient over each note's score, interpolated
+        // across the style's accuracy ramp (default red → amber → green).
         NoteAccuracyChart(
             modifier = Modifier.fillMaxWidth().height(250.dp),
             notes = vm.notes,
             noteDiameter = vm.noteDiameter.dp,
             gridLineCount = vm.gridLineCount,
-            style = style,
         )
 
         HorizontalDivider()
