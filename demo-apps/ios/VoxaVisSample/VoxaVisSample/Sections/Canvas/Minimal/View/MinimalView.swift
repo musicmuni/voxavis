@@ -5,24 +5,14 @@ struct MinimalDemoView: View {
     @StateObject private var vm = MinimalViewModel()
 
     var body: some View {
-        VStack(spacing: 16) {
-            VoxaVisView(state: vm.canvasState)
-                .frame(height: 250)
+        LicenceGate {
+            VStack(spacing: 16) {
+                SingingPracticeView(state: vm.model.canvasState)
+                    .frame(height: 260)
 
-            HStack {
-                Button(action: { vm.isPlaying.toggle() }) {
-                    Image(systemName: vm.isPlaying ? "pause.fill" : "play.fill")
-                        .font(.largeTitle)
-                }
+                TransportControls(model: vm.model)
             }
-
-            Toggle("Show Grid Lines", isOn: $vm.showGridLines)
-        }
-        .task {
-            while !Task.isCancelled {
-                try? await Task.sleep(nanoseconds: 16_000_000)
-                await MainActor.run { vm.tick() }
-            }
+            .task { await vm.model.run() }
         }
     }
 }

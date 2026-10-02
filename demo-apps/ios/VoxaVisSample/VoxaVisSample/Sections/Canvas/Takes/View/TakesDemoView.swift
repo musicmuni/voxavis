@@ -1,8 +1,8 @@
 import SwiftUI
 import voxavis
 
-struct PlaybackDemoView: View {
-    @StateObject private var vm = PlaybackViewModel()
+struct TakesDemoView: View {
+    @StateObject private var vm = TakesViewModel()
 
     var body: some View {
         LicenceGate {
@@ -10,14 +10,11 @@ struct PlaybackDemoView: View {
                 SingingPracticeView(state: vm.model.canvasState)
                     .frame(height: 260)
 
-                SegmentScrubberView(state: vm.scrubber)
-                    .frame(height: 48)
+                TransportControls(model: vm.model)
 
-                Text(vm.scrubLabel)
+                Text("Three takes of one phrase on one session clock, each opened by a count (LeadInMarks) over a beat cycle (MetricLaneCycle).")
                     .font(.caption)
                     .foregroundColor(.secondary)
-
-                TransportControls(model: vm.model, skipMs: 5_000)
             }
             .task { await vm.model.run() }
         }

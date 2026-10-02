@@ -7,27 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F46286BB2F066E6E007F89FE /* voxavis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46286BA2F066E6E007F89FE /* voxavis.xcframework */; };
-		F46286BC2F066E6E007F89FE /* voxavis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F46286BA2F066E6E007F89FE /* voxavis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1A2B3C42F26700200000003 /* VoxaVis in Frameworks */ = {isa = PBXBuildFile; productRef = F1A2B3C42F26700200000002 /* VoxaVis */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F46286BD2F066E6E007F89FE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F46286BC2F066E6E007F89FE /* voxavis.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F6504DC2F054775006A11FF /* VoxaVisSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxaVisSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F46286BA2F066E6E007F89FE /* voxavis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = voxavis.xcframework; path = Frameworks/voxavis.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46286BB2F066E6E007F89FE /* voxavis.xcframework in Frameworks */,
+				F1A2B3C42F26700200000003 /* VoxaVis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +38,6 @@
 			isa = PBXGroup;
 			children = (
 				9F6504DE2F054775006A11FF /* VoxaVisSample */,
-				F46286B92F066E6E007F89FE /* Frameworks */,
 				9F6504DD2F054775006A11FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,14 +50,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F46286B92F066E6E007F89FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F46286BA2F066E6E007F89FE /* voxavis.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,7 +60,6 @@
 				9F6504D82F054775006A11FF /* Sources */,
 				9F6504D92F054775006A11FF /* Frameworks */,
 				9F6504DA2F054775006A11FF /* Resources */,
-				F46286BD2F066E6E007F89FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +70,7 @@
 			);
 			name = VoxaVisSample;
 			packageProductDependencies = (
+				F1A2B3C42F26700200000002 /* VoxaVis */,
 			);
 			productName = VoxaVisSample;
 			productReference = 9F6504DC2F054775006A11FF /* VoxaVisSample.app */;
@@ -125,6 +100,9 @@
 			);
 			mainGroup = 9F6504D32F054775006A11FF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F1A2B3C42F26700200000001 /* XCRemoteSwiftPackageReference "voxavis" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9F6504DD2F054775006A11FF /* Products */;
 			projectDirPath = "";
@@ -209,7 +187,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -267,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -286,17 +264,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W37Q295UQ3;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,17 +298,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W37Q295UQ3;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1A2B3C42F26700200000001 /* XCRemoteSwiftPackageReference "voxavis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/musicmuni/voxavis";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1A2B3C42F26700200000002 /* VoxaVis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1A2B3C42F26700200000001 /* XCRemoteSwiftPackageReference "voxavis" */;
+			productName = VoxaVis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F6504D42F054775006A11FF /* Project object */;
 }

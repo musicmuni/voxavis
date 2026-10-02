@@ -9,27 +9,27 @@ enum MockData {
         return [
             Segment.create(
                 startTimeMs: 0, endTimeMs: 5000,
-                type: .teacher, lyrics: "Sa Re Ga Ma",
+                type: .reference, lyrics: "Sa Re Ga Ma",
                 score: 0.9, bestScore: 0.92
             ),
             Segment.create(
                 startTimeMs: 5000, endTimeMs: 10000,
-                type: .student, lyrics: "Pa Dha Ni Sa",
+                type: .performance, lyrics: "Pa Dha Ni Sa",
                 score: 0.65, bestScore: 0.7
             ),
             Segment.create(
                 startTimeMs: 10000, endTimeMs: 15000,
-                type: .teacher, lyrics: "Sa Ni Dha Pa",
+                type: .reference, lyrics: "Sa Ni Dha Pa",
                 score: 0.3, bestScore: 0.4
             ),
             Segment.create(
                 startTimeMs: 15000, endTimeMs: 20000,
-                type: .student, lyrics: "Ma Ga Re Sa",
+                type: .performance, lyrics: "Ma Ga Re Sa",
                 score: ScoreThresholds.notPracticed, bestScore: ScoreThresholds.notPracticed
             ),
             Segment.create(
                 startTimeMs: 20000, endTimeMs: 25000,
-                type: .teacher, lyrics: "Aaroha",
+                type: .reference, lyrics: "Aaroha",
                 score: ScoreThresholds.notPracticed, bestScore: 0.85
             ),
             Segment.create(
@@ -38,7 +38,7 @@ enum MockData {
             ),
             Segment.create(
                 startTimeMs: 26000, endTimeMs: 30000,
-                type: .teacher, lyrics: "Avaroha",
+                type: .reference, lyrics: "Avaroha",
                 score: 0.95, bestScore: 0.95
             ),
         ]
@@ -68,7 +68,7 @@ enum MockData {
         ]
     }
 
-    static func pitchContour(count: Int = 200) -> PitchContour {
+    static func pitchContour(count: Int = 200) -> PitchContourData {
         let points = (0..<count).map { i in
             let timeMs = Int64(i * 50)
             let baseCents = Float(600 + (i % 40) * 30)
@@ -79,7 +79,7 @@ enum MockData {
                 cents: baseCents + jitter
             )
         }
-        return PitchContour(points: points)
+        return PitchContourData.create(points: points)
     }
 
     static func spiderMetrics() -> [RadarMetric] {

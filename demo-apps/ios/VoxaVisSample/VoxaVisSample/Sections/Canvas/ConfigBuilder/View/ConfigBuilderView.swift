@@ -5,46 +5,34 @@ struct ConfigBuilderDemoView: View {
     @StateObject private var vm = ConfigBuilderViewModel()
 
     var body: some View {
-        VStack(spacing: 16) {
-            VoxaVisView(state: vm.canvasState)
-                .frame(height: 250)
+        LicenceGate {
+            VStack(spacing: 16) {
+                SingingPracticeView(state: vm.model.canvasState)
+                    .frame(height: 260)
 
-            HStack {
-                Button(action: { vm.isPlaying.toggle() }) {
-                    Image(systemName: vm.isPlaying ? "pause.fill" : "play.fill")
-                        .font(.largeTitle)
+                TransportControls(model: vm.model)
+
+                Divider()
+                Text("SingingPracticeConfig").font(.headline)
+
+                HStack {
+                    Text("Ahead of playhead: \(String(format: "%.2f", vm.barPositionRatio))")
+                        .frame(width: 150, alignment: .leading)
+                    Slider(value: $vm.barPositionRatio, in: 0.1...0.9)
                 }
+
+                HStack {
+                    Text("Time per inch: \(Int(vm.timePerInchMs)) ms")
+                        .frame(width: 150, alignment: .leading)
+                    Slider(value: $vm.timePerInchMs, in: 1000...10000)
+                }
+
+                Toggle("Follow the phrase (viewport)", isOn: $vm.followPhrase)
+                Toggle("Reference", isOn: $vm.showReference)
+                Toggle("Grid labels", isOn: $vm.showGridLabels)
+                Toggle("Note names", isOn: $vm.showNoteNames)
             }
-
-            Divider()
-            Text("Config Builder").font(.headline)
-
-            HStack {
-                Text("Bar Position: \(String(format: "%.1f", vm.barPositionRatio))")
-                    .frame(width: 150, alignment: .leading)
-                Slider(value: $vm.barPositionRatio, in: 0.1...0.9)
-            }
-
-            HStack {
-                Text("Time/Inch: \(Int(vm.timePerInchMs))ms")
-                    .frame(width: 150, alignment: .leading)
-                Slider(value: $vm.timePerInchMs, in: 1000...10000)
-            }
-
-            Divider()
-            Text("Visibility").font(.subheadline)
-
-            Toggle("Notes", isOn: $vm.showNotes)
-            Toggle("Segments", isOn: $vm.showSegments)
-            Toggle("Reference Pitch", isOn: $vm.showRefPitch)
-            Toggle("Score Colors", isOn: $vm.showScoreColors)
-            Toggle("Grid Lines", isOn: $vm.showGridLines)
-        }
-        .task {
-            while !Task.isCancelled {
-                try? await Task.sleep(nanoseconds: 16_000_000)
-                await MainActor.run { vm.tick() }
-            }
+            .task { await vm.model.run() }
         }
     }
 }

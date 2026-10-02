@@ -73,7 +73,7 @@ struct HomeView: View {
                     icon: "waveform.path.ecg",
                     title: "Canvas",
                     subtitle: "Scrolling Pitch Canvas",
-                    description: "Singing Session, Freestyle Pitch, Playback Review, Minimal, Config Builder",
+                    description: "Singing Session, Takes & Count-in, Playback Review, Freestyle, Minimal, Config Builder",
                     color: .blue,
                     onTap: { onSelect(.canvas) }
                 )
@@ -100,7 +100,7 @@ struct HomeView: View {
                     icon: "text.below.photo.fill",
                     title: "Navigation",
                     subtitle: "Seek & Lyrics",
-                    description: "SegmentedSeekBar, LyricsOverlay",
+                    description: "SegmentScrubber, SegmentedSeekBar, LyricsOverlay",
                     color: .purple,
                     onTap: { onSelect(.navigation) }
                 )
@@ -182,11 +182,12 @@ struct CanvasListView: View {
     let onSelect: (String) -> Void
 
     private let features = [
-        ("Singing Session", "Full session with segments, notes, pitch tracking"),
-        ("Freestyle Pitch", "Open-ended pitch exploration with pitch ball"),
-        ("Playback Review", "Review recorded reference pitch playback"),
-        ("Minimal Mode", "Grid lines + user pitch only"),
-        ("Config Builder", "Interactive VoxaVisState configuration demo"),
+        ("Singing Session", "A sing-after lesson with a learner answering it"),
+        ("Takes & Count-in", "One phrase drilled as takes on one clock, with a count and a beat cycle"),
+        ("Playback Review", "Scored review with a segment scrubber on the same clock"),
+        ("Freestyle Pitch", "Free singing over the scale, no lesson"),
+        ("Minimal Mode", "Two grid lines and a singer"),
+        ("Config Builder", "Every SingingPracticeConfig setting, live"),
     ]
 
     var body: some View {
@@ -253,6 +254,7 @@ struct NavigationComponentsListView: View {
     let onSelect: (String) -> Void
 
     private let features = [
+        ("SegmentScrubber", "Segment bar you drag along to seek"),
         ("SegmentedSeekBar", "Tappable segmented progress bar"),
         ("LyricsOverlay", "Scrolling lyrics with highlight"),
     ]
@@ -288,6 +290,8 @@ struct CanvasFeatureView: View {
         switch featureName {
         case "Singing Session":
             PracticeDemoView()
+        case "Takes & Count-in":
+            TakesDemoView()
         case "Freestyle Pitch":
             FreestyleDemoView()
         case "Playback Review":
@@ -383,6 +387,8 @@ struct NavigationFeatureView: View {
     @ViewBuilder
     private var featureContent: some View {
         switch featureName {
+        case "SegmentScrubber":
+            SegmentScrubberDemoView()
         case "SegmentedSeekBar":
             SegmentedSeekBarDemoView()
         case "LyricsOverlay":
