@@ -55,6 +55,9 @@ demo-apps/android/app/src/main/jniLibs/
 
 # iOS Frameworks
 demo-apps/ios/VoxaVisSample/Frameworks/
+# Left by ../scripts/ios-demo-source.sh local; gone again after `spm`.
+Package.remote.swift
+demo-apps/ios/VoxaVisSample/.spm-minimum-version
 *.framework
 *.xcframework
 
