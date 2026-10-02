@@ -5,7 +5,7 @@ All notable changes to VoxaVis will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [2.0.0] - Unreleased
+## [2.0.0] - 2026-10-02
 
 A major release. Score colours are no longer built into the components: you
 pass a `ScoreBands` that says which colour a score gets. The practice canvas

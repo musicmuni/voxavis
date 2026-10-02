@@ -1,9 +1,9 @@
 // swift-tools-version:5.9
 import PackageDescription
 
-let version = "1.0.0"
-let releaseTag = "voxavis-v1.0.0"
-let checksum = "a8a9cb7ee76317fd1f85740b6437e7d8ecbc704e08bf966972e20dfa6445cadb"
+let version = "2.0.0"
+let releaseTag = "voxavis-v2.0.0"
+let checksum = "1765c32438bbc76c0d07cb72eeedd9b36879be964837dcb806bfdee2e0fc6732"
 
 let package = Package(
     name: "VoxaVis",
