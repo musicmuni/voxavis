@@ -1,0 +1,154 @@
+/* MusicMuni Design System for VoxaVis Docs (same as VoxaTrace) */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Primary */
+  --ifm-color-primary: #FFC800;
+  --ifm-color-primary-dark: #e6b400;
+  --ifm-color-primary-darker: #cca000;
+  --ifm-color-primary-darkest: #997800;
+  --ifm-color-primary-light: #ffd633;
+  --ifm-color-primary-lighter: #ffe066;
+  --ifm-color-primary-lightest: #ffeb99;
+
+  /* Secondary colors */
+  --mm-secondary-1: #39389F;
+  --mm-secondary-2: #75C88E;
+  --mm-secondary-3: #DB7989;
+  --mm-secondary-4: #FFF4CC;
+
+  /* Alert colors */
+  --mm-alert-error: #EC8182;
+  --mm-alert-warning: #FFE796;
+
+  /* Typography */
+  --ifm-font-family-base: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Lexend', system-ui, -apple-system, sans-serif;
+
+  /* Code */
+  --ifm-code-font-size: 95%;
+}
+
+/* Dark mode (forced) */
+[data-theme='dark'] {
+  /* Greys */
+  --ifm-background-color: #0F0E16;
+  --ifm-background-surface-color: #1A1827;
+  --ifm-navbar-background-color: #171623;
+  --ifm-footer-background-color: #0F0E16;
+
+  /* Grey scale */
+  --mm-grey-1: #544D90;
+  --mm-grey-2: #3A3860;
+  --mm-grey-3: #2E2C41;
+  --mm-grey-4: #252336;
+  --mm-grey-5: #1E1C2D;
+  --mm-grey-6: #1A1827;
+  --mm-grey-7: #171623;
+  --mm-grey-8: #0F0E16;
+
+  /* Text colors */
+  --ifm-font-color-base: rgba(255, 255, 255, 0.87);
+  --ifm-font-color-secondary: rgba(255, 255, 255, 0.6);
+  --mm-text-low-emphasis: rgba(255, 255, 255, 0.38);
+
+  /* Borders */
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.12);
+  --mm-border-1: rgba(255, 255, 255, 0.2);
+  --mm-border-2: rgba(255, 255, 255, 0.12);
+
+  /* Primary stays the same */
+  --ifm-color-primary: #FFC800;
+
+  /* Links */
+  --ifm-link-color: #FFC800;
+  --ifm-link-hover-color: #ffd633;
+
+  /* Code blocks */
+  --ifm-code-background: #1E1C2D;
+  --docusaurus-highlighted-code-line-bg: #252336;
+
+  /* Cards and surfaces */
+  --ifm-card-background-color: #1A1827;
+}
+
+/* Headings use Lexend */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Navbar styling */
+.navbar {
+  border-bottom: 1px solid var(--mm-border-2);
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--mm-border-2);
+}
+
+/* Code blocks */
+pre {
+  border: 1px solid var(--mm-border-2);
+  border-radius: 8px;
+}
+
+/* Buttons */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  color: #0F0E16;
+  font-weight: 600;
+}
+
+.button--primary:hover {
+  background-color: #e6b400;
+  color: #0F0E16;
+}
+
+/* Cards */
+.card {
+  background-color: var(--ifm-card-background-color);
+  border: 1px solid var(--mm-border-2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+/* Admonitions */
+.alert--warning {
+  --ifm-alert-background-color: rgba(255, 231, 150, 0.1);
+  --ifm-alert-border-color: var(--mm-alert-warning);
+}
+
+.alert--danger {
+  --ifm-alert-background-color: rgba(236, 129, 130, 0.1);
+  --ifm-alert-border-color: var(--mm-alert-error);
+}
+
+/* Table of contents */
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Version dropdown */
+.dropdown__menu {
+  background-color: var(--mm-grey-6);
+  border: 1px solid var(--mm-border-2);
+}
