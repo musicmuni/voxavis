@@ -6,6 +6,8 @@ import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -28,6 +30,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        // The feature canvases need the SDK initialized; everything else draws
+        // without it. Started here, once per process; see VoxaVisLicence.
+        VoxaVisLicence.start(this)
         setContent {
             ThemeProvider {
                 Surface(
@@ -139,14 +144,16 @@ fun HomeScreen(onCategoryClick: (String) -> Unit) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
+            LicenceBanner()
             val categories = listOf(
-                CategoryItem("Canvas", "Scrolling Pitch Canvas", "Singing Practice, Instant Pitch Monitor, Scrolling Pitch Monitor, Practice Review, Custom Composition, Config Builder"),
+                CategoryItem("Canvas", "Scrolling Pitch Canvas", "Sing-After Session, Lesson Forms, Pitch Callout, Singing Practice, Instant Pitch Monitor, Scrolling Pitch Monitor, Practice Review, Custom Composition, Config Builder"),
                 CategoryItem("Charts", "Offline Visualization", "ScoreCard, RadarChart, NoteAccuracy, VocalRange, PitchScatter, ScoreTrend, MetricsList, RingMeter"),
                 CategoryItem("Indicators", "Real-Time Feedback", "TuningGauge, BeatIndicator, LevelMeter, ConfidenceMeter"),
-                CategoryItem("Navigation", "Seek & Lyrics", "SegmentedSeekBar, LyricsOverlay"),
+                CategoryItem("Navigation", "Seek & Lyrics", "SegmentScrubber, SegmentedSeekBar, LyricsOverlay"),
                 CategoryItem("Recipes", "Integration Patterns", "Karaoke Screen, Smart Tanpura, Post-Session Summary, Edge Cases"),
             )
             categories.forEach { cat ->
@@ -216,7 +223,11 @@ fun FeatureScreen(category: String, feature: String, onBack: () -> Unit) {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            FeatureRouter(category = category, feature = feature, onBack = onBack)
+            if (needsLicence(category, feature) && VoxaVisLicence.status != VoxaVisLicence.Status.Ready) {
+                LicenceRequired()
+            } else {
+                FeatureRouter(category = category, feature = feature, onBack = onBack)
+            }
         }
     }
 }

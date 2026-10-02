@@ -10,8 +10,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.musicmuni.voxavis.ScrollingPitchMonitor
 import com.musicmuni.voxavis.SingingPractice
-import com.musicmuni.voxavis.model.SessionMode
-import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.sample.sections.recipes.edgecases.viewmodel.EdgeCasesRecipeViewModel
 import com.musicmuni.voxavis.sample.shared.MockData
 
@@ -39,6 +37,8 @@ fun EdgeCasesRecipeView(vm: EdgeCasesRecipeViewModel = viewModel()) {
         }
     }
 
+    val clock = remember(vm) { { vm.currentTimeMs } }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -56,11 +56,8 @@ fun EdgeCasesRecipeView(vm: EdgeCasesRecipeViewModel = viewModel()) {
         EdgeCaseCard(title = "Empty Data", description = "All parameters empty/null — should render gracefully") {
             SingingPractice(
                 modifier = Modifier.fillMaxWidth().height(120.dp),
-                resources = SingingPracticeResources.create(
-                    mode = SessionMode.Singafter,
-                    trackLengthMs = vm.trackLengthMs,
-                ),
-                currentTimeMs = vm.currentTimeMs,
+                resources = vm.emptyLesson,
+                currentTimeMs = clock,
             )
         }
 

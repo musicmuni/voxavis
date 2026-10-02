@@ -1,5 +1,6 @@
 package com.musicmuni.voxavis.sample.sections.canvas.practice.viewmodel
 
+import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
@@ -16,6 +17,8 @@ import com.musicmuni.voxavis.model.PitchContourData
 import com.musicmuni.voxavis.model.Segment
 import com.musicmuni.voxavis.model.SegmentType
 import com.musicmuni.voxavis.model.SessionMode
+import com.musicmuni.voxavis.model.SessionPhase
+import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.sample.shared.MockData
 
 enum class PerformanceContourOption { CLOSE, LOOSE }
@@ -30,36 +33,31 @@ class PracticeViewModel : ViewModel() {
     // Session mode
     var sessionMode by mutableStateOf(SessionMode.Singafter)
 
+    /** The canvas's current phase, as its onPhaseStateChanged event reports it. */
+    var phase by mutableStateOf(SessionPhase.LISTEN)
+
     // Phase timing
     var preSingPrepMs by mutableLongStateOf(150L)
     var postSingPrepMs by mutableLongStateOf(150L)
 
-    // Accuracy
-    var simulatedAccuracy by mutableFloatStateOf(0f)
-    var useManualAccuracy by mutableStateOf(false)
-    var manualAccuracy by mutableFloatStateOf(0.5f)
-
-    val effectiveAccuracy: Float
-        get() = if (useManualAccuracy) manualAccuracy else simulatedAccuracy
-
-    // Mode-derived data
-    val segments: List<Segment>
-        get() {
-            val base = when (sessionMode) {
-                SessionMode.Singafter -> MockData.segments()
-                SessionMode.Singalong -> MockData.singalongSegments()
-                SessionMode.Exercise -> MockData.exerciseSegments()
-            }
-            val selected = if (showCommentary && sessionMode == SessionMode.Singafter) {
-                MockData.segmentsWithCommentary()
-            } else base
-            // Apply per-segment prep overrides to PERFORMANCE segments
-            return selected.map { seg ->
-                if (seg.type == SegmentType.PERFORMANCE) {
-                    seg.copy(prerollMs = preSingPrepMs, postrollMs = postSingPrepMs)
-                } else seg
-            }
+    // Mode-derived data. Derived, so each is built when an input changes rather
+    // than on every read: the clock reads some of them every frame.
+    val segments: List<Segment> by derivedStateOf {
+        val base = when (sessionMode) {
+            SessionMode.Singafter -> MockData.segments()
+            SessionMode.Singalong -> MockData.singalongSegments()
+            SessionMode.Exercise -> MockData.exerciseSegments()
         }
+        val selected = if (showCommentary && sessionMode == SessionMode.Singafter) {
+            MockData.segmentsWithCommentary()
+        } else base
+        // Apply per-segment prep overrides to PERFORMANCE segments
+        selected.map { seg ->
+            if (seg.type == SegmentType.PERFORMANCE) {
+                seg.copy(prerollMs = preSingPrepMs, postrollMs = postSingPrepMs)
+            } else seg
+        }
+    }
 
     val totalDurationMs: Long
         get() = when (sessionMode) {
@@ -68,25 +66,27 @@ class PracticeViewModel : ViewModel() {
             SessionMode.Exercise -> MockData.EXERCISE_DURATION_MS
         }
 
-    val notes: List<ScoreNote>
-        get() = when (sessionMode) {
+    val notes: List<ScoreNote> by derivedStateOf {
+        when (sessionMode) {
             SessionMode.Singafter -> MockData.notes()
             SessionMode.Singalong -> MockData.singalongNotes()
             SessionMode.Exercise -> MockData.exerciseNotes()
         }
+    }
 
-    val referencePitch: PitchContourData?
-        get() = when (sessionMode) {
+    val referencePitch: PitchContourData? by derivedStateOf {
+        when (sessionMode) {
             SessionMode.Singafter -> MockData.referencePitch()
             SessionMode.Singalong -> MockData.referencePitchSingalong()
             SessionMode.Exercise -> MockData.exerciseReferencePitch()
         }
+    }
 
     // Performance contour
     var performanceContourOption by mutableStateOf(PerformanceContourOption.CLOSE)
 
-    val performancePitch: PitchContourData
-        get() = when (sessionMode) {
+    val performancePitch: PitchContourData by derivedStateOf {
+        when (sessionMode) {
             SessionMode.Singafter, SessionMode.Exercise -> when (performanceContourOption) {
                 PerformanceContourOption.CLOSE -> MockData.performancePitchClose()
                 PerformanceContourOption.LOOSE -> MockData.performancePitchLoose()
@@ -96,8 +96,21 @@ class PracticeViewModel : ViewModel() {
                 PerformanceContourOption.LOOSE -> MockData.performancePitchLooseSingalong()
             }
         }
+    }
 
     val gridLines = MockData.gridLines()
+
+    /** The lesson as the canvas takes it: rebuilt when the mode or the timing changes, not per frame. */
+    val resources: SingingPracticeResources by derivedStateOf {
+        SingingPracticeResources.create(
+            mode = sessionMode,
+            trackLengthMs = totalDurationMs,
+            segments = segments,
+            notes = notes,
+            gridLines = gridLines,
+            referencePitch = referencePitch,
+        )
+    }
     val performanceBuffer = CircularPitchBuffer(capacity = 2000)
 
     // Gesture event log
@@ -131,10 +144,7 @@ class PracticeViewModel : ViewModel() {
     var customBallWarmAmberColor by mutableStateOf<Color?>(null)
     var customSmoothingStiffness by mutableStateOf<Float?>(null)
     var customReadyStiffness by mutableStateOf<Float?>(null)
-    var customPulseScaleMin by mutableStateOf<Float?>(null)
-    var customPulseScaleMax by mutableStateOf<Float?>(null)
-    var customPulsePeriodMs by mutableStateOf<Int?>(null)
-    var customIdlePulsePeriodMs by mutableStateOf<Int?>(null)
+    var customIdleGlowAlpha by mutableStateOf<Float?>(null)
 
     // Performance Trail
     var customPerformancePitchColor by mutableStateOf<Color?>(null)
@@ -197,7 +207,6 @@ class PracticeViewModel : ViewModel() {
     var customListenReferenceAlpha by mutableStateOf<Float?>(null)
     var customListenBallMode by mutableStateOf<BallMode?>(null)
     var customListenBallSize by mutableStateOf<Float?>(null)
-    var customListenTrailAlpha by mutableStateOf<Float?>(null)
 
     // Phase Ambience: Sing
     var customSingGridAlpha by mutableStateOf<Float?>(null)
@@ -205,7 +214,6 @@ class PracticeViewModel : ViewModel() {
     var customSingReferenceAlpha by mutableStateOf<Float?>(null)
     var customSingBallMode by mutableStateOf<BallMode?>(null)
     var customSingBallSize by mutableStateOf<Float?>(null)
-    var customSingTrailAlpha by mutableStateOf<Float?>(null)
 
     // Phase Ambience: Commentary
     var customCommentaryGridAlpha by mutableStateOf<Float?>(null)
@@ -213,5 +221,4 @@ class PracticeViewModel : ViewModel() {
     var customCommentaryReferenceAlpha by mutableStateOf<Float?>(null)
     var customCommentaryBallMode by mutableStateOf<BallMode?>(null)
     var customCommentaryBallSize by mutableStateOf<Float?>(null)
-    var customCommentaryTrailAlpha by mutableStateOf<Float?>(null)
 }

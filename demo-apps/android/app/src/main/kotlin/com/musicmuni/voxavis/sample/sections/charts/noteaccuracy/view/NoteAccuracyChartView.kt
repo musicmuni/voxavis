@@ -10,8 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.musicmuni.voxavis.NoteAccuracyChart
+import com.musicmuni.voxavis.components.charts.NoteAccuracyChartStyle
 import com.musicmuni.voxavis.sample.sections.charts.noteaccuracy.viewmodel.NoteAccuracyChartViewModel
 import com.musicmuni.voxavis.sample.shared.MockData
+import com.musicmuni.voxavis.sample.shared.ScoreBandModeChips
+import com.musicmuni.voxavis.sample.shared.scoreBands
 
 @Composable
 fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
@@ -38,13 +41,15 @@ fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        // The dot fill is a gradient over each note's score, interpolated
-        // across the style's accuracy ramp (default red → amber → green).
+        // Each note's score is 0..100; the chart normalizes it and asks the
+        // style's ScoreBands for the dot's fill, as one colour per band or a
+        // blend across them.
         NoteAccuracyChart(
             modifier = Modifier.fillMaxWidth().height(250.dp),
             notes = vm.notes,
             noteDiameter = vm.noteDiameter.dp,
             gridLineCount = vm.gridLineCount,
+            style = NoteAccuracyChartStyle.default().copy(bands = scoreBands(vm.bandMode)),
         )
 
         HorizontalDivider()
@@ -59,6 +64,9 @@ fun NoteAccuracyChartView(vm: NoteAccuracyChartViewModel = viewModel()) {
             Text("Grid Lines: ${vm.gridLineCount}", modifier = Modifier.width(130.dp))
             Slider(value = vm.gridLineCount.toFloat(), onValueChange = { vm.gridLineCount = it.toInt() }, valueRange = 3f..21f, steps = 8, modifier = Modifier.weight(1f))
         }
+
+        Text("Score colours", style = MaterialTheme.typography.bodyMedium)
+        ScoreBandModeChips(mode = vm.bandMode, onModeChange = { vm.bandMode = it })
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text("Simulate Live", modifier = Modifier.weight(1f))

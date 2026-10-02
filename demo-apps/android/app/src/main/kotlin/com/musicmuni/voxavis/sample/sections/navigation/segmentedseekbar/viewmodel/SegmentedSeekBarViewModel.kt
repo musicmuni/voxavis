@@ -7,7 +7,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
+import com.musicmuni.voxavis.navigation.SegmentBarLayout
 import com.musicmuni.voxavis.sample.shared.MockData
+import com.musicmuni.voxavis.theme.ScoreBandMode
 
 class SegmentedSeekBarViewModel : ViewModel() {
     var playing by mutableStateOf(true)
@@ -25,5 +27,7 @@ class SegmentedSeekBarViewModel : ViewModel() {
 
     // Style overrides (null = follow theme)
     var customMarkerColor by mutableStateOf<Color?>(null)
-    var customScoreGoodColor by mutableStateOf<Color?>(null)
+
+    var bandMode by mutableStateOf(ScoreBandMode.Discrete)
+    var layout by mutableStateOf(SegmentBarLayout.Temporal)
 }

@@ -12,7 +12,11 @@ import com.musicmuni.voxavis.SegmentedSeekBar
 import com.musicmuni.voxavis.sample.sections.navigation.segmentedseekbar.viewmodel.SegmentedSeekBarViewModel
 import com.musicmuni.voxavis.sample.shared.LocalThemeSheetState
 import com.musicmuni.voxavis.sample.shared.ColorPalette
+import com.musicmuni.voxavis.navigation.SegmentBarLayout
 import com.musicmuni.voxavis.navigation.SegmentedSeekBarStyle
+import com.musicmuni.voxavis.sample.shared.OptionChip
+import com.musicmuni.voxavis.sample.shared.ScoreBandModeChips
+import com.musicmuni.voxavis.sample.shared.scoreBands
 
 @Composable
 fun SegmentedSeekBarView(vm: SegmentedSeekBarViewModel = viewModel()) {
@@ -21,7 +25,6 @@ fun SegmentedSeekBarView(vm: SegmentedSeekBarViewModel = viewModel()) {
         themeSheet.componentStyleContent = @Composable {
             val defaults = SegmentedSeekBarStyle.default()
             ColorPalette("Marker Color", vm.customMarkerColor ?: defaults.markerColor, { vm.customMarkerColor = it })
-            ColorPalette("Score Good Color", vm.customScoreGoodColor ?: defaults.scoreGoodColor, { vm.customScoreGoodColor = it })
         }
         onDispose { themeSheet.componentStyleContent = null }
     }
@@ -40,7 +43,8 @@ fun SegmentedSeekBarView(vm: SegmentedSeekBarViewModel = viewModel()) {
     val defaultStyle = SegmentedSeekBarStyle.default()
     val style = defaultStyle.copy(
         markerColor = vm.customMarkerColor ?: defaultStyle.markerColor,
-        scoreGoodColor = vm.customScoreGoodColor ?: defaultStyle.scoreGoodColor,
+        // Score colours are the host's: one ScoreBands for every score on screen.
+        bands = scoreBands(vm.bandMode),
     )
 
     Column(
@@ -56,6 +60,7 @@ fun SegmentedSeekBarView(vm: SegmentedSeekBarViewModel = viewModel()) {
             totalDurationMs = vm.totalDurationMs,
             currentTimeMs = vm.currentTimeMs,
             barHeight = 6.dp,
+            layout = vm.layout,
             onSegmentTapped = { index, forward ->
                 vm.lastTappedInfo = "Segment $index (${if (forward) "forward" else "backward"})"
                 vm.addSeekEvent("Tap: segment $index")
@@ -84,5 +89,20 @@ fun SegmentedSeekBarView(vm: SegmentedSeekBarViewModel = viewModel()) {
                 Text(if (vm.playing) "Pause" else "Play")
             }
         }
+
+        Text("Layout", style = MaterialTheme.typography.bodyMedium)
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            SegmentBarLayout.entries.forEach { layout ->
+                OptionChip(selected = vm.layout == layout, onClick = { vm.layout = layout }, label = layout.name)
+            }
+        }
+        Text(
+            "Temporal places segments in real time, silence included. Packed lays them back to back.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+
+        Text("Score colours", style = MaterialTheme.typography.bodyMedium)
+        ScoreBandModeChips(mode = vm.bandMode, onModeChange = { vm.bandMode = it })
     }
 }

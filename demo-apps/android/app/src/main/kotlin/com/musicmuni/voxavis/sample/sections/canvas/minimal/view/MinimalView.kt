@@ -98,7 +98,7 @@ fun MinimalView(vm: MinimalViewModel = viewModel()) {
                 PitchGrid(gridLines = vm.gridLines)
             }
             if (vm.showNoteBars) {
-                NoteBars(notes = vm.notes, currentTimeMs = vm.currentTimeMs)
+                NoteBars(notes = vm.notes)
             }
             if (vm.showReferenceContour) {
                 PitchContour(

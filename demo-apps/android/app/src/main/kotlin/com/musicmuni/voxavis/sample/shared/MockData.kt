@@ -1,8 +1,13 @@
 package com.musicmuni.voxavis.sample.shared
 
+import com.musicmuni.voxavis.model.BeatRole
 import com.musicmuni.voxavis.model.ChartPoint
 import com.musicmuni.voxavis.model.CircularPitchBuffer
 import com.musicmuni.voxavis.model.GridLine
+import com.musicmuni.voxavis.model.LeadInMark
+import com.musicmuni.voxavis.model.LeadInMarkKind
+import com.musicmuni.voxavis.model.LeadInMarks
+import com.musicmuni.voxavis.model.MetricLaneCycle
 import com.musicmuni.voxavis.model.RadarMetric
 import com.musicmuni.voxavis.model.ScoreNote
 import com.musicmuni.voxavis.model.AccuracyData
@@ -621,4 +626,241 @@ object MockData {
     )
 
     const val TIMED_DURATION_MS = 24000L
+
+    // ── Sing-after session (Sing-After Session screen) ──
+    //
+    // A recording in which the teacher sings a phrase (the call) and then
+    // leaves the same length of silence for the learner to sing it back (the
+    // answer). Three phrases, each one cycle of Adi tala for the call and one
+    // for the answer.
+
+    const val SESSION_BEAT_MS = 500L
+    const val SESSION_CALL_MS = 8 * SESSION_BEAT_MS
+    const val SESSION_PHRASE_MS = 2 * SESSION_CALL_MS
+
+    private val SESSION_CALLS = listOf(
+        listOf("Sa", "Re", "Ga", "Ma"),
+        listOf("Ga", "Ma", "Pa", "Dha"),
+        listOf("Pa", "Dha", "Ni", "Sa'"),
+    )
+
+    val SESSION_PHRASE_COUNT: Int get() = SESSION_CALLS.size
+    val SESSION_LENGTH_MS: Long get() = SESSION_CALLS.size * SESSION_PHRASE_MS
+
+    /** How long the slide into a note takes, before the note is held. */
+    private const val GLIDE_MS = 150L
+
+    /** Adi tala at 120 beats a minute: 8 beats, in sections of 4, 2 and 2. */
+    fun adiTala(): MetricLaneCycle = MetricLaneCycle(
+        weights = listOf(
+            BeatRole.PRIMARY, BeatRole.PLAIN, BeatRole.PLAIN, BeatRole.PLAIN,
+            BeatRole.SECONDARY, BeatRole.HOLLOW, BeatRole.SECONDARY, BeatRole.HOLLOW,
+        ),
+        beatMs = SESSION_BEAT_MS.toFloat(),
+        pulsesPerBeat = 2,
+        angaStarts = listOf(0, 4, 6),
+    )
+
+    /**
+     * Four beats counted in, with the half beat between each, timed against the
+     * first note of the phrase they open (so every time is negative).
+     */
+    fun countIn(beats: Int = 4): LeadInMarks = LeadInMarks(
+        marks = (beats downTo 1).flatMap { beat ->
+            val at = -beat * SESSION_BEAT_MS
+            listOf(
+                LeadInMark(timeMs = at, kind = LeadInMarkKind.MATRA),
+                LeadInMark(timeMs = at + SESSION_BEAT_MS / 2, kind = LeadInMarkKind.PULSE),
+            )
+        },
+    )
+
+    /** The call and the answer of every phrase, on the recording's own clock. */
+    fun sessionSegments(): List<Segment> = SESSION_CALLS.flatMapIndexed { i, call ->
+        val start = i * SESSION_PHRASE_MS
+        val lyrics = call.joinToString(" ")
+        val cents = call.map { SWARA_CENTS[it]!! }
+        listOf(
+            Segment(start, start + SESSION_CALL_MS, SegmentType.REFERENCE, lyrics = lyrics, noteCents = cents),
+            Segment(start + SESSION_CALL_MS, start + SESSION_PHRASE_MS, SegmentType.PERFORMANCE, lyrics = lyrics, noteCents = cents),
+        )
+    }
+
+    /**
+     * The held stretch of every note in the calls: the transcription a lesson
+     * ships beside its recording. Each note after the first is reached by a
+     * slide, so its held stretch starts [GLIDE_MS] into its beat.
+     */
+    fun sessionNotes(): List<ScoreNote> = SESSION_CALLS.flatMapIndexed { i, call ->
+        val start = i * SESSION_PHRASE_MS
+        val slot = SESSION_CALL_MS / call.size
+        call.mapIndexed { k, swara ->
+            ScoreNote(
+                startTimeMs = start + k * slot + if (k == 0) 0L else GLIDE_MS,
+                endTimeMs = start + (k + 1) * slot,
+                cents = SWARA_CENTS[swara]!!,
+                label = swara,
+                segmentType = SegmentType.REFERENCE,
+            )
+        }
+    }
+
+    /** The teacher's recorded line: the calls, sung, and silence in the answers. */
+    fun sessionReferencePitch(): PitchContourData = glidingContour(sessionNotes(), SESSION_LENGTH_MS)
+
+    /**
+     * One entry per phrase (call and answer together), for a phrase bar. What
+     * each phrase scored last session is its memory; this session has not
+     * scored anything yet.
+     */
+    fun sessionPhraseSegments(): List<Segment> {
+        val lastSession = listOf(0.72f, 0.45f, ScoreThresholds.NOT_PRACTICED)
+        return SESSION_CALLS.mapIndexed { i, call ->
+            Segment(
+                startTimeMs = i * SESSION_PHRASE_MS,
+                endTimeMs = (i + 1) * SESSION_PHRASE_MS,
+                type = SegmentType.PERFORMANCE,
+                lyrics = call.joinToString(" "),
+                previousScore = lastSession[i],
+            )
+        }
+    }
+
+    /**
+     * How far off the mock learner sings each phrase, in cents, on the first
+     * attempt and on the repeat. A real app has a singer; this one is told.
+     */
+    fun sessionSingerOffsetCents(phrase: Int, attempt: Int): Float =
+        listOf(listOf(18f, 6f), listOf(55f, 25f), listOf(-30f, -12f))[phrase][attempt.coerceAtMost(1)]
+
+    // ── Lesson forms (Lesson Forms screen) ──
+    //
+    // A sung-along lesson that spans two octaves, from Pa in the lower octave
+    // to Re in the upper one, so a window narrower than the whole of it has
+    // somewhere to go. It ships both a recorded line and a transcription.
+
+    const val FORMS_DURATION_MS = 20000L
+
+    private val FORMS_CENTS = mapOf(
+        ".Pa" to -500f, ".Dha" to -300f, ".Ni" to -100f,
+        "Sa" to 0f, "Re" to 200f, "Ga" to 400f, "Ma" to 500f,
+        "Pa" to 700f, "Dha" to 900f, "Ni" to 1100f,
+        "Sa'" to 1200f, "Re'" to 1400f,
+    )
+
+    private val FORMS_PHRASES = listOf(
+        listOf(".Pa", ".Dha", ".Ni", "Sa"),
+        listOf("Re", "Ga", "Ma", "Pa"),
+        listOf("Dha", "Ni", "Sa'", "Re'"),
+        listOf("Sa'", "Pa", "Ga", "Sa"),
+    )
+
+    fun formsSegments(): List<Segment> = FORMS_PHRASES.mapIndexed { i, phrase ->
+        Segment(
+            startTimeMs = i * 5000L,
+            endTimeMs = (i + 1) * 5000L,
+            type = SegmentType.PERFORMANCE,
+            lyrics = phrase.joinToString(" "),
+            noteCents = phrase.map { FORMS_CENTS[it]!! },
+        )
+    }
+
+    fun formsNotes(): List<ScoreNote> = FORMS_PHRASES.flatMapIndexed { i, phrase ->
+        phrase.mapIndexed { k, swara ->
+            ScoreNote(
+                startTimeMs = i * 5000L + k * 1250L + if (k == 0) 0L else GLIDE_MS,
+                endTimeMs = i * 5000L + (k + 1) * 1250L,
+                cents = FORMS_CENTS[swara]!!,
+                label = swara,
+                segmentType = SegmentType.PERFORMANCE,
+            )
+        }
+    }
+
+    fun formsReferencePitch(): PitchContourData = glidingContour(formsNotes(), FORMS_DURATION_MS)
+
+    /**
+     * One line per swara over the lesson's span. Ranked, the tonic in every
+     * octave is an anchor and Pa comes next, so those names are the ones kept
+     * when the canvas cannot fit them all. Unranked, every name is equal and
+     * the ones higher up the screen win.
+     */
+    fun formsGridLines(ranked: Boolean): List<GridLine> = FORMS_CENTS.map { (label, cents) ->
+        val isSa = label == "Sa" || label == "Sa'"
+        GridLine(
+            cents = cents,
+            label = label,
+            isHighlighted = isSa,
+            lineWeight = if (isSa) 2f else 1f,
+            priority = when {
+                !ranked -> GridLine.PRIORITY_DEFAULT
+                isSa -> GridLine.PRIORITY_ANCHOR
+                label.endsWith("Pa") -> GridLine.PRIORITY_ANCHOR / 2
+                else -> GridLine.PRIORITY_DEFAULT
+            },
+        )
+    }
+
+    // ── Phrase bar (SegmentScrubber screen) ──
+
+    /**
+     * A lesson's phrases with the silence between them. Roughly half have a
+     * score from last session (their memory); none has one from this pass yet.
+     * [crowded] makes thirty short ones, narrow enough for the bar's lens.
+     */
+    fun scrubberPhrases(crowded: Boolean): List<Segment> {
+        val rng = Random(if (crowded) 7 else 3)
+        val count = if (crowded) 30 else 8
+        var t = 0L
+        return List(count) { i ->
+            val length = if (crowded) 600L + rng.nextLong(1200L) else 1500L + rng.nextLong(3500L)
+            val segment = Segment(
+                startTimeMs = t,
+                endTimeMs = t + length,
+                type = SegmentType.PERFORMANCE,
+                lyrics = "Phrase ${i + 1}",
+                previousScore = if (rng.nextBoolean()) 0.3f + rng.nextFloat() * 0.65f else ScoreThresholds.NOT_PRACTICED,
+            )
+            t += length + 300L + rng.nextLong(600L)
+            segment
+        }
+    }
+
+    /** What the mock singer scores on phrase [index] in this pass: a spread across every band. */
+    fun scrubberScore(index: Int): Float =
+        listOf(0.92f, 0.55f, 0.78f, 0.66f, 0.35f, 0.86f, 0.71f, 0.48f, 0.97f, 0.6f)[index % 10]
+
+    /**
+     * A sung line through [notes]: each note is reached by a slide from the one
+     * before it and held with a little vibrato, and there is silence wherever
+     * no note is near. [notes] are the held stretches; the slide fills the gap
+     * in front of each one.
+     */
+    private fun glidingContour(notes: List<ScoreNote>, durationMs: Long): PitchContourData {
+        val points = mutableListOf<PitchPoint>()
+        val stepMs = 20L
+        var t = 0L
+        while (t <= durationMs) {
+            val next = notes.indexOfFirst { t < it.endTimeMs }
+            val note = notes.getOrNull(next)
+            val previous = notes.getOrNull(next - 1)
+            val cents = when {
+                note == null -> null
+                t >= note.startTimeMs -> note.cents + sin(t.toDouble() / 200.0 * Math.PI).toFloat() * 5f
+                previous != null && note.startTimeMs - previous.endTimeMs <= GLIDE_MS && t >= previous.endTimeMs -> {
+                    val f = (t - previous.endTimeMs).toFloat() / (note.startTimeMs - previous.endTimeMs)
+                    val eased = f * f * (3f - 2f * f)
+                    previous.cents + (note.cents - previous.cents) * eased
+                }
+                else -> null
+            }
+            points += if (cents == null) {
+                PitchPoint.invalid(t)
+            } else {
+                PitchPoint(timestampMs = t, freqHz = 261.63f, cents = cents)
+            }
+            t += stepMs
+        }
+        return PitchContourData(points)
+    }
 }

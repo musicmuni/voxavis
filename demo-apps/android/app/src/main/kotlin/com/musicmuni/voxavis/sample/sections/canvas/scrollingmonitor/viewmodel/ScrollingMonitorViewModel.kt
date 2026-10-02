@@ -12,6 +12,8 @@ import com.musicmuni.voxavis.model.CircularPitchBuffer
 import com.musicmuni.voxavis.model.PitchContourData
 import com.musicmuni.voxavis.sample.shared.MockData
 
+enum class ViewportChoice { Whole, Static, Following }
+
 class ScrollingMonitorViewModel : ViewModel() {
     var playing by mutableStateOf(true)
     var currentTimeMs by mutableLongStateOf(0L)
@@ -28,6 +30,7 @@ class ScrollingMonitorViewModel : ViewModel() {
     var barPositionRatio by mutableFloatStateOf(0.3f)
     var timePerInchMs by mutableIntStateOf(3000)
     var showGridLabels by mutableStateOf(true)
+    var viewport by mutableStateOf(ViewportChoice.Whole)
 
     // Style overrides (null = follow theme)
     var customBallRadius by mutableStateOf<Float?>(null)

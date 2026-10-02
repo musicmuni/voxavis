@@ -20,7 +20,6 @@ import com.musicmuni.voxavis.model.SessionMode
 import com.musicmuni.voxavis.model.SessionPhase
 import com.musicmuni.voxavis.model.SingingPracticeConfig
 import com.musicmuni.voxavis.model.SingingPracticeEvents
-import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.computePhaseState
 import com.musicmuni.voxavis.model.PitchPoint
 import com.musicmuni.voxavis.sample.sections.canvas.practice.viewmodel.PerformanceContourOption
@@ -29,6 +28,7 @@ import com.musicmuni.voxavis.sample.shared.CollapsibleSection
 import com.musicmuni.voxavis.sample.shared.ColorPalette
 import com.musicmuni.voxavis.sample.shared.DescribedSlider
 import com.musicmuni.voxavis.sample.shared.DescribedSwitch
+import com.musicmuni.voxavis.sample.shared.EveryFrame
 import com.musicmuni.voxavis.sample.shared.GestureEventLog
 import com.musicmuni.voxavis.sample.shared.LocalThemeSheetState
 import com.musicmuni.voxavis.sample.shared.MockData
@@ -54,17 +54,13 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
         vm.performanceBuffer.clear()
     }
 
-    // Animate time
-    LaunchedEffect(vm.playing) {
-        if (vm.playing) {
-            val start = System.currentTimeMillis()
-            val offset = vm.currentTimeMs
-            while (true) {
-                vm.currentTimeMs = (offset + System.currentTimeMillis() - start) % vm.totalDurationMs
-                kotlinx.coroutines.delay(16)
-            }
-        }
+    // The clock: written once a frame, and read by the canvas through a reader
+    // in its own draw (ADR-013). Reading it here, in composition, would redraw
+    // this whole screen every frame.
+    EveryFrame(running = vm.playing) { elapsedMs ->
+        vm.currentTimeMs = (vm.currentTimeMs + elapsedMs) % vm.totalDurationMs
     }
+    val clock = remember(vm) { { vm.currentTimeMs } }
 
     // Feed performance contour into buffer
     LaunchedEffect(vm.playing) {
@@ -76,10 +72,8 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 )
                 if (phase.isSinging) {
                     MockData.feedContourToBuffer(vm.performancePitch, vm.performanceBuffer, vm.currentTimeMs)
-                    vm.simulatedAccuracy = MockData.simulateAccuracy(vm.currentTimeMs)
                 } else {
                     vm.performanceBuffer.add(PitchPoint.invalid(vm.currentTimeMs))
-                    vm.simulatedAccuracy = 0f
                 }
                 kotlinx.coroutines.delay(16)
             }
@@ -95,10 +89,7 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
             warmAmberColor = vm.customBallWarmAmberColor ?: defaultStyle.ball.warmAmberColor,
             smoothingStiffness = vm.customSmoothingStiffness ?: defaultStyle.ball.smoothingStiffness,
             readyStiffness = vm.customReadyStiffness ?: defaultStyle.ball.readyStiffness,
-            pulseScaleMin = vm.customPulseScaleMin ?: defaultStyle.ball.pulseScaleMin,
-            pulseScaleMax = vm.customPulseScaleMax ?: defaultStyle.ball.pulseScaleMax,
-            pulsePeriodMs = vm.customPulsePeriodMs ?: defaultStyle.ball.pulsePeriodMs,
-            idlePulsePeriodMs = vm.customIdlePulsePeriodMs ?: defaultStyle.ball.idlePulsePeriodMs,
+            idleGlowAlpha = vm.customIdleGlowAlpha ?: defaultStyle.ball.idleGlowAlpha,
         ),
         referenceContour = defaultStyle.referenceContour.copy(
             color = vm.customContourColor ?: defaultStyle.referenceContour.color,
@@ -161,7 +152,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
             referenceAlpha = vm.customListenReferenceAlpha ?: defaultStyle.listen.referenceAlpha,
             ballMode = vm.customListenBallMode ?: defaultStyle.listen.ballMode,
             ballSize = vm.customListenBallSize ?: defaultStyle.listen.ballSize,
-            trailAlpha = vm.customListenTrailAlpha ?: defaultStyle.listen.trailAlpha,
         ),
         sing = defaultStyle.sing.copy(
             gridAlpha = vm.customSingGridAlpha ?: defaultStyle.sing.gridAlpha,
@@ -169,7 +159,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
             referenceAlpha = vm.customSingReferenceAlpha ?: defaultStyle.sing.referenceAlpha,
             ballMode = vm.customSingBallMode ?: defaultStyle.sing.ballMode,
             ballSize = vm.customSingBallSize ?: defaultStyle.sing.ballSize,
-            trailAlpha = vm.customSingTrailAlpha ?: defaultStyle.sing.trailAlpha,
         ),
         commentary = defaultStyle.commentary.copy(
             gridAlpha = vm.customCommentaryGridAlpha ?: defaultStyle.commentary.gridAlpha,
@@ -177,7 +166,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
             referenceAlpha = vm.customCommentaryReferenceAlpha ?: defaultStyle.commentary.referenceAlpha,
             ballMode = vm.customCommentaryBallMode ?: defaultStyle.commentary.ballMode,
             ballSize = vm.customCommentaryBallSize ?: defaultStyle.commentary.ballSize,
-            trailAlpha = vm.customCommentaryTrailAlpha ?: defaultStyle.commentary.trailAlpha,
         ),
     )
 
@@ -188,17 +176,9 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
     ) {
         SingingPractice(
             modifier = Modifier.fillMaxWidth().height(200.dp),
-            resources = SingingPracticeResources.create(
-                mode = vm.sessionMode,
-                trackLengthMs = vm.totalDurationMs,
-                segments = vm.segments,
-                notes = vm.notes,
-                gridLines = vm.gridLines,
-                referencePitch = vm.referencePitch,
-            ),
-            currentTimeMs = vm.currentTimeMs,
+            resources = vm.resources,
+            currentTimeMs = clock,
             performancePitch = vm.performanceBuffer,
-            accuracy = vm.effectiveAccuracy,
             config = SingingPracticeConfig.create(
                 pitchRange = vm.minPitchCents..vm.maxPitchCents,
                 barPositionRatio = vm.barPositionRatio,
@@ -215,6 +195,9 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 onDoubleTapRight = { vm.addGestureEvent("Double-tap right") },
                 onTap = { vm.addGestureEvent("Tap") },
                 onPitchOutOfBounds = { dir -> vm.addGestureEvent("Pitch ${dir.name}") },
+                // Fired when the phase changes, not every frame: enough to
+                // light the matching "Phase Ambience" section below.
+                onPhaseStateChanged = { vm.phase = it.current },
             ),
             commentaryContent = if (vm.showCommentary) {
                 @Composable {
@@ -242,39 +225,7 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 .padding(horizontal = 16.dp)
         ) {
             // === Always visible: Phase state + Playback ===
-            val phaseState = computePhaseState(
-                vm.segments, vm.currentTimeMs, vm.sessionMode,
-                vm.preSingPrepMs
-            )
-            Row(
-                modifier = Modifier.padding(vertical = 4.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Text("Phase:", style = MaterialTheme.typography.labelMedium)
-                Surface(
-                    shape = MaterialTheme.shapes.small,
-                    color = phaseChipColor(phaseState.current),
-                ) {
-                    val label = if (phaseState.current == SessionPhase.PREP) {
-                        val from = phaseState.prepFrom?.name ?: "?"
-                        val to = phaseState.prepTo?.name ?: "?"
-                        "PREP ($from\u2009\u2192\u2009$to)"
-                    } else {
-                        phaseState.current.name
-                    }
-                    Text(
-                        text = label,
-                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
-                        style = MaterialTheme.typography.labelSmall,
-                        color = Color.White,
-                    )
-                }
-                Text(
-                    "${(phaseState.progress * 100).toInt()}%",
-                    style = MaterialTheme.typography.bodySmall,
-                )
-            }
+            PhaseReadout(vm)
 
             GestureEventLog(
                 events = vm.gestureEvents,
@@ -287,11 +238,7 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 }
             }
 
-            Text("Seek: ${vm.currentTimeMs / 1000}s / ${vm.totalDurationMs / 1000}s", style = MaterialTheme.typography.bodySmall)
-            Slider(
-                value = vm.currentTimeMs.toFloat() / vm.totalDurationMs,
-                onValueChange = { vm.currentTimeMs = (it * vm.totalDurationMs).toLong(); vm.playing = false }
-            )
+            SeekSlider(vm)
 
             // === Always visible: Session Mode ===
             HorizontalDivider()
@@ -345,30 +292,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                         )
                     }
 
-                    DescribedSwitch(
-                        label = "Manual Accuracy Override",
-                        description = "Override simulation with a manual slider.",
-                        checked = vm.useManualAccuracy,
-                        onCheckedChange = { vm.useManualAccuracy = it },
-                    )
-
-                    if (vm.useManualAccuracy) {
-                        DescribedSlider(
-                            label = "Accuracy",
-                            description = "Low = poor pitch matching. High = perfect singing.",
-                            value = vm.manualAccuracy,
-                            onValueChange = { vm.manualAccuracy = it },
-                            valueRange = 0f..1f,
-                            suffix = "%",
-                            valueFormat = "%.0f",
-                        )
-                    } else {
-                        Text(
-                            "Simulated: ${(vm.simulatedAccuracy * 100).toInt()}%",
-                            style = MaterialTheme.typography.bodySmall,
-                        )
-                    }
-
                     DescribedSlider(
                         label = "Silence Threshold",
                         description = "Time before pitch ball hides. Low = responsive. High = lingers.",
@@ -391,7 +314,7 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     DescribedSlider(
                         label = "Bar Position",
-                        description = "Now-line placement. Low = left (see future). High = right (see past).",
+                        description = "Now-line placement, measured from the right. Low = right (see past). High = left (see future).",
                         value = vm.barPositionRatio,
                         onValueChange = { vm.barPositionRatio = it },
                         valueRange = 0.1f..0.9f,
@@ -500,7 +423,7 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                 title = "Phase Ambience",
                 description = "Visual atmosphere of each session phase \u2014 how prominent or subdued different elements feel.",
             ) {
-                val activePhase = phaseState.current
+                val activePhase = vm.phase
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     PhaseAmbienceSubSection(
                         title = "Listen",
@@ -512,7 +435,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                         referenceAlpha = vm.customListenReferenceAlpha, onReferenceAlpha = { vm.customListenReferenceAlpha = it },
                         ballMode = vm.customListenBallMode, onBallMode = { vm.customListenBallMode = it },
                         ballSize = vm.customListenBallSize, onBallSize = { vm.customListenBallSize = it },
-                        trailAlpha = vm.customListenTrailAlpha, onTrailAlpha = { vm.customListenTrailAlpha = it },
                     )
                     PhaseAmbienceSubSection(
                         title = "Sing",
@@ -524,7 +446,6 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                         referenceAlpha = vm.customSingReferenceAlpha, onReferenceAlpha = { vm.customSingReferenceAlpha = it },
                         ballMode = vm.customSingBallMode, onBallMode = { vm.customSingBallMode = it },
                         ballSize = vm.customSingBallSize, onBallSize = { vm.customSingBallSize = it },
-                        trailAlpha = vm.customSingTrailAlpha, onTrailAlpha = { vm.customSingTrailAlpha = it },
                     )
                     PhaseAmbienceSubSection(
                         title = "Commentary",
@@ -536,12 +457,63 @@ fun PracticeView(vm: PracticeViewModel = viewModel()) {
                         referenceAlpha = vm.customCommentaryReferenceAlpha, onReferenceAlpha = { vm.customCommentaryReferenceAlpha = it },
                         ballMode = vm.customCommentaryBallMode, onBallMode = { vm.customCommentaryBallMode = it },
                         ballSize = vm.customCommentaryBallSize, onBallSize = { vm.customCommentaryBallSize = it },
-                        trailAlpha = vm.customCommentaryTrailAlpha, onTrailAlpha = { vm.customCommentaryTrailAlpha = it },
                     )
                 }
             }
         }
     }
+}
+
+// --- Readouts that follow the clock ---
+//
+// Each reads the clock in its own composition, so only it is redrawn every
+// frame. Read in PracticeView itself, the clock would recompose the whole
+// screen, canvas call included.
+
+@Composable
+private fun PhaseReadout(vm: PracticeViewModel) {
+    val phaseState = computePhaseState(
+        vm.segments, vm.currentTimeMs, vm.sessionMode,
+        vm.preSingPrepMs
+    )
+    Row(
+        modifier = Modifier.padding(vertical = 4.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Text("Phase:", style = MaterialTheme.typography.labelMedium)
+        Surface(
+            shape = MaterialTheme.shapes.small,
+            color = phaseChipColor(phaseState.current),
+        ) {
+            val label = if (phaseState.current == SessionPhase.PREP) {
+                val from = phaseState.prepFrom?.name ?: "?"
+                val to = phaseState.prepTo?.name ?: "?"
+                "PREP ($from\u2009\u2192\u2009$to)"
+            } else {
+                phaseState.current.name
+            }
+            Text(
+                text = label,
+                modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
+                style = MaterialTheme.typography.labelSmall,
+                color = Color.White,
+            )
+        }
+        Text(
+            "${(phaseState.progress * 100).toInt()}%",
+            style = MaterialTheme.typography.bodySmall,
+        )
+    }
+}
+
+@Composable
+private fun SeekSlider(vm: PracticeViewModel) {
+    Text("Seek: ${vm.currentTimeMs / 1000}s / ${vm.totalDurationMs / 1000}s", style = MaterialTheme.typography.bodySmall)
+    Slider(
+        value = vm.currentTimeMs.toFloat() / vm.totalDurationMs,
+        onValueChange = { vm.currentTimeMs = (it * vm.totalDurationMs).toLong(); vm.playing = false }
+    )
 }
 
 // --- Phase Ambience sub-section (reused for Listen/Sing/Commentary) ---
@@ -557,7 +529,6 @@ private fun PhaseAmbienceSubSection(
     referenceAlpha: Float?, onReferenceAlpha: (Float) -> Unit,
     ballMode: BallMode?, onBallMode: (BallMode) -> Unit,
     ballSize: Float?, onBallSize: (Float) -> Unit,
-    trailAlpha: Float?, onTrailAlpha: (Float) -> Unit,
 ) {
     val borderMod = if (isActive) {
         Modifier.border(1.dp, MaterialTheme.colorScheme.primary, MaterialTheme.shapes.small)
@@ -595,7 +566,7 @@ private fun PhaseAmbienceSubSection(
             )
 
             Text("Ball Mode", style = MaterialTheme.typography.bodyMedium)
-            Text("Active = tracks pitch. Ready = idle pulse. Hidden = gone.",
+            Text("Active = tracks pitch. Ready = waits, glowing. Hidden = gone.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -612,14 +583,6 @@ private fun PhaseAmbienceSubSection(
                 onValueChange = onBallSize,
                 valueRange = 0.1f..2.0f, suffix = "x", valueFormat = "%.2f",
             )
-            DescribedSlider(
-                label = "Trail Opacity",
-                description = "Performance trail. Low = hidden. High = full.",
-                value = trailAlpha ?: defaults.trailAlpha,
-                onValueChange = onTrailAlpha,
-                valueRange = 0f..1f, suffix = "", valueFormat = "%.2f",
-            )
-
         }
     }
 }
@@ -657,28 +620,10 @@ private fun ThemeSheetContent(vm: PracticeViewModel, defaults: SingingPracticeSt
                     valueRange = 100f..1000f, suffix = "", valueFormat = "%.0f",
                 )
                 DescribedSlider(
-                    label = "Pulse Min", description = "Minimum pulse scale. Low = dramatic shrink.",
-                    value = vm.customPulseScaleMin ?: defaults.ball.pulseScaleMin,
-                    onValueChange = { vm.customPulseScaleMin = it },
-                    valueRange = 0.8f..1.0f, suffix = "x", valueFormat = "%.2f",
-                )
-                DescribedSlider(
-                    label = "Pulse Max", description = "Maximum pulse scale. High = dramatic grow.",
-                    value = vm.customPulseScaleMax ?: defaults.ball.pulseScaleMax,
-                    onValueChange = { vm.customPulseScaleMax = it },
-                    valueRange = 1.0f..1.3f, suffix = "x", valueFormat = "%.2f",
-                )
-                DescribedSlider(
-                    label = "Pulse Period", description = "Active pulse speed. Low = rapid. High = slow.",
-                    value = (vm.customPulsePeriodMs ?: defaults.ball.pulsePeriodMs).toFloat(),
-                    onValueChange = { vm.customPulsePeriodMs = it.toInt() },
-                    valueRange = 200f..2000f, suffix = "ms", valueFormat = "%.0f",
-                )
-                DescribedSlider(
-                    label = "Idle Pulse", description = "Ready pulse speed. Low = anxious. High = calm.",
-                    value = (vm.customIdlePulsePeriodMs ?: defaults.ball.idlePulsePeriodMs).toFloat(),
-                    onValueChange = { vm.customIdlePulsePeriodMs = it.toInt() },
-                    valueRange = 200f..3000f, suffix = "ms", valueFormat = "%.0f",
+                    label = "Idle Glow", description = "How strongly the waiting ball glows. Still, so a waiting screen draws nothing.",
+                    value = vm.customIdleGlowAlpha ?: defaults.ball.idleGlowAlpha,
+                    onValueChange = { vm.customIdleGlowAlpha = it },
+                    valueRange = 0f..1f, suffix = "", valueFormat = "%.2f",
                 )
             }
         }

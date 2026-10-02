@@ -1,7 +1,10 @@
 package com.musicmuni.voxavis.sample
 
 import androidx.compose.runtime.Composable
+import com.musicmuni.voxavis.sample.sections.canvas.callout.view.CalloutView
+import com.musicmuni.voxavis.sample.sections.canvas.lessonforms.view.LessonFormsView
 import com.musicmuni.voxavis.sample.sections.canvas.practice.view.PracticeView
+import com.musicmuni.voxavis.sample.sections.canvas.session.view.SessionView
 import com.musicmuni.voxavis.sample.sections.canvas.freestyle.view.FreestyleView
 import com.musicmuni.voxavis.sample.sections.canvas.playback.view.PlaybackView
 import com.musicmuni.voxavis.sample.sections.canvas.minimal.view.MinimalView
@@ -21,6 +24,7 @@ import com.musicmuni.voxavis.sample.sections.indicators.levelmeter.view.LevelMet
 import com.musicmuni.voxavis.sample.sections.indicators.confidencemeter.view.ConfidenceMeterView
 import com.musicmuni.voxavis.sample.sections.navigation.segmentedseekbar.view.SegmentedSeekBarView
 import com.musicmuni.voxavis.sample.sections.navigation.lyricsoverlay.view.LyricsOverlayView
+import com.musicmuni.voxavis.sample.sections.navigation.segmentscrubber.view.SegmentScrubberView
 import com.musicmuni.voxavis.sample.sections.recipes.karaoke.view.KaraokeRecipeView
 import com.musicmuni.voxavis.sample.sections.recipes.tanpura.view.TanpuraRecipeView
 import com.musicmuni.voxavis.sample.sections.recipes.summary.view.SummaryRecipeView
@@ -30,6 +34,9 @@ import com.musicmuni.voxavis.sample.sections.recipes.edgecases.view.EdgeCasesRec
 fun FeatureRouter(category: String, feature: String, onBack: () -> Unit) {
     when (category) {
         "Canvas" -> when (feature) {
+            "Sing-After Session" -> SessionView()
+            "Lesson Forms" -> LessonFormsView()
+            "Pitch Callout" -> CalloutView()
             "Singing Practice" -> PracticeView()
             "Instant Pitch Monitor" -> FreestyleView()
             "Scrolling Pitch Monitor" -> ScrollingMonitorView()
@@ -54,6 +61,7 @@ fun FeatureRouter(category: String, feature: String, onBack: () -> Unit) {
             "ConfidenceMeter" -> ConfidenceMeterView()
         }
         "Navigation" -> when (feature) {
+            "SegmentScrubber" -> SegmentScrubberView()
             "SegmentedSeekBar" -> SegmentedSeekBarView()
             "LyricsOverlay" -> LyricsOverlayView()
         }
@@ -64,4 +72,18 @@ fun FeatureRouter(category: String, feature: String, onBack: () -> Unit) {
             "Edge Cases" -> EdgeCasesRecipeView()
         }
     }
+}
+
+/**
+ * The screens that draw one of the four feature canvases (`SingingPractice`,
+ * `InstantPitchMonitor`, `ScrollingPitchMonitor`, `PracticeReview`). Those throw
+ * until `VV` is initialized, so these screens wait for the licence; see
+ * [VoxaVisLicence]. Everything else draws without it.
+ */
+fun needsLicence(category: String, feature: String): Boolean = when (category) {
+    // Custom Composition builds its canvas from primitives and a layout, which
+    // need no licence.
+    "Canvas" -> feature != "Custom Composition"
+    "Recipes" -> true
+    else -> false
 }

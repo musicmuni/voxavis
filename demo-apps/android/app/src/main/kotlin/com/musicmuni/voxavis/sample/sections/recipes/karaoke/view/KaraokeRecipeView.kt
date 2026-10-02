@@ -13,8 +13,6 @@ import com.musicmuni.voxavis.ScoreCard
 import com.musicmuni.voxavis.SegmentedSeekBar
 import com.musicmuni.voxavis.SingingPractice
 import com.musicmuni.voxavis.TuningGauge
-import com.musicmuni.voxavis.model.SessionMode
-import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.sample.sections.recipes.karaoke.viewmodel.KaraokeRecipeViewModel
 import com.musicmuni.voxavis.sample.shared.MockData
 
@@ -50,35 +48,34 @@ fun KaraokeRecipeView(vm: KaraokeRecipeViewModel = viewModel()) {
         }
     }
 
+    val clock = remember(vm) { { vm.currentTimeMs } }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(bottom = 16.dp)
     ) {
-        // Lyrics overlay (collapsed, 1 line)
+        // Lyrics overlay: the line being sung, pinned in a one-line window.
+        // With leadingLines set, the block is exactly visibleItemCount lines
+        // tall; without it, it fills whatever height it is given, and this
+        // scrolling column gives it none.
         LyricsOverlay(
             segments = vm.segments,
             currentTimeMs = vm.currentTimeMs,
             isExpanded = false,
             visibleItemCount = 1,
+            leadingLines = 0,
             modifier = Modifier.fillMaxWidth(),
         )
 
-        // Main singing canvas
+        // Main singing canvas. It reads the clock itself, in its own draw; the
+        // lyrics and seek bar above and below take it as a value.
         SingingPractice(
             modifier = Modifier.fillMaxWidth().height(200.dp),
-            resources = SingingPracticeResources.create(
-                mode = SessionMode.Singafter,
-                trackLengthMs = vm.trackLengthMs,
-                segments = vm.segments,
-                notes = vm.notes,
-                gridLines = vm.gridLines,
-                referencePitch = vm.referencePitch,
-            ),
-            currentTimeMs = vm.currentTimeMs,
+            resources = vm.resources,
+            currentTimeMs = clock,
             performancePitch = vm.performanceBuffer,
-            accuracy = vm.simulatedAccuracy,
         )
 
         // Seekbar

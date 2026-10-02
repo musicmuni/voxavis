@@ -17,6 +17,7 @@ import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.sample.sections.canvas.configbuilder.viewmodel.ConfigBuilderViewModel
 import com.musicmuni.voxavis.sample.shared.ColorPalette
 import com.musicmuni.voxavis.sample.shared.DimensionSlider
+import com.musicmuni.voxavis.sample.shared.EveryFrame
 import com.musicmuni.voxavis.sample.shared.LocalThemeSheetState
 import com.musicmuni.voxavis.sample.shared.MockData
 
@@ -42,16 +43,11 @@ fun ConfigBuilderView(vm: ConfigBuilderViewModel = viewModel()) {
         onDispose { themeSheet.componentStyleContent = null }
     }
 
-    LaunchedEffect(vm.playing) {
-        if (vm.playing) {
-            val start = System.currentTimeMillis()
-            val offset = vm.currentTimeMs
-            while (true) {
-                vm.currentTimeMs = (offset + System.currentTimeMillis() - start) % vm.totalDurationMs
-                kotlinx.coroutines.delay(16)
-            }
-        }
+    // The clock, written once a frame and handed to the canvas as a reader.
+    EveryFrame(running = vm.playing) { elapsedMs ->
+        vm.currentTimeMs = (vm.currentTimeMs + elapsedMs) % vm.totalDurationMs
     }
+    val clock = remember(vm) { { vm.currentTimeMs } }
 
     LaunchedEffect(vm.playing) {
         if (vm.playing) {
@@ -85,15 +81,21 @@ fun ConfigBuilderView(vm: ConfigBuilderViewModel = viewModel()) {
                 segments = if (vm.showSegments) vm.segments else emptyList(),
                 notes = if (vm.showNotes) vm.notes else emptyList(),
                 gridLines = if (vm.showGridLines) vm.gridLines else emptyList(),
-                referencePitch = if (vm.showRefPitch) vm.referencePitch else null,
+                // Handed over whether or not it is on screen. Withholding it
+                // would say this lesson has no reference, which is a fact about
+                // the lesson and not about the checkbox: the canvas would then
+                // size its window differently and draw the note list instead.
+                // Whether the learner sees it is `showReference`, below.
+                referencePitch = vm.referencePitch,
             ),
-            currentTimeMs = vm.currentTimeMs,
+            currentTimeMs = clock,
             performancePitch = if (vm.showPerformancePitch) vm.performanceBuffer else null,
             config = SingingPracticeConfig.create(
                 barPositionRatio = vm.barPositionRatio,
                 timePerInchMs = vm.timePerInchMs.toInt(),
                 showGridLabels = vm.showGridLabels,
                 showSolfegeLabels = vm.showSolfegeLabels,
+                showReference = vm.showRefPitch,
             ),
             style = style,
         )

@@ -18,6 +18,9 @@ import com.musicmuni.voxavis.sample.PaletteAction
 fun CanvasListView(onBack: () -> Unit, onFeatureClick: (String) -> Unit) {
     BackHandler(onBack = onBack)
     val features = listOf(
+        "Sing-After Session" to "Teacher call, learner answer: takes on one clock, count-in, taal lane, scrubber",
+        "Lesson Forms" to "Contour vs notes, hiding the reference, follow-phrase window, grid label priority",
+        "Pitch Callout" to "A sung note travelling to the line it belongs on",
         "Singing Practice" to "Full session with modes, phases, gestures, loops",
         "Instant Pitch Monitor" to "Open-ended pitch with custom grid, tonic/fifth",
         "Scrolling Pitch Monitor" to "Live pitch with time scrolling, no scoring",

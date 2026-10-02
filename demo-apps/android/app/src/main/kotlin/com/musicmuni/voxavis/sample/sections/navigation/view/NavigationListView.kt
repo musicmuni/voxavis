@@ -18,7 +18,8 @@ import com.musicmuni.voxavis.sample.PaletteAction
 fun NavigationListView(onBack: () -> Unit, onFeatureClick: (String) -> Unit) {
     BackHandler(onBack = onBack)
     val features = listOf(
-        "SegmentedSeekBar" to "Tappable segmented progress bar",
+        "SegmentScrubber" to "Phrase bar: memory vs this pass, chips, queued dots, focus, lens",
+        "SegmentedSeekBar" to "Tappable segmented progress bar, score bands, packed layout",
         "LyricsOverlay" to "Scrolling lyrics with highlight",
     )
     Scaffold(

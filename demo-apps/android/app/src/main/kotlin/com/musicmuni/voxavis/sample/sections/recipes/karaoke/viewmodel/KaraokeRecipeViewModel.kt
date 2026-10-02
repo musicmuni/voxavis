@@ -7,6 +7,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.musicmuni.voxavis.model.CircularPitchBuffer
+import com.musicmuni.voxavis.model.SessionMode
+import com.musicmuni.voxavis.model.SingingPracticeResources
 import com.musicmuni.voxavis.sample.shared.MockData
 
 class KaraokeRecipeViewModel : ViewModel() {
@@ -18,6 +20,14 @@ class KaraokeRecipeViewModel : ViewModel() {
     val notes = MockData.notes()
     val gridLines = MockData.gridLines()
     val referencePitch = MockData.referencePitch()
+    val resources = SingingPracticeResources.create(
+        mode = SessionMode.Singafter,
+        trackLengthMs = trackLengthMs,
+        segments = segments,
+        notes = notes,
+        gridLines = gridLines,
+        referencePitch = referencePitch,
+    )
     val performanceBuffer = CircularPitchBuffer(capacity = 2000)
 
     var simulatedAccuracy by mutableFloatStateOf(0f)

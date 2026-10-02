@@ -16,7 +16,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Tab
-import androidx.compose.material3.TabRow
+import androidx.compose.material3.PrimaryTabRow
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -42,7 +42,7 @@ fun ThemeBottomSheet(
         val tabTitles = listOf("Presets", "Colors", "Style")
 
         Column {
-            TabRow(selectedTabIndex = pagerState.currentPage) {
+            PrimaryTabRow(selectedTabIndex = pagerState.currentPage) {
                 tabTitles.forEachIndexed { index, title ->
                     Tab(
                         selected = pagerState.currentPage == index,

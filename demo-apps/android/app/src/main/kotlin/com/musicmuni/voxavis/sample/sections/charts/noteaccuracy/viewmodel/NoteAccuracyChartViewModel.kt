@@ -9,6 +9,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.musicmuni.voxavis.model.AccuracyData
 import com.musicmuni.voxavis.sample.shared.MockData
+import com.musicmuni.voxavis.theme.ScoreBandMode
 
 class NoteAccuracyChartViewModel : ViewModel() {
     val notes = mutableStateListOf<AccuracyData>().apply { addAll(MockData.noteAccuracyData()) }
@@ -21,4 +22,5 @@ class NoteAccuracyChartViewModel : ViewModel() {
     }
 
     var autoAnimate by mutableStateOf(false)
+    var bandMode by mutableStateOf(ScoreBandMode.Gradient)
 }

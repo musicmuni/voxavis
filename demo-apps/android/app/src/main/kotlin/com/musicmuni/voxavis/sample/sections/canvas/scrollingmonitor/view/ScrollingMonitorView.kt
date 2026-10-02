@@ -10,12 +10,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.musicmuni.voxavis.ScrollingPitchMonitor
+import com.musicmuni.voxavis.features.PitchViewport
 import com.musicmuni.voxavis.features.ScrollingPitchMonitorStyle
+import com.musicmuni.voxavis.sample.sections.canvas.scrollingmonitor.viewmodel.ViewportChoice
 import com.musicmuni.voxavis.sample.sections.canvas.scrollingmonitor.viewmodel.ScrollingMonitorViewModel
 import com.musicmuni.voxavis.sample.shared.ColorPalette
 import com.musicmuni.voxavis.sample.shared.DimensionSlider
 import com.musicmuni.voxavis.sample.shared.LocalThemeSheetState
 import com.musicmuni.voxavis.sample.shared.MockData
+import com.musicmuni.voxavis.sample.shared.OptionChip
 
 @Composable
 fun ScrollingMonitorView(vm: ScrollingMonitorViewModel = viewModel()) {
@@ -68,6 +71,16 @@ fun ScrollingMonitorView(vm: ScrollingMonitorViewModel = viewModel()) {
         ),
     )
 
+    // Which slice of the cents axis is on screen. pitchRange stays the data's
+    // bounds; a viewport chooses the window inside it.
+    val viewport = remember(vm.viewport) {
+        when (vm.viewport) {
+            ViewportChoice.Whole -> null
+            ViewportChoice.Static -> PitchViewport.Static(range = 0f..700f)
+            ViewportChoice.Following -> PitchViewport.Following(sizeCents = 600f, initialCenterCents = 350f)
+        }
+    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -82,9 +95,12 @@ fun ScrollingMonitorView(vm: ScrollingMonitorViewModel = viewModel()) {
             performanceContour = if (vm.useRecordedContour) vm.recordedContour else null,
             gridLines = vm.gridLines,
             pitchRange = 0f..1200f,
+            viewport = viewport,
             barPositionRatio = vm.barPositionRatio,
             timePerInchMs = vm.timePerInchMs,
             showGridLabels = vm.showGridLabels,
+            // Before a note is sung the ball waits on Sa, not mid-window.
+            restingPitchCents = 0f,
             style = style,
         )
 
@@ -103,6 +119,23 @@ fun ScrollingMonitorView(vm: ScrollingMonitorViewModel = viewModel()) {
                 value = vm.currentTimeMs.toFloat(),
                 onValueChange = { vm.currentTimeMs = it.toLong() },
                 valueRange = 0f..vm.trackLengthMs.toFloat(),
+            )
+
+            // Viewport
+            Text("Viewport")
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                OptionChip(selected = vm.viewport == ViewportChoice.Whole, onClick = { vm.viewport = ViewportChoice.Whole }, label = "Whole range")
+                OptionChip(selected = vm.viewport == ViewportChoice.Static, onClick = { vm.viewport = ViewportChoice.Static }, label = "Sa to Pa")
+                OptionChip(selected = vm.viewport == ViewportChoice.Following, onClick = { vm.viewport = ViewportChoice.Following }, label = "Following")
+            }
+            Text(
+                when (vm.viewport) {
+                    ViewportChoice.Whole -> "All of pitchRange, Sa to upper Sa."
+                    ViewportChoice.Static -> "A fixed window inside pitchRange."
+                    ViewportChoice.Following -> "A half-octave window that pans after the singer stays near its edge."
+                },
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
 
             // Data source toggle
